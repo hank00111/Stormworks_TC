@@ -22,8 +22,8 @@ id	description	en	local
 		server version	伺服器版本		
 		Server is full	伺服器已滿		
 		Server is not open to multiplayer	伺服器沒有開放多人連線		
-		You are not whitelisted on this server	You are not whitelisted on this server
-		You are banned from this server	You are banned from this server
+		You are not whitelisted on this server	你不在伺服器允許名單之內
+		You are banned from this server	你已被伺服器封鎖
 		no errors detected	沒有檢測到錯誤		
 		Variables	變數		
 		Input 1	輸入 1		
