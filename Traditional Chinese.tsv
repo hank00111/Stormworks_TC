@@ -51,8 +51,8 @@ id	description	en	local
 		Arccosine	反餘弦(Acos)		
 		Arctangent	反正切(Atan)		
 		Atan2	Atan2		
-		Max of x and y	Max of x and y		
-		Min of x and y	Max of x and y		
+		Max of x and y	x和y的最大值		
+		Min of x and y	x和y的最小值		
 		Ceil x	Ceil x		
 		Floor x	Floor x		
 		Round x to nearest y	Round x to nearest y		
@@ -114,19 +114,19 @@ id	description	en	local
 		Home	家
 		Welcome to Stormworks	歡迎來到 Stormworks
 		FIX YOUR BOAT	修理你的船
-		Your boat was damaged in a recent storm. You will need to use a workbench to fix it.	Your boat was damaged in a recent storm. You will need to use a workbench to fix it.
+		Your boat was damaged in a recent storm. You will need to use a workbench to fix it.	您的船在最近的暴風雨中受損。 您將需要使用工作台對其進行修復。
 		Workbench	工作台
 		VEHICLE EDITOR	載具編輯器
-		This is the vehicle editor, where you can fix your boat.	This is the vehicle editor, where you can fix your boat.
+		This is the vehicle editor, where you can fix your boat.	這是車輛編輯器，您可以在其中修復您的船。
 		ROTATE THE CAMERA	旋轉相機
-		You can rotate the camera around in the vehicle editor by holding the RIGHT MOUSE BUTTON while dragging, or by holding [shift] and LEFT MOUSE BUTTON.	You can rotate the camera around in the vehicle editor by holding the RIGHT MOUSE BUTTON while dragging, or by holding [shift] and LEFT MOUSE BUTTON.
+		You can rotate the camera around in the vehicle editor by holding the RIGHT MOUSE BUTTON while dragging, or by holding [shift] and LEFT MOUSE BUTTON.	您可以在車輛編輯器中旋轉相機，方法是在拖動時按住滑鼠右鍵，或者按住[shift]和滑鼠左鍵。
 		MOVE THE CAMERA	移動相機
 		You can pan the camera around in the vehicle editor by dragging while holding \nMIDDLE MOUSE BUTTON\nor\n[alt] and LEFT MOUSE BUTTON.	You can pan the camera around in the vehicle editor by dragging while holding \nMIDDLE MOUSE BUTTON\nor\n[alt] and LEFT MOUSE BUTTON.
 		ZOOM THE CAMERA	縮放相機
-		You can zoom the camera in and out by using the MOUSE SCROLL WHEEL\nor\nthe [-] and [=] keys.	You can zoom the camera in and out by using the MOUSE SCROLL WHEEL\nor\nthe [-] and [=] keys.
+		You can zoom the camera in and out by using the MOUSE SCROLL WHEEL\nor\nthe [-] and [=] keys.	您可以使用鼠標滾動輪\或使用[-]和[=]鍵來放大和縮小相機。
 		RESET THE CAMERA	重設相機
-		Open the camera settings by pressing the 'Camera' button.	Open the camera settings by pressing the 'Camera' button.
-		Return the camera to its original position by pressing the 'Reset Camera' button.	Return the camera to its original position by pressing the 'Reset Camera' button.
+		Open the camera settings by pressing the 'Camera' button.	按下“相機”按鈕打開相機設置。
+		Return the camera to its original position by pressing the 'Reset Camera' button.	按下“重置相機”按鈕將相機返回到其原始位置。
 		PLACE BLOCK (1/3)	PLACE BLOCK (1/3)
 		Place a block in the highlighted space.\n\nMouse over an adjacent component to choose what to connect the block to.\n\nThen click to place it.	Place a block in the highlighted space.\n\nMouse over an adjacent component to choose what to connect the block to.\n\nThen click to place it.
 		PLACE BLOCK (2/3)	PLACE BLOCK (2/3)
@@ -136,14 +136,14 @@ id	description	en	local
 		PLACE WEDGE	PLACE WEDGE
 		PLACE WEDGES	PLACE WEDGES
 		PLACE PYRAMID	PLACE PYRAMID
-		CONNECT LOGIC (1/5)	CONNECT LOGIC (1/5)
-		CONNECT LOGIC (2/5)	CONNECT LOGIC (2/5)
-		CONNECT LOGIC (3/5)	CONNECT LOGIC (3/5)
-		CONNECT LOGIC (4/5)	CONNECT LOGIC (4/5)
-		CONNECT LOGIC (5/5)	CONNECT LOGIC (5/5)		
+		CONNECT LOGIC (1/5)	連接邏輯 (1/5)
+		CONNECT LOGIC (2/5)	連接邏輯 (2/5)
+		CONNECT LOGIC (3/5)	連接邏輯 (3/5)
+		CONNECT LOGIC (4/5)	連接邏輯 (4/5)
+		CONNECT LOGIC (5/5)	連接邏輯 (5/5)		
 		SAVE BOAT	儲存船隻
-		Save your boat design so that you can come back to it later.	Save your boat design so that you can come back to it later.
-		SPAWN BOAT	SPAWN BOAT
+		Save your boat design so that you can come back to it later.	保存您的船隻設計，以便稍後再使用。
+		SPAWN BOAT	生成船
 		Your boat is ready to go.\n\nClick on the 'Spawn' button to build it and take it for a spin.	Your boat is ready to go.\n\nClick on the 'Spawn' button to build it and take it for a spin.
 		SELECT ACTIVE MISSION	選擇一個啟用的任務
 		COMPLETE MISSION	完成任務
@@ -163,91 +163,91 @@ id	description	en	local
 		Police	警察
 		Small police station.	小派出所.
 		Airport	機場
-		Large runway in the shadow of an impenetrable plateau.	Large runway in the shadow of an impenetrable plateau.
-		Brinkfield	Brinkfield
-		Nuclear power plant with dock, reactor rooms and underground disposal pool.	Nuclear power plant with dock, reactor rooms and underground disposal pool.
-		Fishing Village	Fishing Village
-		Small fishing village with mountain, multiple sea stacks and a rocky peninsula.	Small fishing village with mountain, multiple sea stacks and a rocky peninsula.
-		Wind Turbine	Wind Turbine
-		Large offshore wind turbine.	Large offshore wind turbine.
+		Large runway in the shadow of an impenetrable plateau.	堅不可摧的高原下的大跑道
+		Brinkfield	布林菲爾德
+		Nuclear power plant with dock, reactor rooms and underground disposal pool.	具有碼頭，反應堆室和地下處置池的核電站。
+		Fishing Village	漁村
+		Small fishing village with mountain, multiple sea stacks and a rocky peninsula.	有山、小海灘和一個岩石半島的小漁村。
+		Wind Turbine	風力發電機
+		Large offshore wind turbine.	大型海上風力發電機。
 		Small Oil Rig	小型鑽油平台
 		Medium Oil Rig	中型鑽油平台
 		Wind Farm	風力發電廠
-		Multiple wind turbines atop a gentle hillside.	Multiple wind turbines atop a gentle hillside.
+		Multiple wind turbines atop a gentle hillside.	平緩的山坡上有多台風力渦輪機。
 		Oil Refinery	煉油廠
-		An industrial oil refinery with boat access.	An industrial oil refinery with boat access.
+		An industrial oil refinery with boat access.	有航道的工業煉油廠。
 		Lighthouse	燈塔
-		An unmanned lighthouse surrounded by hazardous rock formations.	An unmanned lighthouse surrounded by hazardous rock formations.
+		An unmanned lighthouse surrounded by hazardous rock formations. 一座無人看守的燈塔，周圍環繞著危險的岩層。
 		Observatory	天文台		
-		An astronomical observatory research base.	An astronomical observatory research base.
+		An astronomical observatory research base.	天文台研究基地。
 		Sea Fort	沿海要塞
-		An abandoned military sea fort that has been reopened as a tourist hotspot.	An abandoned military sea fort that has been reopened as a tourist hotspot.
+		An abandoned military sea fort that has been reopened as a tourist hotspot.	一個廢棄的軍事海堡壘，已重新開放為旅遊熱點。
 		Mainland Cliff	大陸懸崖
-		Small cliff at the corner of the mainland.	Small cliff at the corner of the mainland.
+		Small cliff at the corner of the mainland.	大陸一處的小懸崖。
 		Mainland Village	大陸村莊
-		Small fishing village near a rocky bay.	Small fishing village near a rocky bay.
+		Small fishing village near a rocky bay.	在一個岩石海灣附近的小漁村。
 		Mainland Peninsula	大陸半島
-		Wall of sharp rocks extending out into the ocean.	Wall of sharp rocks extending out into the ocean.
+		Wall of sharp rocks extending out into the ocean.	鋒利的岩石壁延伸入海洋。
 		Mainland Tunnel	大陸隧道
-		A short continuing section of rail and road tunnels leading away from the mainland.	A short continuing section of rail and road tunnels leading away from the mainland.
+		A short continuing section of rail and road tunnels leading away from the mainland.	遠離大陸的鐵路和公路隧道。
 		Mainland Junction	大陸交界處
-		The junction point on the mainland where the trainline to the Arctic begins.	The junction point on the mainland where the trainline to the Arctic begins.
+		The junction point on the mainland where the trainline to the Arctic begins.	通往北極大陸上的火車交匯點。
 		Mainland Road	大陸道路
-		Coastal road with a natural tunnel through a rock face.	Coastal road with a natural tunnel through a rock face.
+		Coastal road with a natural tunnel through a rock face.	位於岩石上的天然隧道的沿海道路。
 		Mainland Quarry	大陸採石場
-		Large quarry with mine, natural rock bridge and small castle ruin.	Large quarry with mine, natural rock bridge and small castle ruin.
+		Large quarry with mine, natural rock bridge and small castle ruin.	礦山，天然岩石橋和小城堡廢墟的大型採石場。
 		Mainland Beach	大陸海灘
-		Small beach with several rock stacks.	Small beach with several rock stacks.
-		Mainland Cliff 2	Mainland Cliff 2	
-		Key Cottage	Key Cottage
+		Small beach with several rock stacks.	與幾個岩石堆的小海灘。
+		Mainland Cliff 2	大陸懸崖 2	
+		Key Cottage	重點小屋
 		Small island with lone cottage on the key.	Small island with lone cottage on the key.
-		Key Chemical Plant	Key Chemical Plant
-		Small island with chemical plant on the key.	Small island with chemical plant on the key.
-		Key Lighthouse OB	Key Lighthouse OB
-		Small island with lighthouse on the key.	Small island with lighthouse on the key.
-		Uninhabited 1	Uninhabited 1
-		Small island with cliff edges.	Small island with cliff edges.
-		Uninhabited 2	Uninhabited 2
-		Smooth climb to a rocky cliffside.	Smooth climb to a rocky cliffside.
-		Uninhabited 3	Uninhabited 3
-		Two small islands surrounded by cliffs. Aerial access only.	Two small islands surrounded by cliffs. Aerial access only.
-		Uninhabited 4	Uninhabited 4
-		Multiple scattered sea stacks.	Multiple scattered sea stacks.
-		Uninhabited 5	Uninhabited 5
+		Key Chemical Plant	重點化工廠
+		Small island with chemical plant on the key.	小島嶼上的重點化工廠。
+		Key Lighthouse OB	重點燈塔OB
+		Small island with lighthouse on the key.	小島嶼上的重點燈塔。
+		Uninhabited 1	無人居住 1
+		Small island with cliff edges.	懸崖邊緣的小島。
+		Uninhabited 2	無人居住 2
+		Smooth climb to a rocky cliffside.	平穩攀登到多岩石的懸崖邊。
+		Uninhabited 3	無人居住 3
+		Two small islands surrounded by cliffs. Aerial access only.	懸崖包圍的兩個小島。 僅空中通行。
+		Uninhabited 4	無人居住 4
+		Multiple scattered sea stacks.	多重分散的海蝕柱。
+		Uninhabited 5	無人居住 5
 		Relatively flat island with central rocky outcrop.	Relatively flat island with central rocky outcrop.
-		Uninhabited 6	Uninhabited 6
-		Rocky shoreline with a small bay.	Rocky shoreline with a small bay.
-		Uninhabited 7	Uninhabited 7
-		High cliffs and a bay with 2 narrow entrances.	High cliffs and a bay with 2 narrow entrances.
-		Ruins 1	Ruins 1
-		Rocky coastline with small cave, ancient ruin and sheltered beach.	Rocky coastline with small cave, ancient ruin and sheltered beach.
-		Ruins 2	Ruins 2	
-		Sheltered cove, ancient ruin, cliff face connected by natural arch.	Sheltered cove, ancient ruin, cliff face connected by natural arch.
-		Seabed Rock Formation 1	Seabed Rock Formation 1
-		A rocky formation with cave on the ocean bed.	A rocky formation with cave on the ocean bed.
-		Seabed Rock Formation 2	Seabed Rock Formation 2
-		Two small rock formations on the ocean bed.	Two small rock formations on the ocean bed.
-		Seabed Rock Formation 3	Seabed Rock Formation 3
-		Multiple scattered rock stacks on the ocean bed.	Multiple scattered rock stacks on the ocean bed.
-		Seabed Rock Formation 4	Seabed Rock Formation 4
-		A flat rocky formation with central mound on the ocean bed.	A flat rocky formation with central mound on the ocean bed.
-		Seabed Rock Formation 5	Seabed Rock Formation 5
-		Seabed Rock Formation 6	Seabed Rock Formation 6
-		Small rocky formation on the ocean bed.	Small rocky formation on the ocean bed.
-		Seabed Rock Formation 7	Seabed Rock Formation 7
-		Several rocky stacks on the ocean bed.	Several rocky stacks on the ocean bed.
-		Seabed Caves	Seabed Caves
-		A system of underwater caves.	A system of underwater caves.
-		Seabed Shipwreck	Seabed Shipwreck	
-		A sunken iron-hulled merchant vessel.	A sunken iron-hulled merchant vessel.
-		Seabed Shipwreck 2	Seabed Shipwreck 2
-		A sunken historic timber caravel.	A sunken historic timber caravel.
-		Ice	Ice
+		Uninhabited 6	無人居住 6
+		Rocky shoreline with a small bay.	洛基海岸線有一個小海灘。
+		Uninhabited 7	無人居住 7
+		High cliffs and a bay with 2 narrow entrances.	高聳的懸崖，有2個狹窄的海灣口。
+		Ruins 1	廢墟 1
+		Rocky coastline with small cave, ancient ruin and sheltered beach.	岩石的海岸線與小山洞，岩石海岸線的海灘。
+		Ruins 2	廢墟 2	
+		Sheltered cove, ancient ruin, cliff face connected by natural arch.	隱蔽的海角，古老的廢墟，自然拱連接崖面。
+		Seabed Rock Formation 1	海底岩層 1
+		A rocky formation with cave on the ocean bed.	一個多岩石的形成與海床的洞穴。
+		Seabed Rock Formation 2	海底岩層 2
+		Two small rock formations on the ocean bed.	在海床上的兩個小岩層。
+		Seabed Rock Formation 3	海底岩層 3
+		Multiple scattered rock stacks on the ocean bed.	海床上有多重分散的岩柱。
+		Seabed Rock Formation 4	海底岩層 4
+		A flat rocky formation with central mound on the ocean bed.	與海床中央丘的平坦岩石地層。
+		Seabed Rock Formation 5	海底岩層 5
+		Seabed Rock Formation 6	海底岩層 6
+		Small rocky formation on the ocean bed.	在海床上的小岩層。
+		Seabed Rock Formation 7	海底岩層 7
+		Several rocky stacks on the ocean bed.	在海洋床上的幾個岩石堆。
+		Seabed Caves	海底洞穴
+		A system of underwater caves.	水下的大洞穴。
+		Seabed Shipwreck	海底沉船	
+		A sunken iron-hulled merchant vessel.	一艘沉沒的貨船。
+		Seabed Shipwreck 2	海底沉船 2
+		A sunken historic timber caravel.	沉沒的歷史悠久的木卡拉維爾帆船。
+		Ice	冰
 		Ice Variant	Ice Variant
-		Ice Scale	Ice Scale
-		Add Ice	Add Ice
+		Ice Scale	碎冰
+		Add Ice	加冰
 		Ice cannot be picked up but can be moved using vehicles. Its size and type can be set in the properties window.	Ice cannot be picked up but can be moved using vehicles. Its size and type can be set in the properties window.
-		Arctic Ocean	Arctic Ocean
+		Arctic Ocean	北冰洋
 		1km x 1km of empty Arctic ocean.	1km x 1km of empty Arctic ocean.		
 		Arctic Oil Refinery	Arctic Oil Refinery
 		An oil refinery with rail access.	An oil refinery with rail access.
