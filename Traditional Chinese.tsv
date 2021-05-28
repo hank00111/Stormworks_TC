@@ -23,6 +23,7 @@ id	description	en	local
 		Server is full	伺服器已滿		
 		Server is not open to multiplayer	伺服器沒有開放多人連線		
 		You are not whitelisted on this server	你不在伺服器允許名單之內
+		You are missing a required DLC	You are missing a required DLC
 		You are banned from this server	你已被伺服器封鎖
 		no errors detected	沒有檢測到錯誤		
 		Variables	變數		
@@ -642,8 +643,8 @@ id	description	en	local
 		ADD OBJECT	添加物鍵
 		Objects can be picked up, thrown and moved around by the player. They can be used for delivery missions or just as decoration. You can customise the object type in the properties window.	Objects can be picked up, thrown and moved around by the player. They can be used for delivery missions or just as decoration. You can customise the object type in the properties window.
 		ADD ZONE	添加區域
-		ADD ENV MOD ZONE	ADD ENV MOD ZONE
-		Env Mod Zones are persistent zones, they can be used to set up advanced mission behaviour at specific world locations and can be manipulated from addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().	Env Mod Zones are persistent zones, they can be used to set up advanced mission behaviour at specific world locations and can be manipulated from addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().
+		ADD ZONE	
+		Zones can be used to set up advanced mission behaviour at specific world locations with addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().	
 		Zones are used to specify a location, these zones are local to a addon and can be accessed like any other local component through getLocationObjectData(). Mission Zones are generally more appropriate for constructing procedural style missions.	Zones are used to specify a location, these zones are local to a addon and can be accessed like any other local component through getLocationObjectData(). Mission Zones are generally more appropriate for constructing procedural style missions.
 		ADD VEHICLE	添加載具
 		You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.	You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.
@@ -883,7 +884,7 @@ id	description	en	local
 		Player List	玩家清單
 		Quick Chat	Quick Chat
 		Show detailed data labels	Show detailed data labels
-		Voice Chat	Voice Chat
+		Voice Chat	語音音量
 		Axis 1	Axis 1
 		Axis 2	Axis 2
 		Axis 3	Axis 3
@@ -1672,12 +1673,14 @@ id	description	en	local
 		Trim Axis 3	配平軸 3
 		Trim Axis 4	配平軸 4
 		Spring Strength	Spring Strength
-		Ratio 1	比值 1
-		Ratio 2	比值 2
+		Ratio Off	
+		Ratio On	
 		Fluid Type	流體類型
-		Water	水
+		Fresh Water	
+		Sea Water	
 		Empty	空的
-		Allow Water	允許 水
+		Allow Fresh Water	
+		Allow Sea Water	
 		Allow Diesel	允許 柴油
 		Allow Jet Fuel	允許 航空燃油
 		Allow Air	允許 空氣
@@ -1698,8 +1701,8 @@ id	description	en	local
 		video	影像
 		Edit audio transfer nodes.	編輯音源傳輸節點
 		audio	音源
-		ROPE	ROPE
-		Edit rope transfer nodes.	Edit rope transfer nodes.
+		ROPE	
+		Edit rope transfer nodes.	
 		rope	rope
 		ROPE	
 		sail	sail
@@ -1819,7 +1822,7 @@ id	description	en	local
 		An uncontrolled blaze has sprung up, decimating the natural scenery.	An uncontrolled blaze has sprung up, decimating the natural scenery.
 		Extinguish the wildfire before it gets out of control.	Extinguish the wildfire before it gets out of control.
 		A forest fire needs to be extinguished.	A forest fire needs to be extinguished.
-		Cargo Zone	Cargo Zone
+		Zone	
 		Pickup	Pickup
 		Dropoff	Dropoff
 		Cargo Dropoff Point	Cargo Dropoff Point
@@ -1884,7 +1887,7 @@ id	description	en	local
 			
 		[$[action_equipment_use]] Open parachute [$[action_equipment_secondary]] Close parachute	[$[action_equipment_use]] Open parachute [$[action_equipment_secondary]] Close parachute
 			
-		[$[action_equipment_use]] Zoom in	[$[action_equipment_use]] Zoom in
+		[$[action_equipment_use]] Zoom in	
 			
 			
 		[$[action_equipment_use]] Revive incapaciated player	[$[action_equipment_use]] Revive incapaciated player
@@ -1901,10 +1904,10 @@ id	description	en	local
 			
 		[$[action_equipment_use]] Toggle control [$[action_equipment_secondary]] cycle frequency	[$[action_equipment_use]] Toggle control [$[action_equipment_secondary]] cycle frequency
 			
-		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	
+		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	
 		[$[action_equipment_use]] Toggle strobe [$[action_equipment_secondary]] Toggle MOB mode	
 		[$[action_equipment_use]] Toggle transmit [$[action_equipment_secondary]] Toggle MOB mode	[$[action_equipment_use]] Toggle transmit [$[action_equipment_secondary]] Toggle MOB mode
-		[$[action_equipment_use]] Repair	[$[action_equipment_use]] Repair
+		[$[action_equipment_use]] Repair	
 		[$[action_equipment_use]] Repair	
 		Detailed	Detailed
 		Simple	Simple
@@ -1915,11 +1918,11 @@ id	description	en	local
 		There is already a vehicle in the edit zone, are you sure you would like to spawn this vehicle?	There is already a vehicle in the edit zone, are you sure you would like to spawn this vehicle?
 		Unload	Unload
 		Reload	Reload
-		25mm Ammo Box	25mm Ammo Box
-		30mm Ammo Box	30mm Ammo Box
-		40mm Ammo Box	40mm Ammo Box
-		105mm Shell	105mm Shell
-		203mm Shell	203mm Shell
+		Light Auto Ammo Box	
+		Rotary Auto Ammo Box	
+		Heavy Auto Ammo Box	
+		Battle Shell	
+		Artillery Shell	
 		Temperature	溫度
 		Auto Refuel	自動加油
 		Third Person Vehicle	Third Person Vehicle
@@ -1928,6 +1931,56 @@ id	description	en	local
 		AI	AI
 		Ship Pilot	Ship Pilot
 		Helicopter Pilot	Helicopter Pilot
+		Plane Pilot	
+		Gunner	
+		Light Auto Ammo Box (Kinetic)	
+		Light Auto Ammo Box (High Explosive)	
+		Light Auto Ammo Box (Fragmentation)	
+		Light Auto Ammo Box (Armor Piercing)	
+		Light Auto Ammo Box (Incendiary)	
+		Rotary Auto Ammo Box (Kinetic)	
+		Rotary Auto Ammo Box (High Explosive)	
+		Rotary Auto Ammo Box (Fragmentation)	
+		Rotary Auto Ammo Box (Armor Piercing)	
+		Rotary Auto Ammo Box (Incendiary)	
+		Heavy Auto Ammo Box (Kinetic)	
+		Heavy Auto Ammo Box (High Explosive)	
+		Heavy Auto Ammo Box (Fragmentation)	
+		Heavy Auto Ammo Box (Armor Piercing)	
+		Heavy Auto Ammo Box (Incendiary)	
+		Battle Shell (Kinetic)	
+		Battle Shell (High Explosive)	
+		Battle Shell (Fragmentation)	
+		Battle Shell (Armor Piercing)	
+		Battle Shell (Incendiary)	
+		Artillery Shell (Kinetic)	
+		Artillery Shell (High Explosive)	
+		Artillery Shell (Fragmentation)	
+		Artillery Shell (Armor Piercing)	
+		Artillery Shell (Incendiary)	
+		C4 Explosive	
+		C4 Detonator	
+		Speargun	
+		Speargun Ammo	
+		Pistol	
+		Pistol Ammo	
+		Grenade	
+		Enable weapons DLC	
+		Modular Engines	
+		Medium Modular Engines	
+		Heavy Modular Engines	
+		Hazmat Outfit	
+		Radiation Detector	
+			
+			
+		[$[action_equipment_use]] Toggle detector	
+		Hazmat	
+		Coal	
+		Steam Power	
+		Nuclear Power	
+		Load Coal	
+		Unload Coal	
+		Clean Radiation	
 def_01_block_name		Block	方塊		
 def_01_block_desc		The block is a quarter-metre in size. Components can be attached to all 6 faces.	The block is a quarter-metre in size. Components can be attached to all 6 faces.		
 def_01_block_s_desc		Basic cube-shaped building block.	基本的立方體型建造方塊		
@@ -2016,6 +2069,86 @@ def_aircraft_propeller_node_0_label		Power Received	接收動力
 def_aircraft_propeller_node_0_desc		Receives power generated by an engine.	接收來自引擎的動力		
 def_aircraft_propeller_node_1_label		Collective	Collective		
 def_aircraft_propeller_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
+def_air_exchanger_name		Air-Liquid Heat Exchanger 1x2	
+def_air_exchanger_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	
+def_air_exchanger_s_desc		A heat exchanger that averages heat between air and a liquid.	
+def_air_exchanger_node_0_label		Air In	
+def_air_exchanger_node_0_desc		Input air port.	
+def_air_exchanger_node_1_label		Air Out	
+def_air_exchanger_node_1_desc		Output air port.	
+def_air_exchanger_node_2_label		Fluid In	
+def_air_exchanger_node_2_desc		Input fluid port.	
+def_air_exchanger_node_3_label		Fluid Out	
+def_air_exchanger_node_3_desc		Output fluid port.	
+def_air_exchanger_node_4_label		Temp A	
+def_air_exchanger_node_4_desc		Compartment air temperature.	
+def_air_exchanger_node_5_label		Temp B	
+def_air_exchanger_node_5_desc		Compartment water temperature.	
+def_air_exchanger_5_2_name		Air-Liquid Heat Exchanger 5x2	
+def_air_exchanger_5_2_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	
+def_air_exchanger_5_2_s_desc		A heat exchanger that averages heat between air and a liquid.	
+def_air_exchanger_5_2_node_0_label		Air In	
+def_air_exchanger_5_2_node_0_desc		Input air port.	
+def_air_exchanger_5_2_node_1_label		Air Out	
+def_air_exchanger_5_2_node_1_desc		Output air port.	
+def_air_exchanger_5_2_node_2_label		Fluid In	
+def_air_exchanger_5_2_node_2_desc		Input fluid port.	
+def_air_exchanger_5_2_node_3_label		Fluid Out	
+def_air_exchanger_5_2_node_3_desc		Output fluid port.	
+def_air_exchanger_5_2_node_4_label		Temp A	
+def_air_exchanger_5_2_node_4_desc		Compartment air temperature.	
+def_air_exchanger_5_2_node_5_label		Temp B	
+def_air_exchanger_5_2_node_5_desc		Compartment water temperature.	
+def_air_exchanger_5_3_name		Air-Liquid Heat Exchanger 5x3	
+def_air_exchanger_5_3_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	
+def_air_exchanger_5_3_s_desc		A heat exchanger that averages heat between air and a liquid.	
+def_air_exchanger_5_3_node_0_label		Air In	
+def_air_exchanger_5_3_node_0_desc		Input air port.	
+def_air_exchanger_5_3_node_1_label		Air Out	
+def_air_exchanger_5_3_node_1_desc		Output air port.	
+def_air_exchanger_5_3_node_2_label		Fluid In	
+def_air_exchanger_5_3_node_2_desc		 Input fluid port.	
+def_air_exchanger_5_3_node_3_label		Fluid Out	
+def_air_exchanger_5_3_node_3_desc		Output fluid port.	
+def_air_exchanger_5_3_node_4_label		Temp A	
+def_air_exchanger_5_3_node_4_desc		Compartment air temperature.	
+def_air_exchanger_5_3_node_5_label		Temp B	
+def_air_exchanger_5_3_node_5_desc		Compartment water temperature.	
+def_air_exchanger_9_3_name		Air-Liquid Heat Exchanger 9x3	
+def_air_exchanger_9_3_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	
+def_air_exchanger_9_3_s_desc		A heat exchanger that averages heat between air and a liquid.	
+def_air_exchanger_9_3_node_0_label		Air In	
+def_air_exchanger_9_3_node_0_desc		Input air port.	
+def_air_exchanger_9_3_node_1_label		Air Out	
+def_air_exchanger_9_3_node_1_desc		Output air port.	
+def_air_exchanger_9_3_node_2_label		Fluid In	
+def_air_exchanger_9_3_node_2_desc		Input fluid port.	
+def_air_exchanger_9_3_node_3_label		Fluid Out	
+def_air_exchanger_9_3_node_3_desc		Output fluid port.	
+def_air_exchanger_9_3_node_4_label		Temp A	
+def_air_exchanger_9_3_node_4_desc		Compartment air temperature.	
+def_air_exchanger_9_3_node_5_label		Temp B	
+def_air_exchanger_9_3_node_5_desc		Compartment water temperature.	
+def_air_exchanger_9_5_name		Air-Liquid Heat Exchanger 9x5	
+def_air_exchanger_9_5_desc		An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.	
+def_air_exchanger_9_5_s_desc		A heat exchanger that averages heat between air and a liquid.	
+def_air_exchanger_9_5_node_0_label		Air In	
+def_air_exchanger_9_5_node_0_desc		Input air port.	
+def_air_exchanger_9_5_node_1_label		Air Out	
+def_air_exchanger_9_5_node_1_desc		Output air port.	
+def_air_exchanger_9_5_node_2_label		Fluid In	
+def_air_exchanger_9_5_node_2_desc		Input fluid port.	
+def_air_exchanger_9_5_node_3_label		Fluid Out	
+def_air_exchanger_9_5_node_3_desc		Output fluid port.	
+def_air_exchanger_9_5_node_4_label		Temp A	
+def_air_exchanger_9_5_node_4_desc		Compartment air temperature.	
+def_air_exchanger_9_5_node_5_label		Temp B	
+def_air_exchanger_9_5_node_5_desc		Compartment water temperature.	
+def_air_filter_name		Air Filter	
+def_air_filter_desc			
+def_air_filter_s_desc		Port used to allow air in and out of a fluid system.	
+def_air_filter_node_0_label		Air	
+def_air_filter_node_0_desc		Allows fluid to flow in and out of an enclosed volume.	
 def_altimeter_name		Altimeter	高度計		
 def_altimeter_desc		Outputs distance above sea-level in meters.	輸出當前海拔高度，以公尺為單位.		
 def_altimeter_s_desc		An altitude sensor.	An altitude sensor.		
@@ -2036,7 +2169,7 @@ def_artificial_horizon_node_1_desc		Electrical power connection.	電源連接.
 def_azimuth_thruster_name		Azimuth Thruster	方向推進器		
 def_azimuth_thruster_desc		The thruster can be attached to a robotic pivot to provide steering as well as propulsion. This propeller will only operate underwater.	The thruster can be attached to a robotic pivot to provide steering as well as propulsion. This propeller will only operate underwater.		
 def_azimuth_thruster_s_desc		An azimuth thruster for boats.	給船使用的推進器.		
-def_azimuth_thruster_node_0_label		Power	動力		
+def_azimuth_thruster_node_0_label		RPS	動力		
 def_azimuth_thruster_node_0_desc		Receives power generated by an engine.	接收來自引擎的動力		
 def_battery_large_name		Electric Battery Large	電池 (大)		
 def_battery_large_desc					
@@ -2213,6 +2346,13 @@ def_camera_small_node_0_label		Camera Feed	影像資料接收
 def_camera_small_node_0_desc					
 def_camera_small_node_1_label		Electric	電力		
 def_camera_small_node_1_desc			電源連接.		
+def_catalytic_converter_name		Catalytic Converter	
+def_catalytic_converter_desc		Catalytic converter that removes fumes and decreases the number of exhaust particles emitted from an exhaust.	
+def_catalytic_converter_s_desc		Reduces particles from exhausts.	
+def_catalytic_converter_node_0_label		Exhaust In	
+def_catalytic_converter_node_0_desc			
+def_catalytic_converter_node_1_label		Exhaust Out	
+def_catalytic_converter_node_1_desc			
 def_clock_name		Clock	時鐘		
 def_clock_desc		The clock has a display to visualise the time of day or night. The 12 o'clock position is the white arrow on the face of the display.	The clock has a display to visualise the time of day or night. The 12 o'clock position is the white arrow on the face of the display.		
 def_clock_s_desc		An analogue clock display that outputs a number value representing the time of day.	An analogue clock display that outputs a number value representing the time of day.		
@@ -2632,27 +2772,59 @@ def_fluid_radiator_node_0_label		Fluid A	流體 A
 def_fluid_radiator_node_0_desc		Fluid Connection.	連接流體.		
 def_fluid_radiator_node_1_label		Fluid B	流體 B		
 def_fluid_radiator_node_1_desc		Fluid Connection.	連接流體.		
+def_fluid_radiator_electric_name		Fluid Heat Radiator 3x3 (Electric)	
+def_fluid_radiator_electric_desc		Fluid inside the cooler will lose temperature, supplying electric for the fan will increase the rate of exchange.	
+def_fluid_radiator_electric_s_desc		Radiator type cooler for fluid.	
+def_fluid_radiator_electric_node_0_label		Fluid A	
+def_fluid_radiator_electric_node_0_desc		Fluid Connection.	
+def_fluid_radiator_electric_node_1_label		Fluid B	
+def_fluid_radiator_electric_node_1_desc		Fluid Connection.	
+def_fluid_radiator_electric_node_2_label		Electric	
+def_fluid_radiator_electric_node_2_desc			
+def_fluid_radiator_electric_node_3_label		Fan On/Off	
+def_fluid_radiator_electric_node_3_desc			
+def_fluid_radiator_electric_node_4_label		Temperature	
+def_fluid_radiator_electric_node_4_desc			
+def_fluid_radiator_electric_5_name		Fluid Heat Radiator 5x5 (Electric)	
+def_fluid_radiator_electric_5_desc		Fluid inside the cooler will lose temperature, supplying electric for the fan will increase the rate of exchange.	
+def_fluid_radiator_electric_5_s_desc		Radiator type cooler for fluid.	
+def_fluid_radiator_electric_5_node_0_label		Fluid A	
+def_fluid_radiator_electric_5_node_0_desc		Fluid Connection.	
+def_fluid_radiator_electric_5_node_1_label		Fluid B	
+def_fluid_radiator_electric_5_node_1_desc		Fluid Connection.	
+def_fluid_radiator_electric_5_node_2_label		Electric	
+def_fluid_radiator_electric_5_node_2_desc			
+def_fluid_radiator_electric_5_node_3_label		Fan on/off	
+def_fluid_radiator_electric_5_node_3_desc			
+def_fluid_radiator_electric_5_node_4_label		Temperature	
+def_fluid_radiator_electric_5_node_4_desc			
 def_fluid_tank_large_name		Fluid Tank Large	流體槽 (大)	
-def_fluid_tank_large_desc		The tank fill spawn full of the selected fluid type.	The tank fill spawn full of the selected fluid type.		
+def_fluid_tank_large_desc		The tank will spawn full of the selected fluid type.	The tank fill spawn full of the selected fluid type.		
 def_fluid_tank_large_s_desc		A tank for storing fluid.	A tank for storing fluid.		
 def_fluid_tank_large_node_0_label		Stored Fluid	儲存流體		
 def_fluid_tank_large_node_0_desc		The fluid connection for the stored contents.	The fluid connection for the stored contents.		
 def_fluid_tank_large_node_1_label		Tank Content	槽容量		
 def_fluid_tank_large_node_1_desc		The amount of fluid in the tank in litres.	The amount of fluid in the tank in litres.		
+def_fluid_tank_large_node_2_label		Stored Fluid	
+def_fluid_tank_large_node_2_desc		The fluid connection for the stored contents.	
 def_fluid_tank_medium_name		Fluid Tank Medium	流體槽 (中)		
-def_fluid_tank_medium_desc		The tank fill spawn full of the selected fluid type.	The tank fill spawn full of the selected fluid type.		
+def_fluid_tank_medium_desc		The tank will spawn full of the selected fluid type.	The tank fill spawn full of the selected fluid type.		
 def_fluid_tank_medium_s_desc		A tank for storing fluid.	A tank for storing fluid.		
 def_fluid_tank_medium_node_0_label		Stored Fluid	儲存流體		
 def_fluid_tank_medium_node_0_desc		The fluid connection for the stored contents.	The fluid connection for the stored contents.		
 def_fluid_tank_medium_node_1_label		Tank Content	槽容量		
 def_fluid_tank_medium_node_1_desc		The amount of fluid in the tank in litres.	The amount of fluid in the tank in litres.		
+def_fluid_tank_medium_node_2_label		Stored Fluid	
+def_fluid_tank_medium_node_2_desc		The fluid connection for the stored contents.	
 def_fluid_tank_small_name		Fluid Tank Small	流體槽 (小)		
-def_fluid_tank_small_desc		The tank fill spawn full of the selected fluid type.	The tank fill spawn full of the selected fluid type.		
+def_fluid_tank_small_desc		The tank will spawn full of the selected fluid type.	The tank fill spawn full of the selected fluid type.		
 def_fluid_tank_small_s_desc		A tank for storing fluid.	A tank for storing fluid.		
 def_fluid_tank_small_node_0_label		Stored Fluid	儲存流體		
 def_fluid_tank_small_node_0_desc		The fluid connection for the stored contents.	The fluid connection for the stored contents.		
 def_fluid_tank_small_node_1_label		Tank Content	槽容量		
 def_fluid_tank_small_node_1_desc		The amount of fluid in the tank in litres.	The amount of fluid in the tank in litres.		
+def_fluid_tank_small_node_2_label		Stored Fluid	
+def_fluid_tank_small_node_2_desc		The fluid connection for the stored contents.	
 def_fluid_valve_flow_name		Fluid Flow Valve	流體流量閥		
 def_fluid_valve_flow_desc		Allows fluid to move from the input side of the valve to the output but resists fluid flow in the other direction.	Allows fluid to move from the input side of the valve to the output but resists fluid flow in the other direction.		
 def_fluid_valve_flow_s_desc		A one way valve for controlling fluid flow.	A one way valve for controlling fluid flow.		
@@ -2689,6 +2861,9 @@ def_foghorn_node_0_label		Horn	喇叭
 def_foghorn_node_0_desc		Sounds the horn when recieving an on signal.	Sounds the horn when recieving an on signal.		
 def_foghorn_node_1_label		Electric	電力		
 def_foghorn_node_1_desc		Electrical power connection.	電源連接.		
+def_friction_block_name		Friction Pad	
+def_friction_block_desc		High friction pad that grips any surface it touches.	
+def_friction_block_s_desc		Friction pad that grips to surfaces.	
 def_gate_bool_and_name		And	And		
 def_gate_bool_and_desc		The output will only be switched on if both inputs are on.	The output will only be switched on if both inputs are on.		
 def_gate_bool_and_s_desc		A logic gate that outputs the logical AND of two input signals.	A logic gate that outputs the logical AND of two input signals.		
@@ -3006,7 +3181,7 @@ def_gauge_display_node_3_desc		Electrical power connection.	電源連接.
 def_generator_large_name		Large Generator	發電機 (大)	
 def_generator_large_desc					
 def_generator_large_s_desc		A large generator unit for converting mechanical power to electricity.	A large generator unit for converting mechanical power to electricity.		
-def_generator_large_node_0_label		Power	動力		
+def_generator_large_node_0_label		RPS	動力		
 def_generator_large_node_0_desc		The torque power input to convert to electric energy.	The torque power input to convert to electric energy.		
 def_generator_large_node_1_label		Electric	電力		
 def_generator_large_node_1_desc		The electric connection to output electric energy.	The electric connection to output electric energy.		
@@ -3015,7 +3190,7 @@ def_generator_large_node_2_desc		Data output giving the electrical generation of
 def_generator_medium_name		Medium Generator	發電機 (中)		
 def_generator_medium_desc					
 def_generator_medium_s_desc		A medium generator unit for converting mechanical power to electricity.	A medium generator unit for converting mechanical power to electricity.		
-def_generator_medium_node_0_label		Power	動力		
+def_generator_medium_node_0_label		RPS	動力		
 def_generator_medium_node_0_desc		The torque power input to convert to electric energy.	The torque power input to convert to electric energy.		
 def_generator_medium_node_1_label		Electric	電力		
 def_generator_medium_node_1_desc		The electric connection to output electric energy.	The electric connection to output electric energy.		
@@ -3024,7 +3199,7 @@ def_generator_medium_node_2_desc		Data output giving the electrical generation o
 def_generator_small_name		Small Generator	發電機 (小)		
 def_generator_small_desc					
 def_generator_small_s_desc		A small generator unit for converting mechanical power to electricity.	A small generator unit for converting mechanical power to electricity.		
-def_generator_small_node_0_label		Power	動力		
+def_generator_small_node_0_label		RPS	動力		
 def_generator_small_node_0_desc		The torque power input to convert to electric energy.	The torque power input to convert to electric energy.		
 def_generator_small_node_1_label		Electric	電力		
 def_generator_small_node_1_desc		The electric connection to output electric energy.	The electric connection to output electric energy.		
@@ -3033,7 +3208,7 @@ def_generator_small_node_2_desc		Data output giving the electrical generation of
 def_giga_prop_small_name		Giant Propeller	Bольшие лопости		
 def_giga_prop_small_desc		Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.	Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.		
 def_giga_prop_small_s_desc		A giant propeller for ships.	A giant propeller for ships.		
-def_giga_prop_small_node_0_label		Power	動力		
+def_giga_prop_small_node_0_label		RPS	動力		
 def_giga_prop_small_node_0_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_gps_sensor_name		GPS Sensor	GPS		
 def_gps_sensor_desc		The coordinates represent an offset from the centre of the world, measured in metres. You can check the world coordinates of any location by looking at your map.	The coordinates represent an offset from the centre of the world, measured in metres. You can check the world coordinates of any location by looking at your map.		
@@ -3084,6 +3259,51 @@ def_heater_node_0_label		Heating Element	加熱原件
 def_heater_node_0_desc		Enables the heating element when receiving an on signal.	Enables the heating element when receiving an on signal.		
 def_heater_node_1_label		Electric	電力		
 def_heater_node_1_desc		Electrical power connection.	電源連接.		
+def_heat_exchanger_2_2_name		Air-Air Heat Exchanger 2x2	
+def_heat_exchanger_2_2_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	
+def_heat_exchanger_2_2_s_desc		A heat exchanger that averages heat between two air systems.	
+def_heat_exchanger_2_2_node_0_label		Air A In	
+def_heat_exchanger_2_2_node_0_desc		Input air port.	
+def_heat_exchanger_2_2_node_1_label		Air A Out	
+def_heat_exchanger_2_2_node_1_desc		Output air port.	
+def_heat_exchanger_2_2_node_2_label		Air B In	
+def_heat_exchanger_2_2_node_2_desc		Input air port.	
+def_heat_exchanger_2_2_node_3_label		Air B Out	
+def_heat_exchanger_2_2_node_3_desc		Output air port.	
+def_heat_exchanger_2_2_node_4_label		Temp A	
+def_heat_exchanger_2_2_node_4_desc		Compartment temperature.	
+def_heat_exchanger_2_2_node_5_label		Temp B	
+def_heat_exchanger_2_2_node_5_desc		Compartment temperature.	
+def_heat_exchanger_5_5_name		Air-Air Heat Exchanger 2x5	
+def_heat_exchanger_5_5_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	
+def_heat_exchanger_5_5_s_desc		A heat exchanger that averages heat between two air systems.	
+def_heat_exchanger_5_5_node_0_label		Air A In	
+def_heat_exchanger_5_5_node_0_desc		Input air port.	
+def_heat_exchanger_5_5_node_1_label		Air A Out	
+def_heat_exchanger_5_5_node_1_desc		Output air port.	
+def_heat_exchanger_5_5_node_2_label		Air B In	
+def_heat_exchanger_5_5_node_2_desc		Input air port.	
+def_heat_exchanger_5_5_node_3_label		Air B Out	
+def_heat_exchanger_5_5_node_3_desc		Output air port.	
+def_heat_exchanger_5_5_node_4_label		Temp A	
+def_heat_exchanger_5_5_node_4_desc		Compartment temperature.	
+def_heat_exchanger_5_5_node_5_label		Temp B	
+def_heat_exchanger_5_5_node_5_desc		Compartment temperature.	
+def_heat_exchanger_9_9_name		Air-Air Heat Exchanger 3x9	
+def_heat_exchanger_9_9_desc		A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.	
+def_heat_exchanger_9_9_s_desc		A heat exchanger that averages heat between two air systems.	
+def_heat_exchanger_9_9_node_0_label		Air A In	
+def_heat_exchanger_9_9_node_0_desc		Input air port.	
+def_heat_exchanger_9_9_node_1_label		Air A Out	
+def_heat_exchanger_9_9_node_1_desc		Output air port.	
+def_heat_exchanger_9_9_node_2_label		Air B In	
+def_heat_exchanger_9_9_node_2_desc		Input air port.	
+def_heat_exchanger_9_9_node_3_label		Air B Out	
+def_heat_exchanger_9_9_node_3_desc		Output air port.	
+def_heat_exchanger_9_9_node_4_label		Temp A	
+def_heat_exchanger_9_9_node_4_desc		Compartment temperature.	
+def_heat_exchanger_9_9_node_5_label		Temp B	
+def_heat_exchanger_9_9_node_5_desc		Compartment temperature.	
 def_heavy_rotor_name		Heavy Rotor	Heavy Rotor		
 def_heavy_rotor_desc		Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.	Three standard number inputs control the rotor's swashplate, allowing you to affect the pitch, roll, and collective rotor angle. Power received from an engine affects the amount of up and down force that the rotor will generate.		
 def_heavy_rotor_s_desc		A heavy duty rotor with thrust vectoring.	A heavy duty rotor with thrust vectoring.		
@@ -3091,7 +3311,7 @@ def_heavy_rotor_node_0_label		Roll	Roll
 def_heavy_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.		
 def_heavy_rotor_node_1_label		Pitch	Pitch		
 def_heavy_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
-def_heavy_rotor_node_2_label		Power	動力		
+def_heavy_rotor_node_2_label		RPS	動力		
 def_heavy_rotor_node_2_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_heavy_rotor_node_3_label		Collective	Collective		
 def_heavy_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
@@ -3102,7 +3322,7 @@ def_heavy_rotor_large_node_0_label		Roll	Roll
 def_heavy_rotor_large_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.	
 def_heavy_rotor_large_node_1_label		Pitch	Pitch		
 def_heavy_rotor_large_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
-def_heavy_rotor_large_node_2_label		Power	動力		
+def_heavy_rotor_large_node_2_label		RPS	動力		
 def_heavy_rotor_large_node_2_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_heavy_rotor_large_node_3_label		Collective	Collective		
 def_heavy_rotor_large_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
@@ -3113,7 +3333,7 @@ def_huge_rotor_node_0_label		Roll	Roll
 def_huge_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.		
 def_huge_rotor_node_1_label		Pitch	Pitch		
 def_huge_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
-def_huge_rotor_node_2_label		Power	動力		
+def_huge_rotor_node_2_label		RPS	動力		
 def_huge_rotor_node_2_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_huge_rotor_node_3_label		Collective	Collective		
 def_huge_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
@@ -3122,6 +3342,11 @@ def_humidity_sensor_desc		The reading can be read from the sensor's number outpu
 def_humidity_sensor_s_desc		A humidity sensor for measuring the current fog and visibility meteorological conditions.	A humidity sensor for measuring the current fog and visibility meteorological conditions.		
 def_humidity_sensor_node_0_label		Humidity Factor	溫度因子		
 def_humidity_sensor_node_0_desc		The level of humidity in the air, relating to the fog visibility.	The level of humidity in the air, relating to the fog visibility		
+def_impact_sensor_name		Impact Sensor	
+def_impact_sensor_desc		Setting the impact threshold property will tune the sensitivity for impacts. When the instant change in velocity from an impact exceeds the threshold, and on signal is produced.	
+def_impact_sensor_s_desc		A sensor activated by a sudden change in velocity.	
+def_impact_sensor_node_0_label		Output	
+def_impact_sensor_node_0_desc		Outputs an on signal when instant change in velocity exceeds the impact threshold.	
 def_indicator_name		Indicator Light	指示燈		
 def_indicator_desc					
 def_indicator_s_desc		A simple light that can be used as an indicator in logic systems.	A simple light that can be used as an indicator in logic systems.		
@@ -3147,6 +3372,36 @@ def_instrument_display_node_2_label		Electric	電力
 def_instrument_display_node_2_desc		Electrical power connection.	電源連接.		
 def_instrument_display_node_3_label		Backlight	背光燈		
 def_instrument_display_node_3_desc		Enables the backlight when receiving an on signal.	接收訊號時開起背光.		
+def_intercooler_name		Liquid-Liquid Heat Exchanger 2x2	
+def_intercooler_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	
+def_intercooler_s_desc		A heat exchanger that averages heat between two liquid systems.	
+def_intercooler_node_0_label		Fluid A In	
+def_intercooler_node_0_desc		Input fluid port.	
+def_intercooler_node_1_label		Fluid A Out	
+def_intercooler_node_1_desc		Output fluid port.	
+def_intercooler_node_2_label		Fluid B In	
+def_intercooler_node_2_desc		Input fluid port.	
+def_intercooler_node_3_label		Fluid B Out	
+def_intercooler_node_3_desc		Output fluid port.	
+def_intercooler_node_4_label		Temp A	
+def_intercooler_node_4_desc		Compartment temperature.	
+def_intercooler_node_5_label		Temp B	
+def_intercooler_node_5_desc		Compartment temperature.	
+def_intercooler_large_name		Liquid-Liquid Heat Exchanger 5x5	
+def_intercooler_large_desc		A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.	
+def_intercooler_large_s_desc		A heat exchanger that averages heat between two liquid systems.	
+def_intercooler_large_node_0_label		Fluid A In	
+def_intercooler_large_node_0_desc		Input fluid port.	
+def_intercooler_large_node_1_label		Fluid A Out	
+def_intercooler_large_node_1_desc		Output fluid port.	
+def_intercooler_large_node_2_label		Fluid B In	
+def_intercooler_large_node_2_desc		Input fluid port.	
+def_intercooler_large_node_3_label		Fluid B Out	
+def_intercooler_large_node_3_desc		Output fluid port.	
+def_intercooler_large_node_4_label		Temp A	
+def_intercooler_large_node_4_desc		Compartment temperature.	
+def_intercooler_large_node_5_label		Temp B	
+def_intercooler_large_node_5_desc		Compartment temperature.	
 def_inventory_equipment_binoculars_name		Equipment inventory (Binoculars)	Equipment inventory (Binoculars))
 def_inventory_equipment_binoculars_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. This equipment can be stored on the belt when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Hold [$[action_equipment_use]] to zoom in on faraway objects. This equipment can be stored on the belt when not in use.
 def_inventory_equipment_binoculars_s_desc		A small equipment storage unit containing a pair of binoculars.	A small equipment storage unit containing a pair of binoculars.
@@ -3197,6 +3452,11 @@ def_inventory_equipment_flashlight_desc		Pressing [$[action_interact_left]]/[$[a
 def_inventory_equipment_flashlight_s_desc		A small equipment storage unit containing a flashlight.	A small equipment storage unit containing a flashlight.
 def_inventory_equipment_flashlight_node_0_label		Electric	電力
 def_inventory_equipment_flashlight_node_0_desc		Electrical power connection.	電源連接.
+def_inventory_equipment_geiger_counter_name		Equipment inventory (Radiation Detector)	
+def_inventory_equipment_geiger_counter_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to toggle radiation detection on or off. This equipment requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. This equipment can be stored on the belt.	
+def_inventory_equipment_geiger_counter_s_desc		A small equipment storage unit containing a radiation detector.	
+def_inventory_equipment_geiger_counter_node_0_label		Electric	
+def_inventory_equipment_geiger_counter_node_0_desc		Electrical power connection.	
 def_inventory_equipment_hose_name		Equipment inventory (Hose)	Equipment inventory (Hose)
 def_inventory_equipment_hose_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely. This equipment can be stored on the back when not in use.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the selected item. Press [$[action_equipment_use]] to attach the hose to an unoccupied fluid hose anchor. Pressing [$[action_interact_left]]/[$[action_interact_right]] on an occupied fluid hose anchor will retrieve the hose if the player has inventory space to hold it. If the hose contains water, press [$[action_equipment_secondary]] to toggle open the hose valve and allow the water to flow freely. This equipment can be stored on the back when not in use.
 def_inventory_equipment_hose_s_desc		A large equipment storage unit containing 20m of fluid hosing.	A large equipment storage unit containing 20m of fluid hosing.
@@ -3282,6 +3542,11 @@ def_inventory_outfit_firefighter_desc		Pressing [$[action_interact_left]]/[$[act
 def_inventory_outfit_firefighter_s_desc		An outfit inventory unit containing specialist firefighting gear.	An outfit inventory unit containing specialist firefighting gear.		
 def_inventory_outfit_firefighter_node_0_label		Electric	電力
 def_inventory_outfit_firefighter_node_0_desc		Electrical power connection.	電源連接.
+def_inventory_outfit_hazmat_name		Outfit Inventory (Hazmat)	
+def_inventory_outfit_hazmat_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store outfit. When equipped, it will absorb 95% of incoming radiation.	
+def_inventory_outfit_hazmat_s_desc		An outfit inventory unit containing specialist hazmat gear.	
+def_inventory_outfit_hazmat_node_0_label		Electric	
+def_inventory_outfit_hazmat_node_0_desc		Electrical power connection.	
 def_inventory_outfit_parachute_name		Outfit Inventory (Parachute)	Outfit Inventory (Parachute)		
 def_inventory_outfit_parachute_desc		Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.	Pressing [$[action_interact_left]]/[$[action_interact_right]] will equip/store the outfit. When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.		
 def_inventory_outfit_parachute_s_desc		An outfit inventory unit containing a single-use parachute.	An outfit inventory unit containing a single-use parachute		
@@ -3390,7 +3655,7 @@ def_jet_engine_intake_small_node_1_desc		The rotations per second generated by t
 def_jet_engine_turbine_medium_name		Jet Turbine Medium	噴射渦輪引擎 (中)		
 def_jet_engine_turbine_medium_desc		This is part of a set of modular jet engine components. This turbine has a torque connection for manually starting using an electric motor, or for powering additional props and generators.	This is part of a set of modular jet engine components. This turbine has a torque connection for manually starting using an electric motor, or for powering additional props and generators.		
 def_jet_engine_turbine_medium_s_desc		A medium turbine that will convert air pressure to RPS within a jet engine.	A medium turbine that will convert air pressure to RPS within a jet engine.	
-def_jet_engine_turbine_medium_node_0_label		Power	動力		
+def_jet_engine_turbine_medium_node_0_label		RPS	動力		
 def_jet_engine_turbine_medium_node_0_desc		The torque of the turbine.	The torque of the turbine.		
 def_jet_engine_turbine_medium_node_1_label		Air Pressure	空氣壓力		
 def_jet_engine_turbine_medium_node_1_desc		The pressure of air transferred by the turbine.	The pressure of air transferred by the turbine.		
@@ -3420,7 +3685,7 @@ def_landing_float_s_desc		A buoyant float.	A buoyant float.
 def_large_propeller_name		Large Propeller	船用螺旋槳 (大)	
 def_large_propeller_desc		Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.	Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.		
 def_large_propeller_s_desc		A large boat propeller.	A large boat propeller.		
-def_large_propeller_node_0_label		Power	動力		
+def_large_propeller_node_0_label		RPS	動力		
 def_large_propeller_node_0_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_large_rotor_name		Large Rotor	Large Rotor		
 def_large_rotor_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.		
@@ -3429,7 +3694,7 @@ def_large_rotor_node_0_label		Roll	Roll
 def_large_rotor_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	Standard value between -1 and 1 representing the desired roll amount.		
 def_large_rotor_node_1_label		Pitch	Pitch	
 def_large_rotor_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
-def_large_rotor_node_2_label		Power	動力		
+def_large_rotor_node_2_label		RPS	動力		
 def_large_rotor_node_2_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_large_rotor_node_3_label		Collective	Collective		
 def_large_rotor_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	Standard value between -1 and 1 representing the desired pitch amount.		
@@ -3473,7 +3738,7 @@ def_linear_base_node_2_label		Slider Position	Slider Position
 def_linear_base_node_2_desc		The measured offset of the slider from its starting position.	The measured offset of the slider from its starting position.		
 def_linear_base_node_3_label		Electric	電力		
 def_linear_base_node_3_desc		Electrical power connection.	電源連接.		
-def_linear_base_node_4_label		Power	動力		
+def_linear_base_node_4_label		RPS	動力		
 def_linear_base_node_4_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_linear_base_node_5_label		Fluid	流體		
 def_linear_base_node_5_desc		Fluid connection for transfering fluid.	Fluid connection for transfering fluid.		
@@ -3493,7 +3758,7 @@ def_linear_compact_module_s_desc		An extension piece that can be used to build c
 def_linear_head_name		Linear Track Head	Linear Track Head		
 def_linear_head_desc					
 def_linear_head_s_desc					
-def_linear_head_node_0_label		Power	動力		
+def_linear_head_node_0_label		RPS	動力		
 def_linear_head_node_0_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_linear_head_node_1_label		Fluid	流體		
 def_linear_head_node_1_desc		Fluid connection for transfering fluid.	Fluid connection for transfering fluid.		
@@ -3546,6 +3811,202 @@ def_mic_node_3_desc		If the microphone is currently transmitting.	If the microph
 def_microprocessor_name		Microprocessor	Microprocessor		
 def_microprocessor_desc					
 def_microprocessor_s_desc					
+def_modular_engine_air_manifold_name		Modular Engine Air Manifold	
+def_modular_engine_air_manifold_desc		Attach a manifold to a cylinder to provide a connection for air to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_air_manifold_s_desc		A modular engine air manifold.	
+def_modular_engine_air_manifold_node_0_label		Throttle	
+def_modular_engine_air_manifold_node_0_desc			
+def_modular_engine_air_manifold_node_1_label		Air	
+def_modular_engine_air_manifold_node_1_desc			
+def_modular_engine_air_ram_name		Air Ram	
+def_modular_engine_air_ram_desc			
+def_modular_engine_air_ram_s_desc		Port used to allow air in and out of a fluid system.	
+def_modular_engine_air_ram_node_0_label		Air	
+def_modular_engine_air_ram_node_0_desc		Allows fluid to flow in and out of an enclosed volume.	
+def_modular_engine_alternator_name		Modular Engine Alternator	
+def_modular_engine_alternator_desc		Alternators convert mechanical energy from a Drive Belt into electric charge.	
+def_modular_engine_alternator_s_desc		A modular engine alternator.	
+def_modular_engine_alternator_node_0_label		Clutch Pressure	
+def_modular_engine_alternator_node_0_desc			
+def_modular_engine_alternator_node_1_label		Electric	
+def_modular_engine_alternator_node_1_desc			
+def_modular_engine_clutch_name		Modular Engine Clutch 1x1	
+def_modular_engine_clutch_desc		Attach a clutch to a crankshaft block to control the torque made available to the connected system.	
+def_modular_engine_clutch_s_desc		A modular engine clutch.	
+def_modular_engine_clutch_node_0_label		Clutch Pressure	
+def_modular_engine_clutch_node_0_desc			
+def_modular_engine_clutch_node_1_label		RPS	
+def_modular_engine_clutch_node_1_desc		The power supplied by the engine for inputting to other components.	
+def_modular_engine_clutch_3x3_name		Modular Engine Clutch 3x3	
+def_modular_engine_clutch_3x3_desc		Attach a clutch to a crankshaft block to control the torque made available to the connected system.	
+def_modular_engine_clutch_3x3_s_desc		A modular engine clutch.	
+def_modular_engine_clutch_3x3_node_0_label		Clutch Pressure	
+def_modular_engine_clutch_3x3_node_0_desc			
+def_modular_engine_clutch_3x3_node_1_label		RPS	
+def_modular_engine_clutch_3x3_node_1_desc		The power supplied by the engine for inputting to other components.	
+def_modular_engine_clutch_5x5_name		Modular Engine Clutch 5x5	
+def_modular_engine_clutch_5x5_desc		Attach a clutch to a crankshaft block to control the torque made available to the connected system.	
+def_modular_engine_clutch_5x5_s_desc		A modular engine clutch.	
+def_modular_engine_clutch_5x5_node_0_label		Clutch Pressure	
+def_modular_engine_clutch_5x5_node_0_desc			
+def_modular_engine_clutch_5x5_node_1_label		RPS	
+def_modular_engine_clutch_5x5_node_1_desc		The power supplied by the engine for inputting to other components.	
+def_modular_engine_coolant_manifold_name		Modular Engine Coolant Manifold	
+def_modular_engine_coolant_manifold_desc		Attach a manifold to a cylinder to provide a connection for coolant to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_coolant_manifold_s_desc		A modular engine coolant manifold.	
+def_modular_engine_coolant_manifold_node_0_label		Coolant A	
+def_modular_engine_coolant_manifold_node_0_desc			
+def_modular_engine_coolant_manifold_node_1_label		Coolant B	
+def_modular_engine_coolant_manifold_node_1_desc			
+def_modular_engine_crankshaft_name		Modular Engine Crankshaft 1x1	
+def_modular_engine_crankshaft_desc		The crankshaft is the core of an engine. Attach cylinders to the outer surfaces to generate power. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.	
+def_modular_engine_crankshaft_s_desc		A modular engine crankshaft block.	
+def_modular_engine_crankshaft_node_0_label		RPS	
+def_modular_engine_crankshaft_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_crankshaft_3x1_name		Modular Engine Crankshaft 3x1	
+def_modular_engine_crankshaft_3x1_desc		The crankshaft is the core of an engine. Attach cylinders to the outer surfaces to generate power. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.	
+def_modular_engine_crankshaft_3x1_s_desc		A modular engine crankshaft block.	
+def_modular_engine_crankshaft_3x1_node_0_label		RPS	
+def_modular_engine_crankshaft_3x1_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_crankshaft_3x3_name		Modular Engine Crankshaft 3x3	
+def_modular_engine_crankshaft_3x3_desc		The crankshaft is the core of an engine. Attach cylinders to the outer surfaces to generate power. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.	
+def_modular_engine_crankshaft_3x3_s_desc		A modular engine crankshaft block.	
+def_modular_engine_crankshaft_3x3_node_0_label		RPS	
+def_modular_engine_crankshaft_3x3_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_crankshaft_5x5_name		Modular Engine Crankshaft 5x5	
+def_modular_engine_crankshaft_5x5_desc		The crankshaft is the core of an engine. Attach cylinders to the outer surfaces to generate power. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.	
+def_modular_engine_crankshaft_5x5_s_desc		A modular engine crankshaft block.	
+def_modular_engine_crankshaft_5x5_node_0_label		RPS	
+def_modular_engine_crankshaft_5x5_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_crankshaft_converter_3x3_name		Modular Engine Crankshaft Converter 3 to 1	
+def_modular_engine_crankshaft_converter_3x3_desc		The crankshaft is the core of an engine. This component efficiently converts torque between different size crankshafts. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.	
+def_modular_engine_crankshaft_converter_3x3_s_desc		A modular engine crankshaft block.	
+def_modular_engine_crankshaft_converter_3x3_node_0_label		RPS	
+def_modular_engine_crankshaft_converter_3x3_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_crankshaft_converter_5x5_name		Modular Engine Crankshaft Converter 5 to 3	
+def_modular_engine_crankshaft_converter_5x5_desc		The crankshaft is the core of an engine. This component efficiently converts torque between different size crankshafts. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.	
+def_modular_engine_crankshaft_converter_5x5_s_desc		A modular engine crankshaft block.	
+def_modular_engine_crankshaft_converter_5x5_node_0_label		RPS	
+def_modular_engine_crankshaft_converter_5x5_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_cylinder_straight_name		Modular Engine Cylinder 1x1	
+def_modular_engine_cylinder_straight_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_cylinder_straight_s_desc		A modular engine cylinder.	
+def_modular_engine_cylinder_straight_node_0_label		Composite Data	
+def_modular_engine_cylinder_straight_node_0_desc		Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)	
+def_modular_engine_drive_belt_name		Modular Engine Drive Belt 1x1	
+def_modular_engine_drive_belt_desc		The drive belt attaches to the crankshaft and provides an interface for starters, alternators and pumps.	
+def_modular_engine_drive_belt_s_desc		A modular engine drive belt.	
+def_modular_engine_exhaust_manifold_corner_name		Modular Engine Exhaust Manifold (Corner)	
+def_modular_engine_exhaust_manifold_corner_desc		Attach a manifold to a cylinder to provide an exhaust output connection for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_exhaust_manifold_corner_s_desc		A modular engine manifold.	
+def_modular_engine_exhaust_manifold_corner_node_0_label		Exhaust	
+def_modular_engine_exhaust_manifold_corner_node_0_desc			
+def_modular_engine_exhaust_manifold_straight_name		Modular Engine Exhaust Manifold (Straight)	
+def_modular_engine_exhaust_manifold_straight_desc		Attach a manifold to a cylinder to provide an exhaust output connection for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_exhaust_manifold_straight_s_desc		A modular engine manifold.	
+def_modular_engine_exhaust_manifold_straight_node_0_label		Exhaust	
+def_modular_engine_exhaust_manifold_straight_node_0_desc			
+def_modular_engine_fluid_pump_name		Modular Engine Fluid Pump	
+def_modular_engine_fluid_pump_desc		An pump that attaches to a Drive Belt to mechanically push fluid around a system.	
+def_modular_engine_fluid_pump_s_desc		A modular engine fluid pump.	
+def_modular_engine_fluid_pump_node_0_label		Clutch Pressure	
+def_modular_engine_fluid_pump_node_0_desc			
+def_modular_engine_fluid_pump_node_1_label		Fluid In	
+def_modular_engine_fluid_pump_node_1_desc			
+def_modular_engine_fluid_pump_node_2_label		Fluid Out	
+def_modular_engine_fluid_pump_node_2_desc			
+def_modular_engine_flywheel_name		Modular Engine Flywheel 1x1	
+def_modular_engine_flywheel_desc		The crankshaft is the core of an engine. A flywheel piece sits as part of the crankshaft and acts as a momentum (energy) store for a running engine, but also makes the engine harder to start.	
+def_modular_engine_flywheel_s_desc		A modular engine crankshaft flywheel.	
+def_modular_engine_flywheel_node_0_label		RPS	
+def_modular_engine_flywheel_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_flywheel_3x3_name		Modular Engine Flywheel 3x3	
+def_modular_engine_flywheel_3x3_desc		The crankshaft is the core of an engine. A flywheel piece sits as part of the crankshaft and acts as a momentum (energy) store for a running engine, but also makes the engine harder to start.	
+def_modular_engine_flywheel_3x3_s_desc		A modular engine crankshaft flywheel.	
+def_modular_engine_flywheel_3x3_node_0_label		RPS	
+def_modular_engine_flywheel_3x3_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_flywheel_5x5_name		Modular Engine Flywheel 5x5	
+def_modular_engine_flywheel_5x5_desc		The crankshaft is the core of an engine. A flywheel piece sits as part of the crankshaft and acts as a momentum (energy) store for a running engine, but also makes the engine harder to start.	
+def_modular_engine_flywheel_5x5_s_desc		A modular engine crankshaft flywheel.	
+def_modular_engine_flywheel_5x5_node_0_label		RPS	
+def_modular_engine_flywheel_5x5_node_0_desc		Output value giving data info on engine speed.	
+def_modular_engine_gearbox_1x1_name		Gearbox 1x1	
+def_modular_engine_gearbox_1x1_desc		The ratio can be toggled between two values which can be set in the properties.	
+def_modular_engine_gearbox_1x1_s_desc		Gearbox for changing the torque and speed across power connections.	
+def_modular_engine_gearbox_1x1_node_0_label		Power A	
+def_modular_engine_gearbox_1x1_node_0_desc		Power connection A.	
+def_modular_engine_gearbox_1x1_node_1_label		Power B	
+def_modular_engine_gearbox_1x1_node_1_desc		Power connection B.	
+def_modular_engine_gearbox_1x1_node_2_label		Gear Switch	
+def_modular_engine_gearbox_1x1_node_2_desc		Toggle between the two gear ratios.	
+def_modular_engine_gearbox_1x1_node_3_label		Electric	
+def_modular_engine_gearbox_1x1_node_3_desc		The electric connection to power the component.	
+def_modular_engine_gearbox_3x3_name		Gearbox 3x3	
+def_modular_engine_gearbox_3x3_desc		The ratio can be toggled between two values which can be set in the properties.	
+def_modular_engine_gearbox_3x3_s_desc		Gearbox for changing the torque and speed across power connections.	
+def_modular_engine_gearbox_3x3_node_0_label		Power A	
+def_modular_engine_gearbox_3x3_node_0_desc		Power connection A.	
+def_modular_engine_gearbox_3x3_node_1_label		Power B	
+def_modular_engine_gearbox_3x3_node_1_desc		Power connection B.	
+def_modular_engine_gearbox_3x3_node_2_label		Gear Switch	
+def_modular_engine_gearbox_3x3_node_2_desc		Toggle between the two gear ratios.	
+def_modular_engine_gearbox_3x3_node_3_label		Electric	
+def_modular_engine_gearbox_3x3_node_3_desc		The electric connection to power the component.	
+def_modular_engine_gearbox_5x5_name		Gearbox 5x5	
+def_modular_engine_gearbox_5x5_desc		The ratio can be toggled between two values which can be set in the properties.	
+def_modular_engine_gearbox_5x5_s_desc		Gearbox for changing the torque and speed across power connections.	
+def_modular_engine_gearbox_5x5_node_0_label		Power A	
+def_modular_engine_gearbox_5x5_node_0_desc		Power connection A.	
+def_modular_engine_gearbox_5x5_node_1_label		Power B	
+def_modular_engine_gearbox_5x5_node_1_desc		Power connection B.	
+def_modular_engine_gearbox_5x5_node_2_label		Gear Switch	
+def_modular_engine_gearbox_5x5_node_2_desc		Toggle between the two gear ratios.	
+def_modular_engine_gearbox_5x5_node_3_label		Electric	
+def_modular_engine_gearbox_5x5_node_3_desc		The electric connection to power the component.	
+def_modular_engine_intake_manifold_name		Modular Engine Fuel Manifold	
+def_modular_engine_intake_manifold_desc		Attach a manifold to a cylinder to provide a connection for fuel to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_intake_manifold_s_desc		A modular engine fuel manifold.	
+def_modular_engine_intake_manifold_node_0_label		Throttle	
+def_modular_engine_intake_manifold_node_0_desc			
+def_modular_engine_intake_manifold_node_1_label		Fuel	
+def_modular_engine_intake_manifold_node_1_desc			
+def_modular_engine_manifold_corner_name		Modular Engine Manifold (Corner)	
+def_modular_engine_manifold_corner_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_manifold_corner_s_desc		A modular engine manifold.	
+def_modular_engine_manifold_straight_name		Modular Engine Manifold (Straight)	
+def_modular_engine_manifold_straight_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_manifold_straight_s_desc		A modular engine manifold.	
+def_modular_engine_manifold_t_name		Modular Engine Manifold (T)	
+def_modular_engine_manifold_t_desc		Attach a manifold to a cylinder to provide connections for air, fuel, and exhaust for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_manifold_t_s_desc		A modular engine manifold.	
+def_modular_engine_piston_3x3_name		Modular Engine Cylinder 3x3	
+def_modular_engine_piston_3x3_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_piston_3x3_s_desc		A modular engine cylinder.	
+def_modular_engine_piston_3x3_node_0_label		Composite Data	
+def_modular_engine_piston_3x3_node_0_desc		Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)	
+def_modular_engine_piston_5x5_name		Modular Engine Cylinder 5x5	
+def_modular_engine_piston_5x5_desc		Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.	
+def_modular_engine_piston_5x5_s_desc		A modular engine cylinder.	
+def_modular_engine_piston_5x5_node_0_label		Composite Data	
+def_modular_engine_piston_5x5_node_0_desc		Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)	
+def_modular_engine_power_manifold_3x3_name		Modular Engine Drive Belt 3x3	
+def_modular_engine_power_manifold_3x3_desc		The drive belt attaches to the crankshaft and provides an interface for starters, alternators and pumps.	
+def_modular_engine_power_manifold_3x3_s_desc		A modular engine drive belt.	
+def_modular_engine_power_manifold_5x5_name		Modular Engine Drive Belt 5x5	
+def_modular_engine_power_manifold_5x5_desc		The drive belt attaches to the crankshaft and provides an interface for starters, alternators and pumps.	
+def_modular_engine_power_manifold_5x5_s_desc		A modular engine drive belt.	
+def_modular_engine_sensor_temperature_name		Modular Engine Temperature Sensor	
+def_modular_engine_sensor_temperature_desc		Attach to a crankshaft to provide temperature information.	
+def_modular_engine_sensor_temperature_s_desc		A modular engine temperature sensor.	
+def_modular_engine_sensor_temperature_node_0_label		Temperature	
+def_modular_engine_sensor_temperature_node_0_desc			
+def_modular_engine_starter_name		Modular Engine Starter	
+def_modular_engine_starter_desc		Attach a starter to a Drive Belt component and supply power to apply an inefficient force on the engine to get it started.	
+def_modular_engine_starter_s_desc		A modular engine starter.	
+def_modular_engine_starter_node_0_label		Starter	
+def_modular_engine_starter_node_0_desc			
+def_modular_engine_starter_node_1_label		Electric	
+def_modular_engine_starter_node_1_desc		Electrical power connection.	
 def_monitor_1_name		Monitor 1x1	顯示器 1x1		
 def_monitor_1_desc		Displays video data.	顯示影像資料		
 def_monitor_1_s_desc		A video screen.	A video screen.		
@@ -3557,6 +4018,28 @@ def_monitor_1_node_2_label		Electric	電力
 def_monitor_1_node_2_desc			電源連接.		
 def_monitor_1_node_3_label		Power Switch	電源開關		
 def_monitor_1_node_3_desc		Controls whether or not the screen is switched on.	Controls whether or not the screen is switched on.		
+def_monitor_1x2_name		Monitor 1x2	
+def_monitor_1x2_desc		Displays video data.	
+def_monitor_1x2_s_desc		A video screen.	
+def_monitor_1x2_node_0_label		Video Signal	
+def_monitor_1x2_node_0_desc			
+def_monitor_1x2_node_1_label		Touch Output	
+def_monitor_1x2_node_1_desc			
+def_monitor_1x2_node_2_label		Electric	
+def_monitor_1x2_node_2_desc			
+def_monitor_1x2_node_3_label		Power Switch	
+def_monitor_1x2_node_3_desc		Controls whether or not the screen is switched on.	
+def_monitor_1x3_name		Monitor 1x3	
+def_monitor_1x3_desc		Displays video data.	
+def_monitor_1x3_s_desc		A video screen.	
+def_monitor_1x3_node_0_label		Video Signal	
+def_monitor_1x3_node_0_desc			
+def_monitor_1x3_node_1_label		Touch Output	
+def_monitor_1x3_node_1_desc			
+def_monitor_1x3_node_2_label		Electric	
+def_monitor_1x3_node_2_desc			
+def_monitor_1x3_node_3_label		Power Switch	
+def_monitor_1x3_node_3_desc		Controls whether or not the screen is switched on.	
 def_monitor_2_name		Monitor 2x2	顯示器 2x2		
 def_monitor_2_desc		Displays video data.	顯示影像資料		
 def_monitor_2_s_desc		A video screen.	A video screen.		
@@ -3568,6 +4051,28 @@ def_monitor_2_node_2_label		Electric	電力
 def_monitor_2_node_2_desc			電源連接.		
 def_monitor_2_node_3_label		Power Switch	電源開關		
 def_monitor_2_node_3_desc		Controls whether or not the screen is switched on.	Controls whether or not the screen is switched on..		
+def_monitor_2x3_name		Monitor 2x3	
+def_monitor_2x3_desc		Displays video data.	
+def_monitor_2x3_s_desc		A video screen.	
+def_monitor_2x3_node_0_label		Video Signal	
+def_monitor_2x3_node_0_desc			
+def_monitor_2x3_node_1_label		Touch Output	
+def_monitor_2x3_node_1_desc			
+def_monitor_2x3_node_2_label		Electric	
+def_monitor_2x3_node_2_desc			
+def_monitor_2x3_node_3_label		Power Switch	
+def_monitor_2x3_node_3_desc		Controls whether or not the screen is switched on.	
+def_monitor_3_name		Monitor 3x3	
+def_monitor_3_desc		Displays video data.	
+def_monitor_3_s_desc		A video screen.	
+def_monitor_3_node_0_label		Video Signal	
+def_monitor_3_node_0_desc			
+def_monitor_3_node_1_label		Touch Output	
+def_monitor_3_node_1_desc			
+def_monitor_3_node_2_label		Electric	
+def_monitor_3_node_2_desc			
+def_monitor_3_node_3_label		Power Switch	
+def_monitor_3_node_3_desc		Controls whether or not the screen is switched on.	
 def_monitor_5_name		Monitor 5x3	顯示器 5x3		
 def_monitor_5_desc		Displays video data.	顯示影像資料		
 def_monitor_5_s_desc		A video screen.	A video screen.		
@@ -3615,7 +4120,7 @@ def_monitor_hud_3_node_3_desc		Controls whether or not the screen is switched on
 def_motor_large_name		Large Electric Motor	電動馬達 (大)	
 def_motor_large_desc		Converts electrical energy into mechanical force.	Converts electrical energy into mechanical force.		
 def_motor_large_s_desc		A large electric motor.	A large electric motor.		
-def_motor_large_node_0_label		Power	動力		
+def_motor_large_node_0_label		RPS	動力		
 def_motor_large_node_0_desc		The power output for mechanical force.	The power output for mechanical force.		
 def_motor_large_node_1_label		Electric	電力		
 def_motor_large_node_1_desc		The electric energy input to be converted into mechanical force.	The electric energy input to be converted into mechanical force.		
@@ -3624,7 +4129,7 @@ def_motor_large_node_2_desc		The throttle input to control how much electric ene
 def_motor_medium_name		Medium Electric Motor	電動馬達 (中)		
 def_motor_medium_desc		Converts electrical energy into mechanical force.	Converts electrical energy into mechanical force.		
 def_motor_medium_s_desc		A medium electric motor.	A medium electric motor.		
-def_motor_medium_node_0_label		Power	動力		
+def_motor_medium_node_0_label		RPS	動力		
 def_motor_medium_node_0_desc		The power output for mechanical force.	The power output for mechanical force.		
 def_motor_medium_node_1_label		Electric	電力		
 def_motor_medium_node_1_desc		The electric energy input to be converted into mechanical force.	The electric energy input to be converted into mechanical force.		
@@ -3633,7 +4138,7 @@ def_motor_medium_node_2_desc		The throttle input to control how much electric en
 def_motor_small_name		Small Electric Motor	電動馬達 (小)		
 def_motor_small_desc		Converts electrical energy into mechanical force.	Converts electrical energy into mechanical force.		
 def_motor_small_s_desc		A small electric motor.	A small electric motor.		
-def_motor_small_node_0_label		Power	動力		
+def_motor_small_node_0_label		RPS	動力		
 def_motor_small_node_0_desc		The power output for mechanical force.	The power output for mechanical force.		
 def_motor_small_node_1_label		Electric	電力		
 def_motor_small_node_1_desc		The electric energy input to be converted into mechanical force.	The electric energy input to be converted into mechanical force.		
@@ -3689,14 +4194,14 @@ def_multibody_robotic_hinge_01_a_node_1_label		Current Rotation	Current Rotation
 def_multibody_robotic_hinge_01_a_node_1_desc		The hinge's measured rotation between -0.25 and 0.25.	The hinge's measured rotation between -0.25 and 0.25.		
 def_multibody_robotic_hinge_01_a_node_2_label		Electric	電力		
 def_multibody_robotic_hinge_01_a_node_2_desc		Electrical power connection.	電源連接.		
-def_multibody_robotic_hinge_01_a_node_3_label		Power	動力		
+def_multibody_robotic_hinge_01_a_node_3_label		RPS	動力		
 def_multibody_robotic_hinge_01_a_node_3_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_multibody_robotic_hinge_01_a_node_4_label		Fluid	流體		
 def_multibody_robotic_hinge_01_a_node_4_desc		Fluid connection for transfering fluid.	Fluid connection for transfering fluid.		
 def_multibody_robotic_hinge_01_b_name		Robotic hinge child	Robotic hinge child		
 def_multibody_robotic_hinge_01_b_desc					
 def_multibody_robotic_hinge_01_b_s_desc					
-def_multibody_robotic_hinge_01_b_node_0_label		Power	動力		
+def_multibody_robotic_hinge_01_b_node_0_label		RPS	動力		
 def_multibody_robotic_hinge_01_b_node_0_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_multibody_robotic_hinge_01_b_node_1_label		Fluid	流體		
 def_multibody_robotic_hinge_01_b_node_1_desc		Fluid connection for transfering fluid.	Fluid connection for transfering fluid.		
@@ -3709,7 +4214,7 @@ def_multibody_robotic_pivot_01_a_node_1_label		Current Rotation	Current Rotation
 def_multibody_robotic_pivot_01_a_node_1_desc		The pivot's measured rotation between -0.25 and 0.25.	The pivot's measured rotation between -0.25 and 0.25.		
 def_multibody_robotic_pivot_01_a_node_2_label		Electric	電力		
 def_multibody_robotic_pivot_01_a_node_2_desc		Electrical power connection.	電源連接.		
-def_multibody_robotic_pivot_01_a_node_3_label		Power	動力		
+def_multibody_robotic_pivot_01_a_node_3_label		RPS	動力		
 def_multibody_robotic_pivot_01_a_node_3_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_multibody_robotic_pivot_01_a_fluid_name		Robotic Pivot (Fluid)	Robotic Pivot (Fluid)		
 def_multibody_robotic_pivot_01_a_fluid_desc		The pivot has a range of motion of 0.25 turns in both directions. A standard input value sets the target orientation within the pivot's range of motion. The measured rotation of the pivot can be read from its output. The pivot's speed can be configured by selecting it with the select tool.	The pivot has a range of motion of 0.25 turns in both directions. A standard input value sets the target orientation within the pivot's range of motion. The measured rotation of the pivot can be read from its output. The pivot's speed can be configured by selecting it with the select tool.		
@@ -3725,7 +4230,7 @@ def_multibody_robotic_pivot_01_a_fluid_node_3_desc		Fluid connection for transfe
 def_multibody_robotic_pivot_01_b_name		robotic pivot b	robotic pivot b		
 def_multibody_robotic_pivot_01_b_desc					
 def_multibody_robotic_pivot_01_b_s_desc					
-def_multibody_robotic_pivot_01_b_node_0_label		Power	動力		
+def_multibody_robotic_pivot_01_b_node_0_label		RPS	動力		
 def_multibody_robotic_pivot_01_b_node_0_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_multibody_robotic_pivot_01_b_fluid_name		robotic pivot b	robotic pivot b		
 def_multibody_robotic_pivot_01_b_fluid_desc					
@@ -3735,7 +4240,7 @@ def_multibody_robotic_pivot_01_b_fluid_node_0_desc		Fluid connection for transfe
 def_multibody_suspension_a_name		Suspension	Suspension		
 def_multibody_suspension_a_desc		Power can be passed through the suspension, allowing you to attach and control a wheel at the end.	Power can be passed through the suspension, allowing you to attach and control a wheel at the end.		
 def_multibody_suspension_a_s_desc		A shock absorber that can be used to improve handling of land-based vehicles.	A shock absorber that can be used to improve handling of land-based vehicles.		
-def_multibody_suspension_a_node_0_label		Power	動力		
+def_multibody_suspension_a_node_0_label		RPS	動力		
 def_multibody_suspension_a_node_0_desc		Power connection for transfering mechanical energy.	Power connection for transfering mechanical energy.		
 def_multibody_suspension_b_name		suspension b	suspension b		
 def_multibody_suspension_b_desc					
@@ -3777,10 +4282,15 @@ def_player_sensor_node_0_label		Number Detected	Number Detected
 def_player_sensor_node_0_desc		The number of players detected by the sensor.	The number of players detected by the sensor.	
 def_player_sensor_node_1_label		Detected	Detected		
 def_player_sensor_node_1_desc		Outputs an on signal if any players are detected.	Outputs an on signal if any players are detected.		
+def_pressure_sensor_name		Contact Sensor	
+def_pressure_sensor_desc		Setting the resistance property will tune the amount of contact required to depress the sensor. When depressed, an on signal will be produced.	
+def_pressure_sensor_s_desc		A sensor activated by contact pressure.	
+def_pressure_sensor_node_0_label		Output	
+def_pressure_sensor_node_0_desc		Outputs an on signal when the contact sensor is depressed.	
 def_propeller_name		Small Propeller	螺旋槳 (小)		
 def_propeller_desc		Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.	Power received from an engine affects the forward and backward force generated. This propeller will only operate underwater.		
 def_propeller_s_desc		A small boat propeller.	A small boat propeller.		
-def_propeller_node_0_label		Power	動力		
+def_propeller_node_0_label		RPS	動力		
 def_propeller_node_0_desc		Receives power generated by an engine.	接收來自引擎的動力.		
 def_radar_name		Radar	雷達
 def_radar_desc		This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)	This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)
@@ -3851,7 +4361,7 @@ def_radar_large_node_7_label		Target Found	Target Found
 def_radar_large_node_7_desc		Returns if an object has been detected.	Returns if an object has been detected.
 def_radar_large_node_8_label		Electric	電力
 def_radar_large_node_8_desc		Electrical power connection.	電源連接.
-def_radar_sonar_name		Sonar	聲納(Sonar)
+def_radar_sonar_name		Sonar (Large)	聲納(Sonar)
 def_radar_sonar_desc		This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 3000) (Max FOV : 0.125)	This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 3000) (Max FOV : 0.125)
 def_radar_sonar_s_desc		A short range Sonar that returns information about a detected underwater object within its view.	A short range Sonar that returns information about a detected underwater object within its view.
 def_radar_sonar_node_0_label		FOV	FOV
@@ -3868,6 +4378,28 @@ def_radar_sonar_node_5_label		Target Found	Target Found
 def_radar_sonar_node_5_desc		Returns if an object has been detected.	Returns if an object has been detected.
 def_radar_sonar_node_6_label		Electric	電力
 def_radar_sonar_node_6_desc		Electrical power connection.	電源連接.
+def_radar_sonar_small_name		Sonar (Small)	
+def_radar_sonar_small_desc		This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 1000) (Max FOV : 0.125)	
+def_radar_sonar_small_s_desc		A short range Sonar that returns information about a detected underwater object within its view.	
+def_radar_sonar_small_node_0_label		FOV	
+def_radar_sonar_small_node_0_desc		The sensor's yaw field of view in turns from 0.01 to 0.125.	
+def_radar_sonar_small_node_1_label		Facing Yaw	
+def_radar_sonar_small_node_1_desc		The sensor's yaw direction in turns from -0.5 to 0.5.	
+def_radar_sonar_small_node_2_label		Target Distance	
+def_radar_sonar_small_node_2_desc		The distance to the target in meters.	
+def_radar_sonar_small_node_3_label		Signal Strength	
+def_radar_sonar_small_node_3_desc		The strength of the returned signal.	
+def_radar_sonar_small_node_4_label		Elevation Angle	
+def_radar_sonar_small_node_4_desc		The pitch angle between the sensor and the target in turns.	
+def_radar_sonar_small_node_5_label		Target Found	
+def_radar_sonar_small_node_5_desc		Returns if an object has been detected.	
+def_radar_sonar_small_node_6_label		Electric	
+def_radar_sonar_small_node_6_desc		Electrical power connection.	
+def_radiation_detector_name		Radiation Detector	
+def_radiation_detector_desc		Outputs radiation dose rate per second at its location.	
+def_radiation_detector_s_desc		A sensor to detect radiation.	
+def_radiation_detector_node_0_label		Radiation	
+def_radiation_detector_node_0_desc		The detected radiation dose rate.	
 def_railing_extension_angle_name		Railing Segment Extension Incline	Railing Segment Extension Incline		
 def_railing_extension_angle_desc					
 def_railing_extension_angle_s_desc		Inclined railing extension segment.	Inclined railing extension segment.	
@@ -4055,6 +4587,104 @@ def_rotation_sensor_desc		The measurement is expressed in terms of turns, with a
 def_rotation_sensor_s_desc		A sensor that measures how much it has tilted, relative to the horizon.	A sensor that measures how much it has tilted, relative to the horizon.		
 def_rotation_sensor_node_0_label		Tilt	傾斜		
 def_rotation_sensor_node_0_desc		The measured tilt relative to the horizon.	The measured tilt relative to the horizon.		
+def_rotor_coaxial_large_name		Rotor (Large)	
+def_rotor_coaxial_large_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_large_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_large_node_0_label		Roll	
+def_rotor_coaxial_large_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_large_node_1_label		Pitch	
+def_rotor_coaxial_large_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_large_node_2_label		RPS	
+def_rotor_coaxial_large_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_large_node_3_label		Collective	
+def_rotor_coaxial_large_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_large_node_4_label		Power	
+def_rotor_coaxial_large_node_4_desc			
+def_rotor_coaxial_light_name		Rotor (Light)	
+def_rotor_coaxial_light_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_light_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_light_node_0_label		Roll	
+def_rotor_coaxial_light_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_light_node_1_label		Pitch	
+def_rotor_coaxial_light_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_light_node_2_label		RPS	
+def_rotor_coaxial_light_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_light_node_3_label		Collective	
+def_rotor_coaxial_light_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_light_node_4_label		Power	
+def_rotor_coaxial_light_node_4_desc			
+def_rotor_coaxial_light_end_name		Rotor End (Light)	
+def_rotor_coaxial_light_end_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_light_end_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_light_end_node_0_label		Roll	
+def_rotor_coaxial_light_end_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_light_end_node_1_label		Pitch	
+def_rotor_coaxial_light_end_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_light_end_node_2_label		RPS	
+def_rotor_coaxial_light_end_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_light_end_node_3_label		Collective	
+def_rotor_coaxial_light_end_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_name		Rotor Propeller (Large)	
+def_rotor_coaxial_prop_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_prop_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_prop_node_0_label		Roll	
+def_rotor_coaxial_prop_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_prop_node_1_label		Pitch	
+def_rotor_coaxial_prop_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_node_2_label		RPS	
+def_rotor_coaxial_prop_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_prop_node_3_label		Collective	
+def_rotor_coaxial_prop_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_node_4_label		Power	
+def_rotor_coaxial_prop_node_4_desc			
+def_rotor_coaxial_prop_end_name		Rotor Propeller End (Large)	
+def_rotor_coaxial_prop_end_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_prop_end_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_prop_end_node_0_label		Roll	
+def_rotor_coaxial_prop_end_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_prop_end_node_1_label		Pitch	
+def_rotor_coaxial_prop_end_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_end_node_2_label		RPS	
+def_rotor_coaxial_prop_end_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_prop_end_node_3_label		Collective	
+def_rotor_coaxial_prop_end_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_small_name		Rotor Propeller (Small)	
+def_rotor_coaxial_prop_small_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_prop_small_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_prop_small_node_0_label		Roll	
+def_rotor_coaxial_prop_small_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_prop_small_node_1_label		Pitch	
+def_rotor_coaxial_prop_small_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_small_node_2_label		RPS	
+def_rotor_coaxial_prop_small_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_prop_small_node_3_label		Collective	
+def_rotor_coaxial_prop_small_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_small_node_4_label		Power	
+def_rotor_coaxial_prop_small_node_4_desc			
+def_rotor_coaxial_prop_small_end_name		Rotor Propeller End (Small)	
+def_rotor_coaxial_prop_small_end_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_prop_small_end_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_prop_small_end_node_0_label		Roll	
+def_rotor_coaxial_prop_small_end_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_prop_small_end_node_1_label		Pitch	
+def_rotor_coaxial_prop_small_end_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_prop_small_end_node_2_label		RPS	
+def_rotor_coaxial_prop_small_end_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_prop_small_end_node_3_label		Collective	
+def_rotor_coaxial_prop_small_end_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_small_name		Rotor (Small)	
+def_rotor_coaxial_small_desc		Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater.	
+def_rotor_coaxial_small_s_desc		A helicopter rotor with controllable pitch and roll.	
+def_rotor_coaxial_small_node_0_label		Roll	
+def_rotor_coaxial_small_node_0_desc		Standard value between -1 and 1 representing the desired roll amount.	
+def_rotor_coaxial_small_node_1_label		Pitch	
+def_rotor_coaxial_small_node_1_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_small_node_2_label		RPS	
+def_rotor_coaxial_small_node_2_desc		Receives power generated by an engine.	
+def_rotor_coaxial_small_node_3_label		Collective	
+def_rotor_coaxial_small_node_3_desc		Standard value between -1 and 1 representing the desired pitch amount.	
+def_rotor_coaxial_small_node_4_label		Power	
+def_rotor_coaxial_small_node_4_desc			
 def_rudder_name		Rudder	舵		
 def_rudder_desc		It takes a number input between -1 and 1 that represent the two extremes of the rudder's rotation.	It takes a number input between -1 and 1 that represent the two extremes of the rudder's rotation.		
 def_rudder_s_desc		The rudder can be attached to the underside of a boat to control its yaw, allowing you to steer left and right.	The rudder can be attached to the underside of a boat to control its yaw, allowing you to steer left and right.		
@@ -4221,6 +4851,11 @@ def_rx_video_x_node_1_label		Electric	電力
 def_rx_video_x_node_1_desc			電源連接.		
 def_rx_video_x_node_2_label		Frequency Send	頻率發送		
 def_rx_video_x_node_2_desc			null		
+def_scoop_intake_2_name		Air Scoop Intake 1x1	
+def_scoop_intake_2_desc		An air intake component that performs better at higher velocity.	
+def_scoop_intake_2_s_desc		An air intake component.	
+def_scoop_intake_2_node_0_label		Fluid	
+def_scoop_intake_2_node_0_desc		Air output port.	
 def_searchlight_name		Search Light	探照燈		
 def_searchlight_desc		The light has a standard value input that sets the target orientation within the its range of motion. It can rotate a quarter turn in both directions. An on/off signal is used to switch the light on and off. It has a range of 120m.	The light has a standard value input that sets the target orientation within the its range of motion. It can rotate a quarter turn in both directions. An on/off signal is used to switch the light on and off. It has a range of 120m.		
 def_searchlight_s_desc		A spotlight that can be rotated up and down.	A spotlight that can be rotated up and down.		
@@ -4649,10 +5284,139 @@ def_stair_segment_s_desc		A single step that can be stacked to create a staircas
 def_stair_top_name		Stair Top	Stair Top		
 def_stair_top_desc					
 def_stair_top_s_desc		A single step that can be used at the top of a staircase to make it flush with a platform.	A single step that can be used at the top of a staircase to make it flush with a platform.		
-def_tail_rotor_name		Tail Rotor	尾旋翼	
+def_steam_boiler_name		Steam Boiler	
+def_steam_boiler_desc		The boiler should be connected to a firebox to supply heat for evaporation. Allowing too much pressure to build up in the boiler may cause an explosion; control your boiler's heat to restrict steam generation and keep the pressure below the threshold (10).	
+def_steam_boiler_s_desc		A boiler for evaporating water into steam.	
+def_steam_boiler_node_0_label		Coolant A	
+def_steam_boiler_node_0_desc			
+def_steam_boiler_node_1_label		Coolant B	
+def_steam_boiler_node_1_desc			
+def_steam_boiler_node_2_label		Water In	
+def_steam_boiler_node_2_desc			
+def_steam_boiler_node_3_label		Steam Out	
+def_steam_boiler_node_3_desc			
+def_steam_boiler_node_4_label		Fluid Volume	
+def_steam_boiler_node_4_desc			
+def_steam_boiler_node_5_label		Temperature	
+def_steam_boiler_node_5_desc			
+def_steam_boiler_node_6_label		Pressure	
+def_steam_boiler_node_6_desc			
+def_steam_coal_duct_name		Steam Coal Duct	
+def_steam_coal_duct_desc		Transports coal through the connected system.	
+def_steam_coal_duct_s_desc		A basic coal duct.	
+def_steam_coal_duct_node_0_label		Coal Level	
+def_steam_coal_duct_node_0_desc			
+def_steam_coal_duct_l_name		Steam Coal Duct Large	
+def_steam_coal_duct_l_desc		Transports coal through the connected system.	
+def_steam_coal_duct_l_s_desc		A basic coal duct.	
+def_steam_coal_duct_l_node_0_label		Coal Level	
+def_steam_coal_duct_l_node_0_desc			
+def_steam_coal_duct_m_name		Steam Coal Duct Medium	
+def_steam_coal_duct_m_desc		Transports coal through the connected system.	
+def_steam_coal_duct_m_s_desc		A basic coal duct.	
+def_steam_coal_duct_m_node_0_label		Coal Level	
+def_steam_coal_duct_m_node_0_desc			
+def_steam_coal_firebox_name		Steam Coal Firebox	
+def_steam_coal_firebox_desc		Produces large amounts of heat. Can be supplied with a coal duct. Consumes 1 coal to ignite the fire.	
+def_steam_coal_firebox_s_desc		A coal powered firebox.	
+def_steam_coal_firebox_node_0_label		Coal Level	
+def_steam_coal_firebox_node_0_desc			
+def_steam_coal_firebox_node_1_label		Temperature	
+def_steam_coal_firebox_node_1_desc			
+def_steam_coal_firebox_node_2_label		Ignition	
+def_steam_coal_firebox_node_2_desc			
+def_steam_coal_firebox_node_3_label		Coolant In	
+def_steam_coal_firebox_node_3_desc			
+def_steam_coal_firebox_node_4_label		Coolant Out	
+def_steam_coal_firebox_node_4_desc			
+def_steam_coal_firebox_node_5_label		Air	
+def_steam_coal_firebox_node_5_desc			
+def_steam_coal_firebox_node_6_label		Exhaust	
+def_steam_coal_firebox_node_6_desc			
+def_steam_coal_firebox_l_name		Steam Coal Firebox Large	
+def_steam_coal_firebox_l_desc		Produces large amounts of heat. Can be supplied with a coal duct. Consumes 1 coal to ignite the fire.	
+def_steam_coal_firebox_l_s_desc		A coal powered firebox.	
+def_steam_coal_firebox_l_node_0_label		Coal Level	
+def_steam_coal_firebox_l_node_0_desc			
+def_steam_coal_firebox_l_node_1_label		Temperature	
+def_steam_coal_firebox_l_node_1_desc			
+def_steam_coal_firebox_l_node_2_label		Ignition	
+def_steam_coal_firebox_l_node_2_desc			
+def_steam_coal_firebox_l_node_3_label		Coolant In	
+def_steam_coal_firebox_l_node_3_desc			
+def_steam_coal_firebox_l_node_4_label		Coolant Out	
+def_steam_coal_firebox_l_node_4_desc			
+def_steam_coal_firebox_l_node_5_label		Air	
+def_steam_coal_firebox_l_node_5_desc			
+def_steam_coal_firebox_l_node_6_label		Exhaust	
+def_steam_coal_firebox_l_node_6_desc			
+def_steam_coal_funnel_name		Steam Coal Funnel	
+def_steam_coal_funnel_desc		Can be toggled to slowly move coal out of the connected system.	
+def_steam_coal_funnel_s_desc		A funnel movign coal.	
+def_steam_coal_funnel_node_0_label		Open	
+def_steam_coal_funnel_node_0_desc			
+def_steam_coal_hopper_name		Steam Coal Hopper	
+def_steam_coal_hopper_desc		Pouring coal into the receptacle will add it to the connected system.	
+def_steam_coal_hopper_s_desc		A hopper that can accept coal.	
+def_steam_coal_hopper_node_0_label		Coal Level	
+def_steam_coal_hopper_node_0_desc			
+def_steam_coal_hopper_l_name		Steam Coal Hopper Large	
+def_steam_coal_hopper_l_desc		Pouring coal into the receptacle will add it to the connected system.	
+def_steam_coal_hopper_l_s_desc		A hopper that can accept coal.	
+def_steam_coal_hopper_l_node_0_label		Coal Level	
+def_steam_coal_hopper_l_node_0_desc			
+def_steam_coal_hopper_m_name		Steam Coal Hopper Medium	
+def_steam_coal_hopper_m_desc		Pouring coal into the receptacle will add it to the connected system.	
+def_steam_coal_hopper_m_s_desc		A hopper that can accept coal.	
+def_steam_coal_hopper_m_node_0_label		Coal Level	
+def_steam_coal_hopper_m_node_0_desc			
+def_steam_condenser_name		Steam Condenser	
+def_steam_condenser_desc		The condenser should be continously cooled to function efficiently.	
+def_steam_condenser_s_desc		A condenser for converting steam back to water.	
+def_steam_condenser_node_0_label		Coolant A	
+def_steam_condenser_node_0_desc			
+def_steam_condenser_node_1_label		Coolant B	
+def_steam_condenser_node_1_desc			
+def_steam_condenser_node_2_label		Steam In	
+def_steam_condenser_node_2_desc			
+def_steam_condenser_node_3_label		Water Out	
+def_steam_condenser_node_3_desc			
+def_steam_condenser_node_4_label		Fluid Volume	
+def_steam_condenser_node_4_desc			
+def_steam_condenser_node_5_label		Temperature	
+def_steam_condenser_node_5_desc			
+def_steam_nuclear_control_rod_name		Nuclear Control Rod	
+def_steam_nuclear_control_rod_desc		Can be inserted into a fuel assembly to decrease the rate of reaction of adjacent rods.	
+def_steam_nuclear_control_rod_s_desc		A Control Rod.	
+def_steam_nuclear_control_rod_node_0_label		Insertion Target	
+def_steam_nuclear_control_rod_node_0_desc			
+def_steam_nuclear_control_rod_node_1_label		Insertion	
+def_steam_nuclear_control_rod_node_1_desc			
+def_steam_nuclear_fuel_assembly_name		Nuclear Fuel Assembly	
+def_steam_nuclear_fuel_assembly_desc		A fuel rod can be inserted into the assembly to facilitate a fission reaction.	
+def_steam_nuclear_fuel_assembly_s_desc		A Fuel assembly.	
+def_steam_nuclear_fuel_assembly_node_0_label		Release Fuel Rod	
+def_steam_nuclear_fuel_assembly_node_0_desc			
+def_steam_nuclear_fuel_assembly_node_1_label		Fuel Rod Temperature	
+def_steam_nuclear_fuel_assembly_node_1_desc			
+def_steam_nuclear_fuel_rod_name		Nuclear Fuel Rod	
+def_steam_nuclear_fuel_rod_desc		Can be inserted into a fuel assembly to start the nuclear fission process.	
+def_steam_nuclear_fuel_rod_s_desc		A Radioactive Fuel Rod.	
+def_steam_turbine_name		Steam Turbine	
+def_steam_turbine_desc		Produces torque based on the force generated by steam passing through the turbine.	
+def_steam_turbine_s_desc		A steam powered turbine.	
+def_steam_turbine_node_0_label		Steam in	
+def_steam_turbine_node_0_desc			
+def_steam_turbine_node_1_label		Steam Out	
+def_steam_turbine_node_1_desc			
+def_steam_turbine_node_2_label		Torque	
+def_steam_turbine_node_2_desc			
+def_steam_turbine_node_3_label		Torque	
+def_steam_turbine_node_3_desc			
+def_tail_rotor_name		Rotor (Tail)	尾旋翼	
 def_tail_rotor_desc		A standard number input allows you to control how much force the rotor generates.	A standard number input allows you to control how much force the rotor generates.		
 def_tail_rotor_s_desc		A basic helicopter tail rotor.	A basic helicopter tail rotor.		
-def_tail_rotor_node_0_label		Power	動力		
+def_tail_rotor_node_0_label		RPS	動力		
 def_tail_rotor_node_0_desc		Receives power generated by an engine.	接收來自引擎的動力		
 def_tail_rotor_node_1_label		Yaw	Yaw		
 def_tail_rotor_node_1_desc		Standard value between -1 and 1 representing the desired yaw amount.	在-1到1之間的表示偏航量.		
@@ -4683,8 +5447,8 @@ def_torque_gearbox_node_2_label		Gear Switch	齒輪切換
 def_torque_gearbox_node_2_desc		Toggle between the two gear ratios.	Toggle between the two gear ratios.		
 def_torque_gearbox_node_3_label		Electric	電力		
 def_torque_gearbox_node_3_desc		The electric connection to power the component.	電力連接為組件供電.				
-def_torque_gearbox_2_name		Gearbox	變速箱		
-def_torque_gearbox_2_desc		The ratio can be toggled between two values which can be set in the properties.	The ratio can be toggled between two values which can be set in the properties.		
+def_torque_gearbox_2_name		Gearbox (Deprecated)	變速箱		
+def_torque_gearbox_2_desc		The ratio can be toggled between two values which can be set in the properties. This gearbox operates up to a torque difference of 4000.	The ratio can be toggled between two values which can be set in the properties.		
 def_torque_gearbox_2_s_desc		Gearbox for changing the torque and speed across power connections.	Gearbox for changing the torque and speed across power connection.		
 def_torque_gearbox_2_node_0_label		Power A	動力 A		
 def_torque_gearbox_2_node_0_desc		Power connection A.	Power connection A.		
@@ -4708,18 +5472,18 @@ def_train_wheels_desc
 def_train_wheels_s_desc			null.		
 def_train_wheels_node_0_label		Brakes	煞車		
 def_train_wheels_node_0_desc		Number input to set the level of braking applied to the wheels.	Number input to set the level of braking applied to the wheels.		
-def_train_wheels_node_1_label		Power	動力		
+def_train_wheels_node_1_label		RPS	動力		
 def_train_wheels_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_train_wheels_node_2_label		Wheel Slip	Wheel Slip		
 def_train_wheels_node_2_desc		Detects if wheels are slipping resulting in reduced torque.	Detects if wheels are slipping resulting in reduced torque.		
-def_transponder_name		Emergency Beacon	Emergency Beacon
+def_transponder_name		Transponder	Emergency Beacon
 def_transponder_desc		When activated, emits a continuous transponder signal that can be detected over great distances by any transponder locator.	When activated, emits a continuous transponder signal that can be detected over great distances by any transponder locator.	
 def_transponder_s_desc		An emergency search and rescue transponder.	An emergency search and rescue transponder.
 def_transponder_node_0_label		Electric	電力
 def_transponder_node_0_desc		Electrical power connection.	電源連接.
 def_transponder_node_1_label		Active	Active
 def_transponder_node_1_desc		Emit a continuous transponder signal when active.	Emit a continuous transponder signal when active.
-def_transponder_locator_name		Emergency Beacon Locator	Emergency Beacon Locator
+def_transponder_locator_name		Transponder Locator	Emergency Beacon Locator
 def_transponder_locator_desc		Detects all transponder signals over great distances. Outputs the strongest signal strength detected, transponder signal strengths will decrease with distance.	Detects all transponder signals over great distances. Outputs the strongest signal strength detected, transponder signal strengths will decrease with distance.
 def_transponder_locator_s_desc		An emergency search and rescue transponder locator.	An emergency search and rescue transponder locator.
 def_transponder_locator_node_0_label		Transponder pulse	Transponder pulse	
@@ -4787,6 +5551,24 @@ def_turbine_node_2_label		Throttle	油門
 def_turbine_node_2_desc		Standard value between 0 and 1 that controls the throttle of the engine.	通過-1和1之間的數位訊號輸入控制發動機油門前進後退.		
 def_turbine_node_3_label		Electric	電力		
 def_turbine_node_3_desc		Electrical power connection.	電源連接.		
+def_turbocharger_name		Impeller Pump	
+def_turbocharger_desc		An Impeller that will force fluid through the system when torque is applied.	
+def_turbocharger_s_desc		An Impeller Pump that can push fluid through a system.	
+def_turbocharger_node_0_label		Fluid In	
+def_turbocharger_node_0_desc			
+def_turbocharger_node_1_label		Torque	
+def_turbocharger_node_1_desc			
+def_turbocharger_node_2_label		Fluid Out	
+def_turbocharger_node_2_desc			
+def_turbocharger_small_name		Impeller Pump (Small)	
+def_turbocharger_small_desc		An Impeller that will force fluid through the system when torque is applied.	
+def_turbocharger_small_s_desc		An Impeller Pump that can push fluid through a system.	
+def_turbocharger_small_node_0_label		Fluid In	
+def_turbocharger_small_node_0_desc			
+def_turbocharger_small_node_1_label		Torque	
+def_turbocharger_small_node_1_desc			
+def_turbocharger_small_node_2_label		Fluid Out	
+def_turbocharger_small_node_2_desc			
 def_tyre_large_name		Large Tyre	輪胎 (大)		
 def_tyre_large_desc		Useful for creating tyre stacks and fenders.	Useful for creating tyre stacks and fenders.		
 def_tyre_large_s_desc		A large decorative tyre.	A large decorative tyre.	
@@ -4832,7 +5614,7 @@ def_water_jet_desc		Converts mechanical power and water into a high power jet fo
 def_water_jet_s_desc		A fluid impeller and jet nozzle for ocean propulsion.	A fluid impeller and jet nozzle for ocean propulsion.		
 def_water_jet_node_0_label		Fluid Flow In	流體流入口		
 def_water_jet_node_0_desc		Fluid inlet to supply jet.	Fluid inlet to supply jet.		
-def_water_jet_node_1_label		Power	動力		
+def_water_jet_node_1_label		RPS	動力		
 def_water_jet_node_1_desc		Mechanical power input to power jet.	Mechanical power input to power jet.		
 def_water_jet_node_2_label		Vertical Trim	垂直配平		
 def_water_jet_node_2_desc		Vertical nozzle angle to control jet direction.	垂直噴嘴角控制噴射方向.		
@@ -4898,7 +5680,7 @@ def_wheel_advanced_3_desc		The wheel will rotate forwards and backwards dependin
 def_wheel_advanced_3_s_desc		Small steerable wheel with power connection and braking.	小型 無懸吊,可動力連接和煞車.		
 def_wheel_advanced_3_node_0_label		Brake	煞車		
 def_wheel_advanced_3_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_3_node_1_label		Power	動力		
+def_wheel_advanced_3_node_1_label		RPS	動力		
 def_wheel_advanced_3_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_3_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_3_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4909,7 +5691,7 @@ def_wheel_advanced_3_sus_desc		The wheel will rotate forwards and backwards depe
 def_wheel_advanced_3_sus_s_desc		Small steerable wheel with suspension, power connection, and braking.	小型 有懸吊,可動力連接和煞車.		
 def_wheel_advanced_3_sus_node_0_label		Brake	煞車		
 def_wheel_advanced_3_sus_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_3_sus_node_1_label		Power	動力		
+def_wheel_advanced_3_sus_node_1_label		RPS	動力		
 def_wheel_advanced_3_sus_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_3_sus_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_3_sus_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4920,7 +5702,7 @@ def_wheel_advanced_5_desc		The wheel will rotate forwards and backwards dependin
 def_wheel_advanced_5_s_desc		Medium steerable wheel with power connection and braking.	中型 無懸吊,可動力連接和煞車.		
 def_wheel_advanced_5_node_0_label		Brake	煞車		
 def_wheel_advanced_5_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_5_node_1_label		Power	動力		
+def_wheel_advanced_5_node_1_label		RPS	動力		
 def_wheel_advanced_5_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_5_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_5_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4931,7 +5713,7 @@ def_wheel_advanced_5_sus_desc		The wheel will rotate forwards and backwards depe
 def_wheel_advanced_5_sus_s_desc		Medium steerable wheel with suspension, power connection, and braking.	中型 有懸吊,可動力連接和煞車.		
 def_wheel_advanced_5_sus_node_0_label		Brake	煞車		
 def_wheel_advanced_5_sus_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_5_sus_node_1_label		Power	動力		
+def_wheel_advanced_5_sus_node_1_label		RPS	動力		
 def_wheel_advanced_5_sus_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_5_sus_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_5_sus_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4942,7 +5724,7 @@ def_wheel_advanced_7_desc		The wheel will rotate forwards and backwards dependin
 def_wheel_advanced_7_s_desc		Large steerable wheel with power connection and braking.	大型 無懸吊,可動力連接和煞車.		
 def_wheel_advanced_7_node_0_label		Brake	煞車		
 def_wheel_advanced_7_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_7_node_1_label		Power	動力		
+def_wheel_advanced_7_node_1_label		RPS	動力		
 def_wheel_advanced_7_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_7_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_7_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4953,7 +5735,7 @@ def_wheel_advanced_7_sus_desc		The wheel will rotate forwards and backwards depe
 def_wheel_advanced_7_sus_s_desc		Large steerable wheel with suspension, power connection, and braking.	大型 有懸吊,可動力連接和煞車.		
 def_wheel_advanced_7_sus_node_0_label		Brake	煞車		
 def_wheel_advanced_7_sus_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_7_sus_node_1_label		Power	動力		
+def_wheel_advanced_7_sus_node_1_label		RPS	動力		
 def_wheel_advanced_7_sus_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_7_sus_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_7_sus_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4964,7 +5746,7 @@ def_wheel_advanced_9_desc		The wheel will rotate forwards and backwards dependin
 def_wheel_advanced_9_s_desc		XLarge steerable wheel with power connection and braking.	特大型 無懸吊,可動力連接和煞車.		
 def_wheel_advanced_9_node_0_label		Brake	煞車		
 def_wheel_advanced_9_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_9_node_1_label		Power	動力		
+def_wheel_advanced_9_node_1_label		RPS	動力		
 def_wheel_advanced_9_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_9_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_9_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車	
@@ -4975,7 +5757,7 @@ def_wheel_advanced_9_sus_desc		The wheel will rotate forwards and backwards depe
 def_wheel_advanced_9_sus_s_desc		XLarge steerable wheel with suspension, power connection, and braking.	特大型 有懸吊,可動力連接和煞車.		
 def_wheel_advanced_9_sus_node_0_label		Brake	煞車		
 def_wheel_advanced_9_sus_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_advanced_9_sus_node_1_label		Power	動力		
+def_wheel_advanced_9_sus_node_1_label		RPS	動力		
 def_wheel_advanced_9_sus_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_advanced_9_sus_node_2_label		Variable Brake	可變煞車		
 def_wheel_advanced_9_sus_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車		
@@ -5000,7 +5782,7 @@ def_wheel_medium_desc		The wheel will rotate forwards and backwards depending on
 def_wheel_medium_s_desc		Medium wheel that can be controlled using an engine.	可以由引擎控制的中型輪子.		
 def_wheel_medium_node_0_label		Brake	煞車		
 def_wheel_medium_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.	
-def_wheel_medium_node_1_label		Power	動力		
+def_wheel_medium_node_1_label		RPS	動力		
 def_wheel_medium_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_medium_node_2_label		Variable Brake	可變煞車	
 def_wheel_medium_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車.		
@@ -5011,7 +5793,7 @@ def_wheel_small_desc		The wheel will rotate forwards and backwards depending on 
 def_wheel_small_s_desc		Small wheel that can be controlled using an engine.	可以由引擎控制的小型輪子.		
 def_wheel_small_node_0_label		Brake	煞車		
 def_wheel_small_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_small_node_1_label		Power	動力		
+def_wheel_small_node_1_label		RPS	動力		
 def_wheel_small_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_small_node_2_label		Variable Brake	可變煞車		
 def_wheel_small_node_2_desc		A value between 0 and 1 for soft braking	您可以通過輸入0到1之間的值來使用煞車.		
@@ -5037,21 +5819,21 @@ def_wheel_tank_drive_1_desc		The wheel will form a track with other wheels of th
 def_wheel_tank_drive_1_s_desc		Small drive wheel for tracked vehicles.	用於履帶式載具的小型驅動輪.		
 def_wheel_tank_drive_1_node_0_label		Brake	煞車		
 def_wheel_tank_drive_1_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_tank_drive_1_node_1_label		Power	動力		
+def_wheel_tank_drive_1_node_1_label		RPS	動力		
 def_wheel_tank_drive_1_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_tank_drive_5_name		Tank Drive Wheel (Medium)	坦克驅動輪 (中)		
 def_wheel_tank_drive_5_desc		The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.		
 def_wheel_tank_drive_5_s_desc		Medium drive wheel for tracked vehicles.	用於履帶式載具的中型驅動輪.		
 def_wheel_tank_drive_5_node_0_label		Brake	煞車		
 def_wheel_tank_drive_5_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_tank_drive_5_node_1_label		Power	動力		
+def_wheel_tank_drive_5_node_1_label		RPS	動力		
 def_wheel_tank_drive_5_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_wheel_tank_drive_7_name		Tank Drive Wheel (Large)	坦克驅動輪 (大)		
 def_wheel_tank_drive_7_desc		The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.	he wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.		
 def_wheel_tank_drive_7_s_desc		Large drive wheel for tracked vehicles.	用於履帶式載具的大型驅動輪.		
 def_wheel_tank_drive_7_node_0_label		Brake	煞車		
 def_wheel_tank_drive_7_node_0_desc		Locks the wheel into place when receiving an on signal.	接收到輸入訊號時,將車輪鎖定.		
-def_wheel_tank_drive_7_node_1_label		Power	動力		
+def_wheel_tank_drive_7_node_1_label		RPS	動力		
 def_wheel_tank_drive_7_node_1_desc		Receives power generated by an engine to control forward and backward rotation.	接收引擎產生的動力以控制正向和反向旋轉.		
 def_winch_a_name		Medium Winch (Deprecated)	絞盤 (中 不推薦使用)		
 def_winch_a_desc		The winch is operated electrically, and outputs its current length.	The winch is operated electrically, and outputs its current length		
@@ -5196,6 +5978,18 @@ def_wing_xl_s_desc		The wing surface cuts through the air while resisting moveme
 def_wing_xxl_name		Wing Section (XXLarge)	機翼 (XXL)		
 def_wing_xxl_desc		Wing surface to provide lift and cut through the air.	在機翼表面產生升力.		
 def_wing_xxl_s_desc		The wing surface cuts through the air while resisting movement against the flat plane of its surface. The aerofoil section also provides lift.	機翼表面通過空氣,同時有上下劃破空氣的效果.在機翼部分產生升力.		
+		ADD ENV MOD ZONE	ADD ENV MOD ZONE
+		Env Mod Zones are persistent zones, they can be used to set up advanced mission behaviour at specific world locations and can be manipulated from addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().	Env Mod Zones are persistent zones, they can be used to set up advanced mission behaviour at specific world locations and can be manipulated from addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().
+		Ratio 1	比值 1
+		Ratio 2	比值 2
+		Water	水
+		Allow Water	允許 水
+		Cargo Zone	Cargo Zone
+		25mm Ammo Box	25mm Ammo Box
+		30mm Ammo Box	30mm Ammo Box
+		40mm Ammo Box	40mm Ammo Box
+		105mm Shell	105mm Shell
+		203mm Shell	203mm Shell
 		Click the sleep button to fast-forward to your next mission.	Click the sleep button to fast-forward to your next mission.
 		MISSION COMPONENTS	任務組件
 		PLAYLIST COMPONENTS	PLAYLIST COMPONENTS
