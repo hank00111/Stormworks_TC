@@ -1,4 +1,4 @@
-# languages
+# Languages
  Stormworks_TC
  
  Language : Traditional Chinese
