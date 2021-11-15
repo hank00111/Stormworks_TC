@@ -5288,9 +5288,9 @@ def_steam_boiler_name		Steam Boiler
 def_steam_boiler_desc		The boiler should be connected to a firebox to supply heat for evaporation. Allowing too much pressure to build up in the boiler may cause an explosion; control your boiler's heat to restrict steam generation and keep the pressure below the threshold (10).	
 def_steam_boiler_s_desc		A boiler for evaporating water into steam.	
 def_steam_boiler_node_0_label		Coolant A	
-def_steam_boiler_node_0_desc			
+def_steam_boiler_node_0_desc		Port for supplying hot fluid to heat the contents of the boiler.	
 def_steam_boiler_node_1_label		Coolant B	
-def_steam_boiler_node_1_desc			
+def_steam_boiler_node_1_desc		Port for supplying hot fluid to heat the contents of the boiler.	
 def_steam_boiler_node_2_label		Water In	
 def_steam_boiler_node_2_desc			
 def_steam_boiler_node_3_label		Steam Out	
@@ -5322,37 +5322,37 @@ def_steam_coal_firebox_s_desc		A coal powered firebox.
 def_steam_coal_firebox_node_0_label		Coal Level	
 def_steam_coal_firebox_node_0_desc			
 def_steam_coal_firebox_node_1_label		Temperature	
-def_steam_coal_firebox_node_1_desc			
+def_steam_coal_firebox_node_1_desc		Temperature of the coolant that is being heated.	
 def_steam_coal_firebox_node_2_label		Ignition	
-def_steam_coal_firebox_node_2_desc			
+def_steam_coal_firebox_node_2_desc		Activate to consume a coal and ignite the firebox.	
 def_steam_coal_firebox_node_3_label		Coolant In	
-def_steam_coal_firebox_node_3_desc			
+def_steam_coal_firebox_node_3_desc		In port for fluid to be heated by the firebox.	
 def_steam_coal_firebox_node_4_label		Coolant Out	
-def_steam_coal_firebox_node_4_desc			
+def_steam_coal_firebox_node_4_desc		Out port for fluid to be heated by the firebox.	
 def_steam_coal_firebox_node_5_label		Air	
-def_steam_coal_firebox_node_5_desc			
+def_steam_coal_firebox_node_5_desc		Port for supplying air to the fire.	
 def_steam_coal_firebox_node_6_label		Exhaust	
-def_steam_coal_firebox_node_6_desc			
+def_steam_coal_firebox_node_6_desc		Port for removing exhaust from burnt coal.	
 def_steam_coal_firebox_l_name		Steam Coal Firebox Large	
 def_steam_coal_firebox_l_desc		Produces large amounts of heat. Can be supplied with a coal duct. Consumes 1 coal to ignite the fire.	
 def_steam_coal_firebox_l_s_desc		A coal powered firebox.	
 def_steam_coal_firebox_l_node_0_label		Coal Level	
 def_steam_coal_firebox_l_node_0_desc			
 def_steam_coal_firebox_l_node_1_label		Temperature	
-def_steam_coal_firebox_l_node_1_desc			
+def_steam_coal_firebox_l_node_1_desc		Temperature of the coolant that is being heated.	
 def_steam_coal_firebox_l_node_2_label		Ignition	
-def_steam_coal_firebox_l_node_2_desc			
+def_steam_coal_firebox_l_node_2_desc		Activate to consume a coal and ignite the firebox.	
 def_steam_coal_firebox_l_node_3_label		Coolant In	
-def_steam_coal_firebox_l_node_3_desc			
+def_steam_coal_firebox_l_node_3_desc		In port for fluid to be heated by the firebox.	
 def_steam_coal_firebox_l_node_4_label		Coolant Out	
-def_steam_coal_firebox_l_node_4_desc			
+def_steam_coal_firebox_l_node_4_desc		Out port for fluid to be heated by the firebox.	
 def_steam_coal_firebox_l_node_5_label		Air	
-def_steam_coal_firebox_l_node_5_desc			
+def_steam_coal_firebox_l_node_5_desc		Port for supplying air to the fire.	
 def_steam_coal_firebox_l_node_6_label		Exhaust	
-def_steam_coal_firebox_l_node_6_desc			
+def_steam_coal_firebox_l_node_6_desc		Port for removing exhaust from burnt coal.	
 def_steam_coal_funnel_name		Steam Coal Funnel	
 def_steam_coal_funnel_desc		Can be toggled to slowly move coal out of the connected system.	
-def_steam_coal_funnel_s_desc		A funnel movign coal.	
+def_steam_coal_funnel_s_desc		A funnel moving coal.	
 def_steam_coal_funnel_node_0_label		Open	
 def_steam_coal_funnel_node_0_desc			
 def_steam_coal_hopper_name		Steam Coal Hopper	
@@ -5374,9 +5374,9 @@ def_steam_condenser_name		Steam Condenser
 def_steam_condenser_desc		The condenser should be continously cooled to function efficiently.	
 def_steam_condenser_s_desc		A condenser for converting steam back to water.	
 def_steam_condenser_node_0_label		Coolant A	
-def_steam_condenser_node_0_desc			
+def_steam_condenser_node_0_desc		Port for supplying cold fluid to cool the contents of the condenser.	
 def_steam_condenser_node_1_label		Coolant B	
-def_steam_condenser_node_1_desc			
+def_steam_condenser_node_1_desc		Port for supplying cold fluid to cool the contents of the condenser.	
 def_steam_condenser_node_2_label		Steam In	
 def_steam_condenser_node_2_desc			
 def_steam_condenser_node_3_label		Water Out	
