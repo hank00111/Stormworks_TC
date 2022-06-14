@@ -9,7 +9,7 @@ id	description	en	local
 		### has left the game	### 已離開遊戲		
 		SET ROGUE MODE SAVE	SET ROGUE MODE SAVE		
 		SERVER SLOWDOWN	伺服器減速	
-		### is slowing the game.	### is slowing the game.		
+		### is slowing the game.	### 正在拖慢遊戲速度。		
 		Error connecting to server:	無法連接到伺服器:	
 		Connecting to server...	連接伺服器中...		
 		Joining game...	加入遊戲中...		
@@ -23,7 +23,7 @@ id	description	en	local
 		Server is full	伺服器已滿		
 		Server is not open to multiplayer	伺服器沒有開放多人連線		
 		You are not whitelisted on this server	你不在伺服器允許名單之內
-		You are missing a required DLC	You are missing a required DLC
+		You are missing a required DLC	你缺少了必要的 DLC
 		You are banned from this server	你已被伺服器封鎖
 		no errors detected	沒有檢測到錯誤		
 		Variables	變數		
@@ -54,22 +54,22 @@ id	description	en	local
 		Max of x and y	Max of x and y		
 		Min of x and y	Max of x and y		
 		Ceil x	Ceil x		
-		Floor x	Floor x		
-		Round x to nearest y	Round x to nearest y		
-		Absolute value of x	Absolute value of x		
-		Sign of x (1 if x=0)	Sign of x (1 if x=0)	
-		Square root of x	Square root of x		
-		Length of vector(x,y)	Length of vector(x,y)		
+		Floor x	取整數到 x 		
+		Round x to nearest y	簡化 x 到最近的 y		
+		Absolute value of x	x 的絕對值		
+		Sign of x (1 if x=0)	x 的符號函數 (1 if x=0)	
+		Square root of x	x 的平方根		
+		Length of vector(x,y)	向量長度(x,y)		
 		len(x,y) (no sqrt)	len(x,y) (no sqrt)		
 		Linearly interpolate x to y by z	Linearly interpolate x to y by z		
-		Clamp x within y and z	Clamp x within y and z		
-		Conversions	Conversions		
-		m/s to kmph	m/s to kmph		
-		m/s to mph	m/s to mph		
-		m/s to knots	m/s to knots		
+		Clamp x within y and z	限制 x 在 y 與 z 之間		
+		Conversions	換算		
+		m/s to kmph	m/s 換算成 kmph		
+		m/s to mph	m/s 換算成 mph		
+		m/s to knots	m/s 換算成 knots		
 		Turns to radians	圈數轉弧度		
-		Degrees to radians	Углы в радианы		
-		Radians to degrees	Радианы в углы		
+		Degrees to radians	角度到弧度		
+		Radians to degrees	弧度到角度		
 		True	真(True)
 		False	假(False)
 		And	And		
@@ -77,7 +77,7 @@ id	description	en	local
 		Xor	Xor		
 		Not	Not		
 		Click on the 'Logic' button in the top bar to enter logic connecting mode.	點擊頂部欄 'Logic' 按鈕進入 'Logic' 連接模式.
-		Select the 'Data' logic type to view 'On/Off' and 'Number' logic nodes.	Select the 'Data' logic type to view 'On/Off' and 'Number' logic nodes.
+		Select the 'Data' logic type to view 'On/Off' and 'Number' logic nodes.	選擇 'Data' logic 查看 'On/Off' 與 'Number' logic 節點.
 		Select the 'Power' logic type to view 'Power' logic nodes.	選擇 'Power' logic 查看 'Power' logic 節點.
 		Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.	Place a wedge in the highlighted space.\n\nYou can change a component's rotation by hovering over different adjacent surfaces in the vehicle.
 		Click on the wedge block in the component list to start building with it.	Click on the wedge block in the component list to start building with it.
@@ -97,36 +97,36 @@ id	description	en	local
 		Click on the 'Missions' button to see an overview of all currently available missions.	Click on the 'Missions' button to see an overview of all currently available missions.
 		Click the mission overview to show more detailed information about it.	Click the mission overview to show more detailed information about it.
 		Click the 'Toggle Active' button to make this the active mission.\n\nThe mission will then be shown on the map and in game.	Click the 'Toggle Active' button to make this the active mission.\n\nThe mission will then be shown on the map and in game.
-		Press [$[action_interact_right]] when looking at the crate to pick it up.	按 [$[action_interact_right]] when looking at the crate to pick it up.
-		Press [$[action_interact_right]] (hold and release to throw) to place the crate into your boat.	按 [$[action_interact_right]] (hold and release to throw) to place the crate into your boat.
-		Press [$[action_use_seat]] when looking at your pilot seat to start driving your boat.	按 [$[action_use_seat]] when looking at your pilot seat to start driving your boat.
-		Press [$[action_camera_mode]] to enter third-person view while in a seat.	按 [$[action_camera_mode]] to enter third-person view while in a seat.
-		Press [$[action_camera_mode]] to return to first-person view.	按 [$[action_camera_mode]] to return to first-person view.
-		Use [$[action_up]][$[action_left]][$[action_down]][$[action_right]] to drive to the target location.	Use [$[action_up]][$[action_left]][$[action_down]][$[action_right]] to drive to the target location.
-		Press [$[action_interact_right]] while looking at the engine on/off button to turn on the engine.	Press [$[action_interact_right]] while looking at the engine on/off button to turn on the engine.
-		Press [$[action_use_seat]] to exit your vehicle.	按 [$[action_use_seat]] to exit your vehicle.
-		Press [$[action_interact_right]] to pick up the crate.	按 [$[action_interact_right]] to pick up the crate.
-		Press [$[action_interact_right]] to place the crate in the drop zone.	按 [$[action_interact_right]] to place the crate in the drop zone.
-		Click the sleep button to fast-forward time.	
-		Press [$[action_use_seat]] while looking at your bed to go to sleep.	按 [$[action_use_seat]] while looking at your bed to go to sleep.
+		Press [$[action_interact_right]] when looking at the crate to pick it up.	在看著箱子時，按 [$[action_interact_right]] 來拾起它。
+		Press [$[action_interact_right]] (hold and release to throw) to place the crate into your boat.	按 [$[action_interact_right]] 以放置或「按住後放開」來丟擲物件到你的船上。
+		Press [$[action_use_seat]] when looking at your pilot seat to start driving your boat.	在看著你的駕駛座時，按 [$[action_use_seat]] 以駕駛你的船。
+		Press [$[action_camera_mode]] to enter third-person view while in a seat.	坐在椅子上時，按 [$[action_camera_mode]] 來切換到第三人稱視角
+		Press [$[action_camera_mode]] to return to first-person view.	按 [$[action_camera_mode]] 來回到第一人稱視角。
+		Use [$[action_up]][$[action_left]][$[action_down]][$[action_right]] to drive to the target location.	用 [$[action_up]][$[action_left]][$[action_down]][$[action_right]] 駕駛至目標區域。
+		Press [$[action_interact_right]] while looking at the engine on/off button to turn on the engine.	在看著引擎上的'on/off'按鈕時，按 [$[action_interact_right]] 已啟動引擎。
+		Press [$[action_use_seat]] to exit your vehicle.	按 [$[action_use_seat]] 來離開載具。
+		Press [$[action_interact_right]] to pick up the crate.	按 [$[action_interact_right]] 以撿起箱子。
+		Press [$[action_interact_right]] to place the crate in the drop zone.	按 [$[action_interact_right]] 來放置物件。
+		Click the sleep button to fast-forward time.	按 'sleep'按鈕來快轉時間。
+		Press [$[action_use_seat]] while looking at your bed to go to sleep.	在看著床時，按 [$[action_use_seat]] 來睡覺。
 		Bed	床
 		Return to your home base.	回到你的基地.
 		Home	家
 		Welcome to Stormworks	歡迎來到 Stormworks
 		FIX YOUR BOAT	修理你的船
-		Your boat was damaged in a recent storm. You will need to use a workbench to fix it.	Your boat was damaged in a recent storm. You will need to use a workbench to fix it.
+		Your boat was damaged in a recent storm. You will need to use a workbench to fix it.	你的船在近期的暴風中受損了，你會需要使用工作台來修復它。
 		Workbench	工作台
 		VEHICLE EDITOR	載具編輯器
-		This is the vehicle editor, where you can fix your boat.	This is the vehicle editor, where you can fix your boat.
+		This is the vehicle editor, where you can fix your boat.	這是載具編輯器，你可以在這裡修復你的船隻
 		ROTATE THE CAMERA	旋轉相機
-		You can rotate the camera around in the vehicle editor by holding the RIGHT MOUSE BUTTON while dragging, or by holding [shift] and LEFT MOUSE BUTTON.	You can rotate the camera around in the vehicle editor by holding the RIGHT MOUSE BUTTON while dragging, or by holding [shift] and LEFT MOUSE BUTTON.
+		You can rotate the camera around in the vehicle editor by holding the RIGHT MOUSE BUTTON while dragging, or by holding [shift] and LEFT MOUSE BUTTON.	您可以在載具編輯器中「按住鼠標右鍵」或「按住[shift]加滑鼠左鍵」來旋轉相機。
 		MOVE THE CAMERA	移動相機
 		You can pan the camera around in the vehicle editor by dragging while holding \nMIDDLE MOUSE BUTTON\nor\n[alt] and LEFT MOUSE BUTTON.	You can pan the camera around in the vehicle editor by dragging while holding \nMIDDLE MOUSE BUTTON\nor\n[alt] and LEFT MOUSE BUTTON.
 		ZOOM THE CAMERA	縮放相機
 		You can zoom the camera in and out by using the MOUSE SCROLL WHEEL\nor\nthe [-] and [=] keys.	You can zoom the camera in and out by using the MOUSE SCROLL WHEEL\nor\nthe [-] and [=] keys.
 		RESET THE CAMERA	重設相機
-		Open the camera settings by pressing the 'Camera' button.	Open the camera settings by pressing the 'Camera' button.
-		Return the camera to its original position by pressing the 'Reset Camera' button.	Return the camera to its original position by pressing the 'Reset Camera' button.
+		Open the camera settings by pressing the 'Camera' button.	按'相機'按鈕打以開相機設置。
+		Return the camera to its original position by pressing the 'Reset Camera' button.	按'重設相機'按鈕將相機返回到其原始位置。
 		PLACE BLOCK (1/3)	PLACE BLOCK (1/3)
 		Place a block in the highlighted space.\n\nMouse over an adjacent component to choose what to connect the block to.\n\nThen click to place it.	Place a block in the highlighted space.\n\nMouse over an adjacent component to choose what to connect the block to.\n\nThen click to place it.
 		PLACE BLOCK (2/3)	PLACE BLOCK (2/3)
@@ -142,15 +142,15 @@ id	description	en	local
 		CONNECT LOGIC (4/5)	CONNECT LOGIC (4/5)
 		CONNECT LOGIC (5/5)	CONNECT LOGIC (5/5)		
 		SAVE BOAT	儲存船隻
-		Save your boat design so that you can come back to it later.	Save your boat design so that you can come back to it later.
-		SPAWN BOAT	SPAWN BOAT
+		Save your boat design so that you can come back to it later.	保存你的船隻設計，以便你稍後再使用。
+		SPAWN BOAT	生成船隻
 		Your boat is ready to go.\n\nClick on the 'Spawn' button to build it and take it for a spin.	Your boat is ready to go.\n\nClick on the 'Spawn' button to build it and take it for a spin.
 		SELECT ACTIVE MISSION	選擇一個啟用的任務
 		COMPLETE MISSION	完成任務
 		RETURN TO BASE	返回基地
-		Press [f] to focus on hovered mouse position	按 [f] 焦點於滑鼠的位置
-		Press [f] to focus on selected object	按 [f] 焦點於選擇的物件
-		Press [lmb] to place object	按 [lmb] 焦點於物件上
+		Press [f] to focus on hovered mouse position	按 [f] 聚焦於滑鼠的位置
+		Press [f] to focus on selected object	按 [f] 聚焦於選擇的物件
+		Press [lmb] to place object	按 [lmb] 聚焦於物件上
 		Hold [shift] to place multiple	按住 [shift] 放置多個
 		Press [enter] to cancel	按 [enter] 取消
 		Press [del] to delete object	按 [del] 刪除物件
@@ -163,173 +163,173 @@ id	description	en	local
 		Police	警察
 		Small police station.	小派出所.
 		Airport	機場
-		Large runway in the shadow of an impenetrable plateau.	Large runway in the shadow of an impenetrable plateau.
-		Brinkfield	Brinkfield
-		Nuclear power plant with dock, reactor rooms and underground disposal pool.	Nuclear power plant with dock, reactor rooms and underground disposal pool.
-		Fishing Village	Fishing Village
-		Small fishing village with mountain, multiple sea stacks and a rocky peninsula.	Small fishing village with mountain, multiple sea stacks and a rocky peninsula.
-		Wind Turbine	Wind Turbine
-		Large offshore wind turbine.	Large offshore wind turbine.
+		Large runway in the shadow of an impenetrable plateau.	一座位於高原上，一旁有著高聳峭壁的機場
+		Brinkfield	'Brinkfield'核電廠
+		Nuclear power plant with dock, reactor rooms and underground disposal pool.	附有船塢、反應堆室和地下乏燃料池的核電廠。
+		Fishing Village	漁村
+		Small fishing village with mountain, multiple sea stacks and a rocky peninsula.	一旁有著山脈、多個海蝕柱和岩石半島的小漁村。
+		Wind Turbine	風力發電機組
+		Large offshore wind turbine.	大型離岸風力發電機組
 		Small Oil Rig	小型鑽油平台
 		Medium Oil Rig	中型鑽油平台
 		Wind Farm	風力發電廠
-		Multiple wind turbines atop a gentle hillside.	Multiple wind turbines atop a gentle hillside.
+		Multiple wind turbines atop a gentle hillside.	在平緩山坡上豎立的數個風力發電機組。
 		Oil Refinery	煉油廠
-		An industrial oil refinery with boat access.	An industrial oil refinery with boat access.
+		An industrial oil refinery with boat access.	一個附有船隻接駁區的工業煉油廠。
 		Lighthouse	燈塔
-		An unmanned lighthouse surrounded by hazardous rock formations.	An unmanned lighthouse surrounded by hazardous rock formations.
+		An unmanned lighthouse surrounded by hazardous rock formations.	一座被包圍在危險岩石群中的無人燈塔。
 		Observatory	天文台		
-		An astronomical observatory research base.	An astronomical observatory research base.
+		An astronomical observatory research base.	一座天文台研究基地
 		Sea Fort	沿海要塞
-		An abandoned military sea fort that has been reopened as a tourist hotspot.	An abandoned military sea fort that has been reopened as a tourist hotspot.
+		An abandoned military sea fort that has been reopened as a tourist hotspot.	一座被重新開放成觀光景點的廢棄軍事要塞。
 		Mainland Cliff	大陸懸崖
-		Small cliff at the corner of the mainland.	Small cliff at the corner of the mainland.
+		Small cliff at the corner of the mainland.	大陸邊角上的一處小懸崖。
 		Mainland Village	大陸村莊
-		Small fishing village near a rocky bay.	Small fishing village near a rocky bay.
+		Small fishing village near a rocky bay.	一處靠近岩岸的小小漁村。
 		Mainland Peninsula	大陸半島
-		Wall of sharp rocks extending out into the ocean.	Wall of sharp rocks extending out into the ocean.
+		Wall of sharp rocks extending out into the ocean.	延伸至海中的一處高聳的海蝕牆。
 		Mainland Tunnel	大陸隧道
-		A short continuing section of rail and road tunnels leading away from the mainland.	A short continuing section of rail and road tunnels leading away from the mainland.
+		A short continuing section of rail and road tunnels leading away from the mainland.	一小段駛離大陸的鐵路和公路隧道。
 		Mainland Junction	大陸交界處
-		The junction point on the mainland where the trainline to the Arctic begins.	The junction point on the mainland where the trainline to the Arctic begins.
+		The junction point on the mainland where the trainline to the Arctic begins.	在大陸上通往北極的火車線路的起點。
 		Mainland Road	大陸道路
-		Coastal road with a natural tunnel through a rock face.	Coastal road with a natural tunnel through a rock face.
+		Coastal road with a natural tunnel through a rock face.	有一條穿過岩壁的天然隧道的沿海公路。
 		Mainland Quarry	大陸採石場
-		Large quarry with mine, natural rock bridge and small castle ruin.	Large quarry with mine, natural rock bridge and small castle ruin.
+		Large quarry with mine, natural rock bridge and small castle ruin.	帶有大型採石場的礦山、天然岩石橋和小城堡廢墟。
 		Mainland Beach	大陸海灘
-		Small beach with several rock stacks.	Small beach with several rock stacks.
-		Mainland Cliff 2	Mainland Cliff 2	
-		Key Cottage	Key Cottage
-		Small island with lone cottage on the key.	Small island with lone cottage on the key.
-		Key Chemical Plant	Key Chemical Plant
-		Small island with chemical plant on the key.	Small island with chemical plant on the key.
-		Key Lighthouse OB	Key Lighthouse OB
-		Small island with lighthouse on the key.	Small island with lighthouse on the key.
-		Uninhabited 1	Uninhabited 1
-		Small island with cliff edges.	Small island with cliff edges.
-		Uninhabited 2	Uninhabited 2
-		Smooth climb to a rocky cliffside.	Smooth climb to a rocky cliffside.
-		Uninhabited 3	Uninhabited 3
-		Two small islands surrounded by cliffs. Aerial access only.	Two small islands surrounded by cliffs. Aerial access only.
-		Uninhabited 4	Uninhabited 4
-		Multiple scattered sea stacks.	Multiple scattered sea stacks.
-		Uninhabited 5	Uninhabited 5
-		Relatively flat island with central rocky outcrop.	Relatively flat island with central rocky outcrop.
-		Uninhabited 6	Uninhabited 6
-		Rocky shoreline with a small bay.	Rocky shoreline with a small bay.
-		Uninhabited 7	Uninhabited 7
-		High cliffs and a bay with 2 narrow entrances.	High cliffs and a bay with 2 narrow entrances.
-		Ruins 1	Ruins 1
-		Rocky coastline with small cave, ancient ruin and sheltered beach.	Rocky coastline with small cave, ancient ruin and sheltered beach.
-		Ruins 2	Ruins 2	
-		Sheltered cove, ancient ruin, cliff face connected by natural arch.	Sheltered cove, ancient ruin, cliff face connected by natural arch.
-		Seabed Rock Formation 1	Seabed Rock Formation 1
-		A rocky formation with cave on the ocean bed.	A rocky formation with cave on the ocean bed.
-		Seabed Rock Formation 2	Seabed Rock Formation 2
-		Two small rock formations on the ocean bed.	Two small rock formations on the ocean bed.
-		Seabed Rock Formation 3	Seabed Rock Formation 3
-		Multiple scattered rock stacks on the ocean bed.	Multiple scattered rock stacks on the ocean bed.
-		Seabed Rock Formation 4	Seabed Rock Formation 4
-		A flat rocky formation with central mound on the ocean bed.	A flat rocky formation with central mound on the ocean bed.
-		Seabed Rock Formation 5	Seabed Rock Formation 5
-		Seabed Rock Formation 6	Seabed Rock Formation 6
-		Small rocky formation on the ocean bed.	Small rocky formation on the ocean bed.
-		Seabed Rock Formation 7	Seabed Rock Formation 7
-		Several rocky stacks on the ocean bed.	Several rocky stacks on the ocean bed.
-		Seabed Caves	Seabed Caves
-		A system of underwater caves.	A system of underwater caves.
-		Seabed Shipwreck	Seabed Shipwreck	
-		A sunken iron-hulled merchant vessel.	A sunken iron-hulled merchant vessel.
-		Seabed Shipwreck 2	Seabed Shipwreck 2
-		A sunken historic timber caravel.	A sunken historic timber caravel.
-		Ice	Ice
-		Ice Variant	Ice Variant
-		Ice Scale	Ice Scale
-		Add Ice	Add Ice
-		Ice cannot be picked up but can be moved using vehicles. Its size and type can be set in the properties window.	Ice cannot be picked up but can be moved using vehicles. Its size and type can be set in the properties window.
-		Arctic Ocean	Arctic Ocean
-		1km x 1km of empty Arctic ocean.	1km x 1km of empty Arctic ocean.		
-		Arctic Oil Refinery	Arctic Oil Refinery
-		An oil refinery with rail access.	An oil refinery with rail access.
-		Arctic Ship Breaking Yard	Arctic Ship Breaking Yard
-		A ship breaking yard with dry dock where boats are brought to be scrapped.	A ship breaking yard with dry dock where boats are brought to be scrapped.
-		Arctic Research Facility	Arctic Research Facility
-		An Arctic survey base situated on top of a large iceberg.	An Arctic survey base situated on top of a large iceberg.
-		Arctic Mainland Rocks	Arctic Mainland Rocks
-		A rocky coastal area surrounded by multiple small icebergs.	A rocky coastal area surrounded by multiple small icebergs.
-		Arctic Oil Platform	Arctic Oil Platform
-		An oil platform built on the edge of the Arctic mainland, with road access to a train terminal.	An oil platform built on the edge of the Arctic mainland, with road access to a train terminal.
-		Arctic Mainland Hill	Arctic Mainland Hill
-		A snow-covered rocky hill. Small section of train line with junction boxes.	A snow-covered rocky hill. Small section of train line with junction boxes.
-		Arctic Mainland Outcrop	Arctic Mainland Outcrop
-		Southern end of an outcrop off the coast of the Arctic mainland.	Southern end of an outcrop off the coast of the Arctic mainland.
-		Arctic Mainland Outpost	Arctic Mainland Outpost
-		An Arctic research outpost, large inland lake and train terminal with road access.	An Arctic research outpost, large inland lake and train terminal with road access.
-		Arctic Fishing Village	Arctic Fishing Village
-		A small fishing village with a dock and a un-manned lighthouse.	A small fishing village with a dock and a un-manned lighthouse.
-		Arctic Mainland Arch	Arctic Mainland Arch
-		Eroded rocks form a snow-covered natural arch.	Eroded rocks form a snow-covered natural arch.
-		Arctic Mainland South	Arctic Mainland South
-		Southern point of the Arctic mainland where the incoming trainline splits.	Southern point of the Arctic mainland where the incoming trainline splits.
-		Arctic Mainland Coast	Arctic Mainland Coast
-		A small section of coastline with multiple small icebergs offshore.	A small section of coastline with multiple small icebergs offshore.
-		Arctic Container Depot	Arctic Container Depot
-		A large shipping container depot with several docking areas and trainline access.	A large shipping container depot with several docking areas and trainline access.
-		Arctic Underwater Mining	Arctic Underwater Mining
-		An underwater drilling and mining facility with dock and trainline access.	An underwater drilling and mining facility with dock and trainline access.
-		Multiplayer Island Base	Multiplayer Island Base
-		A large island complete with dock and airstrip, both featuring with two workbenches.	A large island complete with dock and airstrip, both featuring with two workbenches.
-		Ice Shelf 1	Ice Shelf 1
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 2	Ice Shelf 2
-		An ice shelf with narrow passages between cliffs of ice.	An ice shelf with narrow passages between cliffs of ice.
-		Ice Shelf 3	Ice Shelf 3
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 4	Ice Shelf 4
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 5	Ice Shelf 5
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 6	Ice Shelf 6
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 7	Ice Shelf 7
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 8	Ice Shelf 8
-		An ice shelf with two very large icebergs.	An ice shelf with two very large icebergs.
-		Ice Shelf 9	Ice Shelf 9
-		A dense ice shelf with many large icebergs.	A dense ice shelf with many large icebergs.
-		Ice Shelf 10	Ice Shelf 10
-		Two small icebergs.	Two small icebergs.
-		Ice Shelf 11	Ice Shelf 11
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Ice Shelf 12	Ice Shelf 12
-		An ice shelf with multiple large icebergs.	An ice shelf with multiple large icebergs.
-		Volcano Northwest	Volcano Northwest
-		Northwest region of a dormant volcano.	Northwest region of a dormant volcano.
-		Volcano North	Volcano North
-		Northern region of a dormant volcano.	Northern region of a dormant volcano.
-		Volcano Northeast	Volcano Northeast
-		Northeast region of a dormant volcano.	Northeast region of a dormant volcano.		
-		Volcano West	Volcano West
-		Western region of a dormant volcano.	Western region of a dormant volcano.
-		Volcano Center	Volcano Center
-		Central region of a dormant volcano.	Central region of a dormant volcano.
-		Volcano East	Volcano East
-		Eastern region of a dormant volcano.	Eastern region of a dormant volcano.
-		Volcano Southwest	Volcano Southwest
-		Southwest region of a dormant volcano.	Southwest region of a dormant volcano.
-		Volcano South	Volcano South
-		Southern region of a dormant volcano.	Southern region of a dormant volcano.
-		Volcano Southeast	Volcano Southeast
-		Southeast region of a dormant volcano.	Southeast region of a dormant volcano.
-		Special Outfit	Special Outfit
-		None	None
+		Small beach with several rock stacks.	小海灘與幾處小石堆。
+		Mainland Cliff 2	大陸懸崖 2	
+		Key Cottage	地點：小屋
+		Small island with lone cottage on the key.	一座有著單獨小屋的小島。
+		Key Chemical Plant	地點：化學工廠
+		Small island with chemical plant on the key.	一座有著化學工廠的小島。
+		Key Lighthouse OB	地點： OB燈塔
+		Small island with lighthouse on the key.	一座有著燈塔的小島。
+		Uninhabited 1	無人島 1
+		Small island with cliff edges.	一座有著懸崖的小島。
+		Uninhabited 2	無人島 2
+		Smooth climb to a rocky cliffside.	帶著緩坡的一處懸崖。
+		Uninhabited 3	無人島 3
+		Two small islands surrounded by cliffs. Aerial access only.	兩座被懸崖環繞的小島，只能從空中降落來登上。
+		Uninhabited 4	無人島 4
+		Multiple scattered sea stacks.	數個分散的海蝕柱.
+		Uninhabited 5	無人島 5
+		Relatively flat island with central rocky outcrop.	相比之下較為平坦的島嶼，中央帶有岩石露頭。
+		Uninhabited 6	無人島 6
+		Rocky shoreline with a small bay.	有著岩岸的一個小海灣。
+		Uninhabited 7	無人島 7
+		High cliffs and a bay with 2 narrow entrances.	高聳的懸崖和一個有 2 個狹窄入口的海灣。
+		Ruins 1	遺跡 1
+		Rocky coastline with small cave, ancient ruin and sheltered beach.	有著岩岸、小洞穴，古老遺跡與被岩石庇護的海灘。
+		Ruins 2	遺跡 2	
+		Sheltered cove, ancient ruin, cliff face connected by natural arch.	隱蔽的避風灣、古老遺跡，由天然拱門連接的懸崖面。
+		Seabed Rock Formation 1	海底岩石群 1
+		A rocky formation with cave on the ocean bed.	海床上有著洞穴的岩石群。.
+		Seabed Rock Formation 2	海床岩石群 2
+		Two small rock formations on the ocean bed.	海床上的兩個小岩石群。
+		Seabed Rock Formation 3	海床岩石群 3
+		Multiple scattered rock stacks on the ocean bed.	海床上的數個分散的岩石堆。
+		Seabed Rock Formation 4	海床岩石群 4
+		A flat rocky formation with central mound on the ocean bed.	海床上一個平坦的岩石地形，中央有土丘。
+		Seabed Rock Formation 5	海床岩石群 5
+		Seabed Rock Formation 6	海床岩石群 6
+		Small rocky formation on the ocean bed.	海床上的小岩石群。
+		Seabed Rock Formation 7	海床岩石群 7
+		Several rocky stacks on the ocean bed.	海床上的個處岩石堆。
+		Seabed Caves	海床洞穴
+		A system of underwater caves.	水下的復雜洞穴
+		Seabed Shipwreck	海底沉船	
+		A sunken iron-hulled merchant vessel.	一艘沉沒的鐵殼商船。
+		Seabed Shipwreck 2	海底沉船 2
+		A sunken historic timber caravel.	一艘沉沒的卡拉維爾帆船。
+		Ice	浮冰
+		Ice Variant	浮冰的種類
+		Ice Scale	浮冰的尺寸
+		Add Ice	加入浮冰
+		Ice cannot be picked up but can be moved using vehicles. Its size and type can be set in the properties window.	浮冰不能被拾起，但可以被載具推動。其大小和類別可以在屬性頁面中設定。
+		Arctic Ocean	北極海
+		1km x 1km of empty Arctic ocean.	1km x 1km 的空曠的北極海。		
+		Arctic Oil Refinery	北極煉油廠
+		An oil refinery with rail access.	一個附有列車接駁區的工業煉油廠。
+		Arctic Ship Breaking Yard	北極拆船場
+		A ship breaking yard with dry dock where boats are brought to be scrapped.	一個帶有乾船塢的拆船場，廢棄船隻的終點。
+		Arctic Research Facility	北極研究設施
+		An Arctic survey base situated on top of a large iceberg.	位於大冰山頂部的北極調查基地。
+		Arctic Mainland Rocks	北極大陸岩岸
+		A rocky coastal area surrounded by multiple small icebergs.	周圍被數個小冰山環繞的岩岸。
+		Arctic Oil Platform	北極鑽油平台
+		An oil platform built on the edge of the Arctic mainland, with road access to a train terminal.	建在北極大陸邊緣的石油平台，附有條通往火車站的公路。
+		Arctic Mainland Hill	北極大陸山
+		A snow-covered rocky hill. Small section of train line with junction boxes.	白雪覆蓋的岩石山，帶有一小段火車軌道與轉轍器。
+		Arctic Mainland Outcrop	北極大陸露頭
+		Southern end of an outcrop off the coast of the Arctic mainland.	北極大陸海岸旁的露頭的南端。
+		Arctic Mainland Outpost	北極大陸前哨
+		An Arctic research outpost, large inland lake and train terminal with road access.	一個北極研究站，一旁有大型內陸湖和可通往火車總站的公路。
+		Arctic Fishing Village	北極漁村
+		A small fishing village with a dock and a un-manned lighthouse.	一個有碼頭和無人燈塔的小漁村。
+		Arctic Mainland Arch	北極大陸拱門
+		Eroded rocks form a snow-covered natural arch.	被侵蝕的岩石形成的一個白雪覆蓋的天然拱門。
+		Arctic Mainland South	北極大陸南部
+		Southern point of the Arctic mainland where the incoming trainline splits.	北極大陸的南端，來往的火車線路在此分岔。
+		Arctic Mainland Coast	北極大陸海岸
+		A small section of coastline with multiple small icebergs offshore.	一小段海岸線，近海有數個小冰山。
+		Arctic Container Depot	北極貨櫃堆放場
+		A large shipping container depot with several docking areas and trainline access.	一個大型貨櫃堆放場，附有小港口和火車接駁區。
+		Arctic Underwater Mining	北極水下採礦
+		An underwater drilling and mining facility with dock and trainline access.	一個水下鑽探和採礦設施，附有小港口和火車接駁區。
+		Multiplayer Island Base	多人遊戲基地
+		A large island complete with dock and airstrip, both featuring with two workbenches.	一個帶有碼頭和簡易機場的大島嶼，各設有兩個工作台。
+		Ice Shelf 1	冰棚 1
+		An ice shelf with multiple large icebergs.	有數個大冰山組成的冰棚。
+		Ice Shelf 2	冰棚 2
+		An ice shelf with narrow passages between cliffs of ice.	一個有在冰崖之間有狹窄通道的冰棚。
+		Ice Shelf 3	冰棚 3
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Ice Shelf 4	冰棚 4
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Ice Shelf 5	冰棚 5
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Ice Shelf 6	冰棚 6
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Ice Shelf 7	冰棚 7
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Ice Shelf 8	冰棚 8
+		An ice shelf with two very large icebergs.	有兩個非常大的冰山的冰棚。
+		Ice Shelf 9	冰棚 9
+		A dense ice shelf with many large icebergs.	一個由許多大冰山組合而成的密集的冰棚。
+		Ice Shelf 10	冰棚 10
+		Two small icebergs.	兩個小冰山。
+		Ice Shelf 11	冰棚 11
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Ice Shelf 12	冰棚 12
+		An ice shelf with multiple large icebergs.	由數個大冰山組成的冰棚。
+		Volcano Northwest	火山西北側
+		Northwest region of a dormant volcano.	一座休眠火山的西北側地區。
+		Volcano North	火山北側
+		Northern region of a dormant volcano.	一座休眠火山的北側地區。
+		Volcano Northeast	火山東北側
+		Northeast region of a dormant volcano.	一座休眠火山的東北側地區。	
+		Volcano West	火山西側
+		Western region of a dormant volcano.	一座休眠火山的西側地區。
+		Volcano Center	火山中央
+		Central region of a dormant volcano.	一座休眠火山的中央地區。
+		Volcano East	火山東側
+		Eastern region of a dormant volcano.	一座休眠火山的東側地區。
+		Volcano Southwest	火山西南側
+		Southwest region of a dormant volcano.	一座休眠火山的西南側地區。
+		Volcano South	火山南側
+		Southern region of a dormant volcano.	一座休眠火山的南側地區。
+		Volcano Southeast	火山東南側
+		Southeast region of a dormant volcano.	一座休眠火山的東南側地區。
+		Special Outfit	特殊制服
+		None	無
 		Diving	潛水
 		Firefighter	消防
 		Scuba	水肺
-		Parachute	Parachute
+		Parachute	降落傘
 		Arctic	極地
 		SET OBJECTIVE	設置目標
-		ADD COMPONENTS TO MISSION	衛任務增加組件
+		ADD COMPONENTS TO MISSION	為任務增加組件
 		IN MISSON	任務中
 		SET TRIGGER	設置觸發器
 		ZONES	地區
@@ -343,72 +343,72 @@ id	description	en	local
 		SET ACTION OBJECTIVES	SET ACTION OBJECTIVES
 		Uploading to workshop. Please wait...	上傳工作坊中. 請稍候...
 		Loading. Please wait...	載入中. 請稍後...
-		Your addon has errors that must be fixed in order to upload to the Steam workshop:\n\n	Your addon has errors that must be fixed in order to upload to the Steam workshop:\n\n
+		Your addon has errors that must be fixed in order to upload to the Steam workshop:\n\n	你上傳的插件有必須被修復的錯誤，修復後才能上傳到工作坊:\n\n
 		CANNOT UPLOAD TO WORKSHOP	無法上傳至工作坊
-		Your mission has errors that must be fixed before it can be tested:\n\n	Your mission has errors that must be fixed before it can be tested:\n\n
+		Your mission has errors that must be fixed before it can be tested:\n\n	你上傳的任務有必須被修復的錯誤，修復後才能上傳到工作坊:\n\n
 		CANNOT SPAWN MISSION	無法生成任務
 		WORKSHOP UPLOAD FAILED	上傳工作坊失敗
-		COMPONENTS OVERLAPPING	COMPONENTS OVERLAPPING
-		Your addon has failed to upload to the Steam workshop.	Your addon has failed to upload to the Steam workshop.
-		Your workshop addon has failed to update.	Your workshop addon has failed to update.
-		ADDON UPLOAD COMPLETE	ADDON UPLOAD COMPLETE
-		Your addon was successfully uploaded to the Steam workshop.\n\n We recommend heading to your addon's workshop page to add more information about the content you've included.\n\n Any vehicles used in your addon have been included as part of the upload. Players will not need to separately subscribe to any of these vehicles.	Your addon was successfully uploaded to the Steam workshop.\n\n We recommend heading to your addon's workshop page to add more information about the content you've included.\n\n Any vehicles used in your addon have been included as part of the upload. Players will not need to separately subscribe to any of these vehicles.
-		ADDON UPDATE COMPLETE	ADDON UPDATE COMPLETE
-		Your addon was updated successfully.\n\nYou can customise the changelog for this update by heading to your addon's workshop page to let your subscribers know what's new.	Your addon was updated successfully.\n\nYou can customise the changelog for this update by heading to your addon's workshop page to let your subscribers know what's new.
+		COMPONENTS OVERLAPPING	組件重疊
+		Your addon has failed to upload to the Steam workshop.	您的插件上傳失敗了。
+		Your workshop addon has failed to update.	您的插件更新失敗了
+		ADDON UPLOAD COMPLETE	插件上傳完成
+		Your addon was successfully uploaded to the Steam workshop.\n\n We recommend heading to your addon's workshop page to add more information about the content you've included.\n\n Any vehicles used in your addon have been included as part of the upload. Players will not need to separately subscribe to any of these vehicles.	您的插件已成功上傳到 Steam 創意工作坊。\n\n 我們建議您前往您的插件的創意工作坊頁面，添加有關您所包含內容的更多信息。\n\n 您的插件中使用的任何車輛都已包含在上傳。玩家無需單獨訂閱任何這些車輛。
+		ADDON UPDATE COMPLETE	插件更新完成
+		Your addon was updated successfully.\n\nYou can customise the changelog for this update by heading to your addon's workshop page to let your subscribers know what's new.	您的插件已成功更新。\n\n您可以通過前往插件的工作坊頁面來自定義此次更新的更動日誌，讓您的訂閱者了解新內容。
 		missions	任務
 		mission	任務
 		objectives	目標
 		objective	目標
 		triggers	觸發器
 		trigger	觸發器
-		This component is currently required by	This component is currently required by
-		Are you sure you want to delete it?	Are you sure you want to delete it?
-		Workshop upload must have a name	Workshop upload must have a name
-		Workshop upload must be renamed	Workshop upload must be renamed
-		This addon includes the following	This addon includes the following
-		mission(s)	mission(s)		
-		Please note that some missions in this addon will only naturally spawn if certain criteria are met(such as owning a specific type of island, or having unlocked fire equipment).	Please note that some missions in this addon will only naturally spawn if certain criteria are met(such as owning a specific type of island, or having unlocked fire equipment).
-		The author of this addon has tagged it as creative, so some or all included missions may be unsuitable for career mode.	The author of this addon has tagged it as creative, so some or all included missions may be unsuitable for career mode.
-		(If you are the author of this addon, you can edit this description to add more details)	(If you are the author of this addon, you can edit this description to add more details)
+		This component is currently required by	該組件目前需要
+		Are you sure you want to delete it?	你確定你要刪除它？
+		Workshop upload must have a name	必須要有名稱才能上傳至工作坊
+		Workshop upload must be renamed	必須要更改名稱才能上傳至工作坊
+		This addon includes the following	此插件包含以下內容
+		mission(s)	任務		
+		Please note that some missions in this addon will only naturally spawn if certain criteria are met(such as owning a specific type of island, or having unlocked fire equipment).	請注意，此插件中的某些任務只有在滿足特定條件（例如擁有特定類型的島嶼或已解鎖消防設備）時才會自然生成。
+		The author of this addon has tagged it as creative, so some or all included missions may be unsuitable for career mode.	此插件的作者將其標記為創意，因此部分或全部包含的任務可能不適合生涯模式。
+		(If you are the author of this addon, you can edit this description to add more details)	（如果您是此插件的作者，您可以編輯此說明以添加更多詳細信息）
 		Uploaded	上傳
 		to the Workshop.	到工作坊.
 		Updated	更新
-		Addon must have a name	Addon must have a name
-		Addon must be renamed	Addon must be renamed
+		Addon must have a name	插件必須要有名稱
+		Addon must be renamed	插件必須要更改名稱
 		MISSION OVERVIEW	任務概述
 		No dependencies set.	未設置相關性.
 		[no zone set]	[未設置區域]
 		[no vehicle button set]	[未設置車輛按鈕]
 		[no objective set]	[未設置目標]
 		[no buttons set]	[未設置按鈕]
-		[no flares set]	[no flares set]
-		[no fires set]	[no fires set]
+		[no flares set]	[未設置照明彈]
+		[no fires set]	[未設置照明彈]
 		[no message set]	[未設置訊息]
 		[no objectives set]	[未設置目標]
 		Loading vehicles...	載入載具...
 		Saving game...	儲存遊戲...
 		Occupied	已佔用
 		Place Character In	放置
-		Pick Up Character	扳起
+		Pick Up Character	搬起
 		Store	商店
-		Equip	Equip
-		Restock	Restock
-		Swap to	Swap to
+		Equip	裝備
+		Restock	回收
+		Swap to	切換至
 		Release	發佈
 		Tap	點擊
 		Grab	抓住
 		Hold	Hold住
-		Tether	Tether
+		Tether	輕輕抓住
 		Structure	建築
 		Vehicle	載具
 		Return To Workbench	返回工作台
 		Deceased	死亡
 		Stop Following	停止跟隨
 		Follow	跟隨
-		Purchase Island\n$	Purchase Island\n$
+		Purchase Island\n$	購買島嶼\n$
 		Purchase Island to Use	購買島嶼使用
 		Not Available	不可用
-		Not Available When Carrying Someone	不可用時不能運送某人
+		Not Available When Carrying Someone	運時人不能使用
 		Spawning...	生成中...
 		SAVE SELECTION	儲存選擇
 		SAVE VEHICLE	儲存載具
@@ -427,15 +427,15 @@ id	description	en	local
 		exit bed	離開床鋪
 		change view	改變視角
 		Infinite	無限
-		Are you sure you want to purchase this property?	Are you sure you want to purchase this property?
+		Are you sure you want to purchase this property?	您確定要購買此房產嗎？
 		You cannot afford to purchase this property at the moment	您目前無法購買此房產
-		FAST TRAVEL	FAST TRAVEL
-		Are you sure you want to travel to this location?	Are you sure you want to travel to this location?
+		FAST TRAVEL	快速移動
+		Are you sure you want to travel to this location?	您確定要前往此地點嗎？
 		Cancel	取消
 		Confirm	繼續
 		TAKE TO WORKBENCH	帶回工作台
-		Are you sure you want to take this vehicle back to the workbench?	Are you sure you want to take this vehicle back to the workbench?
-		Are you sure you want to spawn this mission?	Are you sure you want to spawn this mission?
+		Are you sure you want to take this vehicle back to the workbench?	您確定要將這個載具帶回工作台嗎？
+		Are you sure you want to spawn this mission?	您確定要生成此任務嗎？
 		Only missions available on the server are possible to spawn.	只限可用的任務在伺服器上生成.
 		SPAWN MISSION	生成任務
 		REMOVE MISSION	刪除任物
@@ -454,20 +454,20 @@ id	description	en	local
 		Survival difficulty with reduced starting money, locked to first person view, no fast travel or vehicle teleporting, limited fuel.	生存難度 減少起始資金,鎖定第一人稱,無快速旅行和載具傳送,有限的燃料.
 		Hardcore mode with permadeath (save file will be deleted upon death).	極限模式永久死亡(儲存文件將在死亡時刪除).
 		Custom difficulty settings.	設定自定義難度.
-		Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.	Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.
-		Classic career mode. Expand your coastguard empire. Complete missions to earn money and unlock components.	Classic career mode. Expand your coastguard empire. Complete missions to earn money and unlock components.
-		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	Career mode. Expand your coastguard empire. Complete missions with survival style settings.
+		Custom mode. A sandbox environment with an array of settings to customise your session. Career or Creative.	自定義模式。具有一系列設定的沙盒環境以自定您的遊戲。生涯也好，創造也好。
+		Classic career mode. Expand your coastguard empire. Complete missions to earn money and unlock components.	經典的職業模式。擴大你的海岸警衛隊帝國。完成任務以賺錢並解鎖組件。
+		Career mode. Expand your coastguard empire. Complete missions with survival style settings.	生涯模式。擴大你的海岸警衛隊帝國。使用生存風格的設定完成任務。
 		Custom game mode settings.	設定自定義遊戲模式.
 		PLEASE CHOOSE ANOTHER KEY	請選擇另一個鍵
 		PRESS CONTROLLER BUTTON TO REBIND TO	請按一個鍵
-		PRESS KEY/MOUSE TO REBIND TO	PRESS KEY/MOUSE TO REBIND TO
+		PRESS KEY/MOUSE TO REBIND TO	按 鍵盤/鼠標上 的按鍵以重新綁定
 		GRAPHICS	圖像
 		QUALITY	品質
 		Window Mode	視窗模式
 		Resolution	解析度	
 		Antialiasing Mode	抗拒齒模式
 		VSync	垂直同步
-		View Distance	View Distance
+		View Distance	視野距離
 		Meters	Meters
 		Motion Blur	動態模糊
 		Ocean Reflections	海洋反射
@@ -475,13 +475,13 @@ id	description	en	local
 		Wildlife	野生動物
 		Shadow Quality	陰影品質
 		Shadow Resolution	陰影解析度
-		Light Volume Quality	Light Volume Quality
+		Light Volume Quality	亮度品質
 		SSAO	SSAO
-		SSAO Quality	SSAO Quality
+		SSAO Quality	SSAO品質
 		Vehicle Foam	載具泡沫
-		Ocean Foam	Ocean Foam
-		Tree Quality	Tree Quality
-		Monitor Quality	Monitor Quality
+		Ocean Foam	海洋泡沫
+		Tree Quality	樹木貼飾品質
+		Monitor Quality	顯示器顯示品質
 		FOV	視野範圍(FOV)
 		First Person	第一人稱
 		degrees	度
@@ -489,7 +489,7 @@ id	description	en	local
 		Third Person	第三人稱
 		Windowed	視窗化
 		Fullscreen	全螢幕
-		None	None
+		None	無
 		FXAA	FXAA
 		TAA	TAA
 		Disabled	禁用
@@ -516,14 +516,14 @@ id	description	en	local
 		Fixed	固定
 		Free	自由
 		GENERAL	一般
-		HUD	HUD
+		HUD	抬頭顯示器(HUD)
 		Objectives	目標
 		Clock	時鐘
 		Minimap	小地圖
 		Player Names	玩家名稱
-		New Chat Messages	New Chat Messages
-		Keybind Hints	Keybind Hints
-		Tooltip Detail	Tooltip Detail
+		New Chat Messages	新的聊天消息
+		Keybind Hints	按鍵提示
+		Tooltip Detail	工具詳細提示
 		Show	顯示		
 		Hide	隱藏
 		Graphics	圖像
@@ -533,7 +533,7 @@ id	description	en	local
 		Language	語言
 		AVAILABLE LANGUAGES	可用的語言
 		LANGUAGE	語言
-		Language settings can only be changed from the main menu.	語言設置只能從主選單更改.
+		Language settings can only be changed from the main menu.	語言設置只能從主選單更改。
 		New Translation	新增翻譯
 		NEW TRANSLATION	新增翻譯
 		Language name	語言名稱
@@ -557,7 +557,7 @@ id	description	en	local
 		Apply/Save	套用/儲存		
 		Reset	重設
 		RESET TO DEFAULTS	重設為預設值
-		Are you sure you want to reset to defaults?	Are you sure you want to reset to defaults?
+		Are you sure you want to reset to defaults?	您確定要重置為預設值嗎？
 		CLEAR BINDING	清除綁定
 		Are you sure you want to clear this binding?	Are you sure you want to clear this binding?
 		The resolution in the persistent graphics settings is not available. Defaulting to the current resolution.	The resolution in the persistent graphics settings is not available. Defaulting to the current resolution.
@@ -593,7 +593,7 @@ id	description	en	local
 		Host	Host
 		Submit	提交
 		CHOOSE BASE	選擇基地
-		DELETE SAVE	刪除儲存
+		DELETE SAVE	刪除存檔
 		Are you sure you want to delete this game?	Are you sure you want to delete this game?
 		COMPONENT STOCK	COMPONENT STOCK
 		CASH REWARD	現金獎勵
@@ -608,36 +608,37 @@ id	description	en	local
 		Official	官方
 		Saved	已儲存
 		Workshop	工作坊
-		Your saved addons.	Your saved addons.
-		Addons you've subscribed to on the Steam Workshop.	Addons you've subscribed to on the Steam Workshop.
-		Official addons created by the Stormworks Devs.	Official addons created by the Stormworks Devs.	
+		Your saved addons.	您保存的插件。
+		Addons you've subscribed to on the Steam Workshop.	您在 Steam 創意工作坊上訂閱的插件。
+		Official addons created by the Stormworks Devs.	Stormworks 開發人員創建的官方插件。	
 		no objectives	沒有任和目標
 		1 objective	1個目標
 		requirements	要求
-		UPLOAD NEW ADDON	UPLOAD NEW ADDON
-		Share your addon with other players on the Steam Workshop.	Share your addon with other players on the Steam Workshop.
-		Addon	Addon
-		Addon Name	Addon Name
-		Test Location	Test Location
-		Enabled Addons	Enabled Addons
-		Edit Addon Lua	Edit Addon Lua
+		UPLOAD NEW ADDON	上傳新插件
+		Share your addon with other players on the Steam Workshop.	在 Steam 創意工作坊與其他玩家分享您的插件。
+		Addon	插件
+		Addon Name	插件名稱
+		Test Location	測試位置
+		Enabled Addons	啟用的插件
+		Edit Addon Lua	啟用插件 Lua
 		Toggle All	選取全部
-		OVERWRITE EXISTING ADDON	OVERWRITE EXISTING ADDON
-		Overwrite your addon and publish your changes to the Steam Workshop.	Overwrite your addon and publish your changes to the Steam Workshop.
+		OVERWRITE EXISTING ADDON	覆蓋現有插件
+		Overwrite your addon and publish your changes to the Steam Workshop.	覆蓋您的插件並將您的更改發佈到 Steam 創意工作坊。
+
 		Loading...	載入中...
 		EXIT	離開
 		Exit the editor.	離開編輯器.
 		NEW	新增
-		Create a new addon.	Create a new addon.	
+		Create a new addon.	新增新的插件	
 		LOAD	讀取檔案		
-		Load a saved addon.	Load a saved addon.
+		Load a saved addon.	讀取已存檔的插件
 		SAVE	儲存
-		Save the currently edited addon.	Save the currently edited addon.
-		ADDON OVERVIEW	ADDON OVERVIEW
-		View the currently edited addon.	View the currently edited addon.
+		Save the currently edited addon.	保存當前編輯的插件。
+		ADDON OVERVIEW	插件覆蓋
+		View the currently edited addon.	查看當前編輯的插件。
 		LOCATION EDITOR	位置編輯
-		Edit the current addon's locations.	Edit the current addon's locations.	
-		View the currently edited addon.	View the currently edited addon.
+		Edit the current addon's locations.	編輯當前插件的位置。	
+		View the currently edited addon.	查看當前編輯的插件。
 		ADD CHARACTER	添加文字
 		You can customise outfits and whether this character is a survivor or NPC in the properties window. Survivors will follow you and can be picked up, but NPCs can not be interacted with.	You can customise outfits and whether this character is a survivor or NPC in the properties window. Survivors will follow you and can be picked up, but NPCs can not be interacted with.
 		ADD OBJECT	添加物鍵
@@ -647,22 +648,22 @@ id	description	en	local
 		Zones can be used to set up advanced mission behaviour at specific world locations with addon Lua. These zones can be accessed globally by any addon script with functions getZones() and isInZone().	
 		Zones are used to specify a location, these zones are local to a addon and can be accessed like any other local component through getLocationObjectData(). Mission Zones are generally more appropriate for constructing procedural style missions.	Zones are used to specify a location, these zones are local to a addon and can be accessed like any other local component through getLocationObjectData(). Mission Zones are generally more appropriate for constructing procedural style missions.
 		ADD VEHICLE	添加載具
-		You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.	You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.
+		You can set a vehicle to be static in the properties window. Static vehicles are fixed in place, making them useful for adding buildings or cranes to missions.	您可以在屬性頁面中將車輛設置為靜態。靜態車輛固定在適當的位置，這使得它們可用於將建築物或起重機添加到任務中。
 		ADD VEHICLE BUTTON	添加載具按鈕
-		Vehicle buttons allow your mission to interact with a named button on a vehicle. You must parent the button to a vehicle, and set the 'button display name' in the properties window to be the name of a button on the parent vehicle.	Vehicle buttons allow your mission to interact with a named button on a vehicle. You must parent the button to a vehicle, and set the 'button display name' in the properties window to be the name of a button on the parent vehicle.
-		ADD FLARE	ADD FLARE
-		Flares emit a plume of coloured smoke that can be used to get the player's attention in an emergency situation. The colour of the flare can be customised in the properties window.	Flares emit a plume of coloured smoke that can be used to get the player's attention in an emergency situation. The colour of the flare can be customised in the properties window.
+		Vehicle buttons allow your mission to interact with a named button on a vehicle. You must parent the button to a vehicle, and set the 'button display name' in the properties window to be the name of a button on the parent vehicle.	車輛按鈕允許您的任務與載具上的命名按鈕進行相通。您必須將按鈕與載具綁定，並將屬性頁面中的“按鈕顯示名稱”設置為綁定載具上按鈕的名稱。
+		ADD FLARE	添加照明彈
+		Flares emit a plume of coloured smoke that can be used to get the player's attention in an emergency situation. The colour of the flare can be customised in the properties window.	照明彈會發出一縷彩色煙霧，可用於在緊急情況下引起玩家的注意。可以在屬性窗口中自定照明彈的顏色。
 		ADD FIRE	添加火災
-		Fires can be extinguished using water cannons and will spread to other nearby fires. The size of the fire and whether or not it is initially lit can be customised in the properties window.	Fires can be extinguished using water cannons and will spread to other nearby fires. The size of the fire and whether or not it is initially lit can be customised in the properties window.
-		ADD LOOT	ADD LOOT
-		Loot boxes allow you to hide additional rewards in your missions. Each one will give the player a random reward with a value between $6000 and $10000.	Loot boxes allow you to hide additional rewards in your missions. Each one will give the player a random reward with a value between $6000 and $10000.
-		ADD ANIMAL	ADD ANIMAL
-		The animal type can be customised in the properties window. If the 'Sharks' difficulty option is enabled, sharks will stalk and attack characters in the water.	The animal type can be customised in the properties window. If the 'Sharks' difficulty option is enabled, sharks will stalk and attack characters in the water.
+		Fires can be extinguished using water cannons and will spread to other nearby fires. The size of the fire and whether or not it is initially lit can be customised in the properties window.	火可以用高壓水槍撲滅，並會蔓延到附近的其他火上。可以在屬性窗口中自定義火的大小以及最初是否點燃。
+		ADD LOOT	添加戰利品
+		Loot boxes allow you to hide additional rewards in your missions. Each one will give the player a random reward with a value between $6000 and $10000.	戰利品箱可讓您在任務中隱藏額外的獎勵。每個箱子都會給玩家一個隨機獎勵，價值在 6000 美元到 10000 美元之間。
+		ADD ANIMAL	添加動物
+		The animal type can be customised in the properties window. If the 'Sharks' difficulty option is enabled, sharks will stalk and attack characters in the water.	可以在屬性窗口中自定義動物類型。如果啟用“鯊魚”難度選項，鯊魚將跟踪並攻擊水中的角色。
 		Done	完成
-		Clear Parent	Clear Parent	
+		Clear Parent	清除綁定	
 		Properties	屬性
-		Parent to Vehicle	Parent to Vehicle
-		Replace Vehicle File	Replace Vehicle File
+		Parent to Vehicle	綁定至載具
+		Replace Vehicle File	覆蓋載具檔案
 		Move	移動
 		Rotate	旋轉
 		Resize	調整大小
@@ -670,33 +671,33 @@ id	description	en	local
 		Message	訊息
 		Description	描述
 		DELETE LOCATION	刪除位置
-		Are you sure you want to delete this location?	Are you sure you want to delete this location?
+		Are you sure you want to delete this location?	您確定要刪除這個位置？
 		DELETE MISSION	刪除任務
-		Are you sure you want to delete this mission?	Are you sure you want to delete this mission?
+		Are you sure you want to delete this mission?	您確定要刪除此任務嗎？
 		DELETE OBJECTIVE	刪除目標
-		Are you sure you want to delete this objective?	Are you sure you want to delete this objective?
+		Are you sure you want to delete this objective?	您確定要刪除此目標嗎？
 		DELETE TRIGGER	刪除觸發
-		Are you sure you want to delete this trigger?	Are you sure you want to delete this trigger?
+		Are you sure you want to delete this trigger?	您確定要刪除此觸發嗎？
 		DELETE COMPONENT	刪除組件
-		Are you sure you want to delete this mission component?	Are you sure you want to delete this mission component?
-		Are you sure you want to create a new addon?	Are you sure you want to create a new addon?
-		Enter a save name for this addon:	Enter a save name for this addon:
-		DELETE ADDON	DELETE ADDON
-		Are you sure you want to delete this addon?	Are you sure you want to delete this addon?
-		OVERWRITE ADDON	OVERWRITE ADDON
-		Are you sure you want to overwrite this addon?	Are you sure you want to overwrite this addon?
-		UPLOAD ADDON	UPLOAD ADDON
-		NEW ADDON	NEW ADDON
-		Are you sure you want to upload this addon to the workshop?\n\n This will make it available to all Stormworks players.	Are you sure you want to upload this addon to the workshop?\n\n This will make it available to all Stormworks players.
-		Are you sure you want to overwrite this workshop playlist?	Are you sure you want to overwrite this workshop playlist?
-		Are you sure you want to test this mission in the world?\n\nYour mission will be automatically despawned when you return to the addon editor.	Are you sure you want to test this mission in the world?\n\nYour mission will be automatically despawned when you return to the addon editor.
-		SET OBJECTIVE DEPENDENCIES	SET OBJECTIVE DEPENDENCIES
+		Are you sure you want to delete this mission component?	您確定要刪除此任務組件嗎？
+		Are you sure you want to create a new addon?	您確定要創建新插件嗎？
+		Enter a save name for this addon:	輸入此插件的保存名稱：
+		DELETE ADDON	刪除插件
+		Are you sure you want to delete this addon?	您確定要刪除此插件嗎？
+		OVERWRITE ADDON	覆蓋插件
+		Are you sure you want to overwrite this addon?	您確定要覆蓋此插件嗎？
+		UPLOAD ADDON	上傳插件
+		NEW ADDON	新增插件
+		Are you sure you want to upload this addon to the workshop?\n\n This will make it available to all Stormworks players.	您確定要將此插件上傳到創意工作坊嗎？\n\n 這將使所有 Stormworks 玩家都可以使用它。
+		Are you sure you want to overwrite this workshop playlist?	您確定要覆蓋此工作坊任務列表嗎？
+		Are you sure you want to test this mission in the world?\n\nYour mission will be automatically despawned when you return to the addon editor.	您確定要在世界上測試此任務嗎？\n\n當您返回插件編輯器時，您的任務將自動消失。
+		SET OBJECTIVE DEPENDENCIES	設定目標觸發條件
 		OTHER OBJECTIVES	其他目標
-		SET COMPONENT DEPENDENCIES	SET COMPONENT DEPENDENCIES
+		SET COMPONENT DEPENDENCIES	設定組件觸發條件
 		COMPONENTS	組件
-		SET MISSION DEPENDENCIES	SET MISSION DEPENDENCIES
+		SET MISSION DEPENDENCIES	設定任務觸發條件
 		OTHER MISSIONS	其他任務
-		This mission will only spawn in career mode if all of its dependencies are met. It will never spawn if its dependencies have failed to be met.	This mission will only spawn in career mode if all of its dependencies are met. It will never spawn if its dependencies have failed to be met.
+		This mission will only spawn in career mode if all of its dependencies are met. It will never spawn if its dependencies have failed to be met.	如果滿足所有附加條件，則此任務只會在職業模式下生成。如果未能滿足其附加條件，它將永遠不會生成。
 		TRIGGERS	觸發	
 		TRIGGER	觸發
 		SET ACTION DEPENDENCIES	設置動作相關內容
@@ -708,136 +709,136 @@ id	description	en	local
 		OUTPUT	輸出
 		INPUT	輸入
 		IN STOCK	有庫存
-		EACH	EACH
-		OUT OF STOCK	OUT OF STOCK
+		EACH	各
+		OUT OF STOCK	缺貨
 		Cost	花費
 		Locked	鎖定
 		Open	開啟
 		Close	關閉
 		UPLOAD NEW VEHICLE	上傳新載具
-		Share your vehicle with other players on the Steam Workshop.	Share your vehicle with other players on the Steam Workshop.
-		OVERWRITE EXISTING VEHICLE	OVERWRITE EXISTING VEHICLE
-		Overwrite your vehicle and publish your changes to the Steam Workshop.	Overwrite your vehicle and publish your changes to the Steam Workshop.
-		LOGIC GATES	LOGIC GATES
-		Enter a name for this microcontroller	Enter a name for this microcontroller
-		DELETE MICROCONTROLLER	DELETE MICROCONTROLLER
-		Are you sure you want to delete this microcontroller?	Are you sure you want to delete this microcontroller?
-		OVERWRITE MICROCONTROLLER	OVERWRITE MICROCONTROLLER
-		Are you sure you want to overwrite this microcontroller?	Are you sure you want to overwrite this microcontroller?
-		CLEAR MICROCONTROLLER	CLEAR MICROCONTROLLER
-		Are you sure you want to start a new microcontroller? Any unsaved changes will be lost.	Are you sure you want to start a new microcontroller? Any unsaved changes will be lost.
-		UPLOAD MICROCONTROLLER	UPLOAD MICROCONTROLLER
-		Are you sure you want to upload this microcontroller to the workshop?\n\n This will make it available to all Stormworks players.	Are you sure you want to upload this microcontroller to the workshop?\n\n This will make it available to all Stormworks players.
-		EDIT MICROCONTROLLER	EDIT MICROCONTROLLER
-		Are you sure you want to open this microcontroller in the editor?\n\nAny unsaved changed currently open in the microcontroller editor will be lost.	Are you sure you want to open this microcontroller in the editor?\n\nAny unsaved changed currently open in the microcontroller editor will be lost.
-		UPDATE MICROCONTROLLER	UPDATE MICROCONTROLLER
-		Are you sure you want to update the selected microcontroller with this schematic?\n\n- If you have resized the schematic, some components may be removed to make room for the new microcontroller.\n- If you have moved or changed any logic inputs/outputs, some logic links may not be preserved.	Are you sure you want to update the selected microcontroller with this schematic?\n\n- If you have resized the schematic, some components may be removed to make room for the new microcontroller.\n- If you have moved or changed any logic inputs/outputs, some logic links may not be preserved.
-		Enter a name for this vehicle	Enter a name for this vehicle
-		Enter file name to export vehicle model to	Enter file name to export vehicle model to
+		Share your vehicle with other players on the Steam Workshop.	在 Steam 創意工作坊與其他玩家分享您的載具。
+		OVERWRITE EXISTING VEHICLE	覆蓋現有載具
+		Overwrite your vehicle and publish your changes to the Steam Workshop.	覆蓋您的載具並將您的更改發佈到 Steam 創意工作坊。
+		LOGIC GATES	邏輯閘
+		Enter a name for this microcontroller	為此微控制器輸入名稱
+		DELETE MICROCONTROLLER	刪除微控制器
+		Are you sure you want to delete this microcontroller?	您確定要刪除此微控制器嗎？
+		OVERWRITE MICROCONTROLLER	覆蓋微控制器
+		Are you sure you want to overwrite this microcontroller?	您確定要覆蓋此微控制器嗎？
+		CLEAR MICROCONTROLLER	清除微控制器
+		Are you sure you want to start a new microcontroller? Any unsaved changes will be lost.	您確定要開起新的微控制器嗎？任何未保存的更改都將丟失。
+		UPLOAD MICROCONTROLLER	上傳微控制器
+		Are you sure you want to upload this microcontroller to the workshop?\n\n This will make it available to all Stormworks players.	您確定要將此微控制器上傳到創意工作坊嗎？\n\n 這將使所有 Stormworks 玩家都可以使用它。
+		EDIT MICROCONTROLLER	編輯微控制器
+		Are you sure you want to open this microcontroller in the editor?\n\nAny unsaved changed currently open in the microcontroller editor will be lost.	您確定要在編輯器中打開此微控制器嗎？\n\n當前在微控制器編輯器中打開的任何未保存的更改都將丟失。
+		UPDATE MICROCONTROLLER	更新微控制器
+		Are you sure you want to update the selected microcontroller with this schematic?\n\n- If you have resized the schematic, some components may be removed to make room for the new microcontroller.\n- If you have moved or changed any logic inputs/outputs, some logic links may not be preserved.	您確定要使用此原理圖更新選定的微控制器嗎？\n\n- 如果您調整了原理圖的大小，可能會移除某些組件以為新微控制器騰出空間。\n- 如果您移動或更改了任何邏輯輸入/輸出，一些邏輯連接線可能不會被保留。
+		Enter a name for this vehicle	為此載具輸入名稱
+		Enter file name to export vehicle model to	輸入文件名以導出載具模型
 		EXPORT 3D MODEL	匯出 3D 模型
 		DELETE VEHICLE	刪除載具
-		Are you sure you want to delete this vehicle?	Are you sure you want to delete this vehicle?
+		Are you sure you want to delete this vehicle?	您確定要刪除此載具嗎？
 		OVERWRITE VEHICLE	覆蓋載具	
-		Are you sure you want to overwrite this vehicle?	Are you sure you want to overwrite this vehicle?
+		Are you sure you want to overwrite this vehicle?	您確定要覆蓋此載具嗎？
 		CLEAR VEHICLE	清除載具
-		Are you sure you want to clear this vehicle? This cannot be undone.	Are you sure you want to clear this vehicle? This cannot be undone.
-		Are you sure you want to overwrite this workshop vehicle?	Are you sure you want to overwrite this workshop vehicle?
+		Are you sure you want to clear this vehicle? This cannot be undone.	您確定要清除此載具嗎？這個動作不能被撤消。
+		Are you sure you want to overwrite this workshop vehicle?	您確定要覆蓋此工作坊的載具嗎？
 		UPLOAD VEHICLE	上傳載具
-		Are you sure you want to upload this vehicle to the workshop?\n This will make it available to all Stormworks players.	Are you sure you want to upload this vehicle to the workshop?\n This will make it available to all Stormworks players.
+		Are you sure you want to upload this vehicle to the workshop?\n This will make it available to all Stormworks players.	您確定要將此載具上傳到工作坊嗎？\n 這將使所有 Stormworks 玩家都可以使用它。
 		ERROR LOADING VEHICLE	無法讀取載具
-		There was an error	There was an error
+		There was an error	出現了一個錯誤
 		UPLOAD COMPLETE	上傳完畢
 		Upload complete.	上傳完畢.
-		The vehicle you are trying to load is too large for this edit area.\n\nYou will need to purchase an island with a larger workbench to load this vehicle. Check the map screen for islands for sale.	The vehicle you are trying to load is too large for this edit area.\n\nYou will need to purchase an island with a larger workbench to load this vehicle. Check the map screen for islands for sale.
-		The vehicle you are trying to load is too large for this edit area.	The vehicle you are trying to load is too large for this edit area.
-		The vehicle file you are trying to load could not be found.	The vehicle file you are trying to load could not be found.
-		Your vehicle has failed to upload to the Steam workshop.	Your vehicle has failed to upload to the Steam workshop.
-		Your microcontroller has failed to upload to the Steam workshop.	Your microcontroller has failed to upload to the Steam workshop.
-		Your workshop vehicle has failed to update.	Your workshop vehicle has failed to update.
-		Your workshop microcontroller has failed to update.	Your workshop microcontroller has failed to update.
-		UPDATING MICROCONTROLLER FAILED	UPDATING MICROCONTROLLER FAILED
-		The microcontroller could not be updated due to the new schematic extending beyond the boundary of the workbench.\n\nYou will need to replace this microcontroller manually.	The microcontroller could not be updated due to the new schematic extending beyond the boundary of the workbench.\n\nYou will need to replace this microcontroller manually.
-		The microcontroller could not be updated.\n\nYou will need to replace this microcontroller manually.	The microcontroller could not be updated.\n\nYou will need to replace this microcontroller manually.
-		The updated microcontroller could not be added to your vehicle.\n\nYou will need to replace this microcontroller manually.	The updated microcontroller could not be added to your vehicle.\n\nYou will need to replace this microcontroller manually.
-		Please give your vehicle a descriptive name.	Please give your vehicle a descriptive name.
-		Please limit your selected tags to a maximum of 10.	Please limit your selected tags to a maximum of 10.
-		Please select at least 1 tag.	Please select at least 1 tag.
-		Your vehicle is too small to be uploaded to the workshop.	Your vehicle is too small to be uploaded to the workshop.
-		Your custom thumbnail is not a 512x512 size PNG.	Your custom thumbnail is not a 512x512 size PNG.
-		You are missing some components in this vehicle, they have been removed:\n	You are missing some components in this vehicle, they have been removed:\n
-		Some components do not fit or may be overlapping, they have been removed:\n	Some components do not fit or may be overlapping, they have been removed:\n
+		The vehicle you are trying to load is too large for this edit area.\n\nYou will need to purchase an island with a larger workbench to load this vehicle. Check the map screen for islands for sale.	您嘗試讀取的載具對於此編輯區域而言太大。\n\n您需要購買一個帶有更大工作台的島來讀取此載具。檢查地圖上出售的島嶼。
+		The vehicle you are trying to load is too large for this edit area.	您嘗試讀取的載具對於此編輯區域來說太大。
+		The vehicle file you are trying to load could not be found.	找不到您嘗試讀取的載具文件。
+		Your vehicle has failed to upload to the Steam workshop.	您的載具上傳失敗。
+		Your microcontroller has failed to upload to the Steam workshop.	您的微控制器上傳失敗。
+		Your workshop vehicle has failed to update.	您的工作坊載具更新失敗。
+		Your workshop microcontroller has failed to update.	您的工作坊微控制器更新失敗。
+		UPDATING MICROCONTROLLER FAILED	更新微控制器失敗
+		The microcontroller could not be updated due to the new schematic extending beyond the boundary of the workbench.\n\nYou will need to replace this microcontroller manually.	由於新原理圖超出了工作台的邊界，因此無法更新微控制器。\n\n您需要手動更換此微控制器。
+		The microcontroller could not be updated.\n\nYou will need to replace this microcontroller manually.	無法更新微控制器。\n\n您需要手動更換此微控制器。
+		The updated microcontroller could not be added to your vehicle.\n\nYou will need to replace this microcontroller manually.	更新後的微控制器無法添加到您的載具。\n\n您需要手動更換此微控制器。
+		Please give your vehicle a descriptive name.	請為您的載具起一個描述性的名稱。
+		Please limit your selected tags to a maximum of 10.	請將您選擇的標籤限制在10個以下。
+		Please select at least 1 tag.	請將您至少選擇1個標籤。
+		Your vehicle is too small to be uploaded to the workshop.	您的載具太小，無法上傳到工作坊。
+		Your custom thumbnail is not a 512x512 size PNG.	您的自定義縮略圖不是 512x512 大小的 PNG。
+		You are missing some components in this vehicle, they have been removed:\n	您在這個載具上缺少一些組件，它們已被移除:\n
+		Some components do not fit or may be overlapping, they have been removed:\n	某些不適合或可能重疊的物件已被移除:\n
 		INCOMPATIBLE DIFFICULTY	INCOMPATIBLE DIFFICULTY
 		This vehicle was built with the 'Advanced Vehicles' difficulty option enabled.\n\nYou are currently playing with Advanced Vehicles disabled, so this vehicle may not function correctly or at all without modification.	This vehicle was built with the 'Advanced Vehicles' difficulty option enabled.\n\nYou are currently playing with Advanced Vehicles disabled, so this vehicle may not function correctly or at all without modification.		
 		This vehicle was built with the 'Advanced Vehicles' difficulty option disabled.\n\nYou are currently playing with Advanced Vehicles enabled, so this vehicle may not function correctly or at all without modification.	This vehicle was built with the 'Advanced Vehicles' difficulty option disabled.\n\nYou are currently playing with Advanced Vehicles enabled, so this vehicle may not function correctly or at all without modification.
-		SOME COMPONENTS DID NOT FIT	SOME COMPONENTS DID NOT FIT
-		Some components have been updated and no longer fit on this vehicle. You will still be able to edit this vehicle but these components have been removed:\n	Some components have been updated and no longer fit on this vehicle. You will still be able to edit this vehicle but these components have been removed:\n
-		Your microcontroller has errors that must be fixed in order to upload to the workshop:\n\n	Your microcontroller has errors that must be fixed in order to upload to the workshop:\n\n
+		SOME COMPONENTS DID NOT FIT	某些組件放不下
+		Some components have been updated and no longer fit on this vehicle. You will still be able to edit this vehicle but these components have been removed:\n	某些組件已更新，不再適合此載具。您仍然可以編輯此載具，但這些組件已被刪除：\n
+		Your microcontroller has errors that must be fixed in order to upload to the workshop:\n\n	你上傳的微控制器有必須被修復的錯誤，修復後才能上傳到工作坊:\n\n
 		ERROR	錯誤
 		An error occurred.	發生錯誤.
 		VEHICLE UPLOAD COMPLETE	載具上傳完成
-		Your vehicle was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your vehicle's workshop page to add a description and screenshots.	Your vehicle was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your vehicle's workshop page to add a description and screenshots.
+		Your vehicle was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your vehicle's workshop page to add a description and screenshots.	您的車輛已成功上傳到 Steam 創意工作坊。\n\n我們建議前往您載具的創意工作坊頁面添加描述和屏幕截圖。
 		MICROCONTROLLER UPLOAD COMPLETE	微控制器上傳完成
-		Your microcontroller was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your microcontroller's workshop page to add a description, screenshots, and usage instructions.	Your microcontroller was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your microcontroller's workshop page to add a description, screenshots, and usage instructions.
+		Your microcontroller was successfully uploaded to the Steam workshop.\n\nWe recommend heading to your microcontroller's workshop page to add a description, screenshots, and usage instructions.	您的微控制器已成功上傳到 Steam 創意工作坊。\n\n我們建議您前往微控制器的創意工作坊頁面添加說明、屏幕截圖和使用說明。
 		VEHICLE UPDATE COMPLETE	載具更新完成
-		Your vehicle was updated successfully.\n\nYou can customise the changelog for this update by heading to your vehicle's workshop page to let your subscribers know what's new.	Your vehicle was updated successfully.\n\nYou can customise the changelog for this update by heading to your vehicle's workshop page to let your subscribers know what's new.
+		Your vehicle was updated successfully.\n\nYou can customise the changelog for this update by heading to your vehicle's workshop page to let your subscribers know what's new.	您的載具已成功更新。\n\n您可以通過前往您載具的工作坊頁面來自定義此次更新的更動日誌，讓您的訂閱者了解新內容。
 		MICROCONTROLLER UPDATE COMPLETE	微控制器更新完成
-		Your microcontroller was updated successfully.\n\nYou can customise the changelog for this update by heading to your microcontroller's workshop page to let your subscribers know what's new.	Your microcontroller was updated successfully.\n\nYou can customise the changelog for this update by heading to your microcontroller's workshop page to let your subscribers know what's new.
+		Your microcontroller was updated successfully.\n\nYou can customise the changelog for this update by heading to your microcontroller's workshop page to let your subscribers know what's new.	您的微控制器已成功更新。\n\n您可以通過前往微控制器的工作坊頁面來自定義此次更新的更動日誌，讓您的訂閱者了解新內容。
 		EXPORT COMPLETE	匯出完成
 		SUCCESS	成功
 		The action was completed successfully.	此行動已經成功完成.
 		(double-click to expand)	(雙擊以展開)
-		No description set for microcontroller component.	No description set for microcontroller component.
-		Results for	Results for
+		No description set for microcontroller component.	沒有為微控制器組件設置描述。
+		Results for	導致
 		COMPONENT INVENTORY	組件背包
-		Group: None	Group: None
-		Group: Category	Group: Category
-		Group: A to Z	Group:  А 到 Z
+		Group: None	組別: 無
+		Group: Category	組別: 類別
+		Group: A to Z	組別:  А 到 Z
 		Backups	備份
 		Your saved microcontrollers.	你已儲存微控制器.
-		Microcontrollers you've subscribed to on the Steam Workshop.	Microcontrollers you've subscribed to on the Steam Workshop.
-		Backups of the 10 most recent autosaves.	Backups of the 10 most recent autosaves.
-		Microcontrollers you've uploaded to the Steam Workshop.	Microcontrollers you've uploaded to the Steam Workshop.
+		Microcontrollers you've subscribed to on the Steam Workshop.	您在 Steam 創意工作坊上訂閱的微控制器。
+		Backups of the 10 most recent autosaves.	最近 10 個自動保存的檔案。
+		Microcontrollers you've uploaded to the Steam Workshop.	您上傳到 Steam 創意工作坊的微控制器。
 		STEAM WORKSHOP UPLOAD	上傳至STEAM工作坊		
-		Share your microcontroller with other players on the Steam Workshop.	Share your microcontroller with other players on the Steam Workshop.
+		Share your microcontroller with other players on the Steam Workshop.	在 Steam 創意工作坊與其他玩家分享您的微控制器。
 		UPLOAD NAME	上傳名稱
 		Microcontroller	微控制器
-		Tags	Tags
+		Tags	標籤
 		TAGS	標籤
-		Show on Map	Show on Map
+		Show on Map	在地圖上顯示
 		Upload	上傳
 		UPLOAD NEW MICROCONTROLLER	上傳新的微控制器
-		OVERWRITE EXISTING MICROCONTROLLER	OVERWRITE EXISTING MICROCONTROLLER
-		Overwrite your microcontroller and publish your changes to the Steam Workshop. Players will need to replace any copies of your microcontroller that they have placed on their vehicle in order to use your updated version.	Overwrite your microcontroller and publish your changes to the Steam Workshop. Players will need to replace any copies of your microcontroller that they have placed on their vehicle in order to use your updated version.
-		BACK	BACK
+		OVERWRITE EXISTING MICROCONTROLLER	覆蓋現有的微控制器
+		Overwrite your microcontroller and publish your changes to the Steam Workshop. Players will need to replace any copies of your microcontroller that they have placed on their vehicle in order to use your updated version.	覆蓋您的微控制器並將您的更改發佈到 Steam 創意工作坊。玩家需要更換他們放置在車輛上的任何微控制器副本才能使用您的更新版本
+		BACK	返回
 		Return to the vehicle editor.	返回載具編輯器.
 		UPDATE	更新
-		Update the selected microcontroller with this schematic.	Update the selected microcontroller with this schematic.
-		Discard any changes and start a new microcontroller.	Discard any changes and start a new microcontroller.
-		Load a saved microcontroller.	Load a saved microcontroller.
-		Save your microcontroller for use in your vehicles.	Save your microcontroller for use in your vehicles.
+		Update the selected microcontroller with this schematic.	使用此原理圖更新選定的微控制器。
+		Discard any changes and start a new microcontroller.	放棄任何更改並開啟全新的微控制器。
+		Load a saved microcontroller.	讀取保存的微控制器。
+		Save your microcontroller for use in your vehicles.	保存您的微控制器以用於您的車輛。
 		WORKSHOP	工作坊
-		Upload your microcontroller to the Steam Workshop, or update a previous upload.	Upload your microcontroller to the Steam Workshop, or update a previous upload.
+		Upload your microcontroller to the Steam Workshop, or update a previous upload.	將您的微控制器上傳到 Steam 創意工作坊，或更新之前上傳的內容。
 		DESIGN	設計
-		Design the physical layout of your microcontroller and customise inputs and outputs.	Design the physical layout of your microcontroller and customise inputs and outputs.
+		Design the physical layout of your microcontroller and customise inputs and outputs.	設計微控制器的排列佈局並自定輸入和輸出。
 		LOGIC	邏輯
-		Edit the logic behaviour of your microcontroller.	Edit the logic behaviour of your microcontroller.
-		Browse microcontroller components [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.	Browse microcontroller components [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.
+		Edit the logic behaviour of your microcontroller.	編輯微控制器的邏輯行為。
+		Browse microcontroller components [tab]. Drag components to your hotbar with [LMB] for quick access. Double click a component to hide the inventory. Double click a hotbar slot or select it when the inventory is open to replace it with another component. [0-9] can be used to select hotbar slots.	使用 [tab] 瀏覽微控制器組件。使用 [LMB] 將組件拖到快捷欄以便快速使用。雙擊一個組件以隱藏庫存列表。雙擊快捷欄位或在庫存打開時選擇它以將其替換為另一個組件。 [0-9] 可用於選擇快捷欄位。
 		input	輸入
 		output	輸出
 		Name	名稱
 		Signal In	訊號輸入
-		The input signal to process.	The input signal to process.
-		No description set.	No description set.		
+		The input signal to process.	要處理的輸入信號。
+		No description set.	沒有設 定說明。		
 		Width	寬度		
 		Length	長度		
-		Don't show in inventory	Don't show in inventory
+		Don't show in inventory	不在庫存中顯示
 		Add Node	新增節點
 		NODES	節點
-		Use [lmb] to toggle pixels.	Use [lmb] to toggle pixels.
-		SCHEMATIC	SCHEMATIC
-		Drag logic nodes to reposition them. Click to focus.	Drag logic nodes to reposition them. Click to focus.
-		Some nodes are overlapping.	Some nodes are overlapping.
-		Some nodes are outside the microcontroller.	Some nodes are outside the microcontroller.
+		Use [lmb] to toggle pixels.	使用 [lmb] 改變像素。
+		SCHEMATIC	原理圖
+		Drag logic nodes to reposition them. Click to focus.	拖動邏輯節點以重新定位它們。點擊聚焦。
+		Some nodes are overlapping.	有一些節點重疊了。
+		Some nodes are outside the microcontroller.	一些節點在微控制器之外。
 		Logic	邏輯
 		Symbol	符號
 		Movement	運動
@@ -851,19 +852,19 @@ id	description	en	local
 		Right	右
 		Forward	前進
 		Backward	後退
-		Jump/Swim Up	Jump/Swim Up
-		Crouch/Swim Down	Crouch/Swim Down
-		Trim Menu	修正選單
+		Jump/Swim Up	跳躍/向上游泳
+		Crouch/Swim Down	蹲下/向下游泳
+		Trim Menu	微調選單
 		Sprint	短跑
 		Walk	行走
-		Interact Left	Interact Left
-		Interact Right	Interact Right
-		Use Equipment	Use Equipment
-		Use Equipment Secondary Function	Use Equipment Secondary Function
-		Drop Equipment	Drop Equipment
-		Cycle Next Equipment	Cycle Next Equipment
-		Cycle Previous Equipment	Cycle Previous Equipment
-		Use Seat/Ladder	Use Seat/Ladder
+		Interact Left	左側互動
+		Interact Right	右側互動
+		Use Equipment	使用裝備
+		Use Equipment Secondary Function	使用裝備的副功能
+		Drop Equipment	拋棄裝備
+		Cycle Next Equipment	切換到下一個設備
+		Cycle Previous Equipment	切換到上一個設備
+		Use Seat/Ladder	使用座椅/梯子
 		Pedal Left	左傾
 		Pedal Right	右傾
 		Throttle Up	增加油門
@@ -874,16 +875,16 @@ id	description	en	local
 		Hotkey 4	熱鍵 4
 		Hotkey 5	熱鍵 5
 		Hotkey 6	熱鍵 6
-		Custom Menu	Custom Menu
-		Photo Mode	照片模式
+		Custom Menu	自定義選單
+		Photo Mode	相機模式
 		Zoom	放大
-		Camera Mode	相機模式
-		Toggle Controls UI	Toggle Controls UI
-		Toggle Controller Input	Toggle Controller Input
+		Camera Mode	切換視角
+		Toggle Controls UI	切換控制器 UI
+		Toggle Controller Input	切換控制器輸入
 		Emote Wheel	表情滾輪
 		Player List	玩家清單
-		Quick Chat	Quick Chat
-		Show detailed data labels	Show detailed data labels
+		Quick Chat	聊天
+		Show detailed data labels	顯示詳細的數據標籤
 		Voice Chat	語音音量
 		Axis 1	Axis 1
 		Axis 2	Axis 2
@@ -902,7 +903,7 @@ id	description	en	local
 		Spawned Mission	生成任務
 		New Mission	新增任務
 		### could not be spawned	### 無法被生成
-		No location set	No location set
+		No location set	未設定位置
 		GAME MODE	遊戲模式
 		World Seed	世界種子
 		Difficulty	難度
@@ -913,48 +914,48 @@ id	description	en	local
 		Custom	自訂
 		Game Mode	遊戲模式
 		Career	生涯
-		Classic Career	Classic Career
+		Classic Career	經典生涯
 		Custom	自訂
 		CUSTOMISE DIFFICULTY	自定難度
 		First Person Only	限第一人稱視角
-		Camera is locked to first person when on foot.	Camera is locked to first person when on foot.
+		Camera is locked to first person when on foot.	步行時視角鎖定為第一人稱視角。
 		First Person Vehicle Only	限第一人稱載具視角
-		Camera is locked to first person in vehicles.	Camera is locked to first person in vehicles.
+		Camera is locked to first person in vehicles.	駕駛時視角鎖定為第一人稱視角。
 		Advanced Vehicles	進階載具
-		Transmission pipes, fuel requirement, advanced engine mechanics.	Transmission pipes, fuel requirement, advanced engine mechanics.
+		Transmission pipes, fuel requirement, advanced engine mechanics.	需要用管線傳輸燃料、動力，進階的發動機機制。
 		Vehicle Damage	載具損傷
-		Vehicles can be damaged by the environment.	Vehicles can be damaged by the environment.
+		Vehicles can be damaged by the environment.	載具可能會被環境損壞。
 		Player Damage	人物傷害
-		Survival mechanics such as player mortality and debuffs.	Survival mechanics such as player mortality and debuffs.
+		Survival mechanics such as player mortality and debuffs.	生存機制，例如：玩家會死亡、異常狀態效果。
 		NPC Damage	NPC 損傷
-		Survivors and NPCs have the same mortality as the player in survival mode.	Survivors and NPCs have the same mortality as the player in survival mode.		
+		Survivors and NPCs have the same mortality as the player in survival mode.	倖存者和 NPC 會像生存模式中的玩家一樣死亡。		
 		Sharks	鯊魚
 		Sharks will attack you.	開啟時鯊魚會攻擊您.
-		Megalodons	Megalodons
-		Megalodons will stalk and attack your vehicles.	Megalodons will stalk and attack your vehicles.
+		Megalodons	巨齒鯊
+		Megalodons will stalk and attack your vehicles.	巨齒鯊會跟踪並攻擊您的載具。
 		Teleport Vehicles	傳送載具
-		Teleport vehicles back to the workbench from the map.	Teleport vehicles back to the workbench from the map.
+		Teleport vehicles back to the workbench from the map.	將載具從地圖傳送回工作台。
 		Fast Travel	快速返回
-		Fast travel back to your base from the map.	Fast travel back to your base from the map.
+		Fast travel back to your base from the map.	從地圖快速移動至您的基地。
 		Permadeath	永久死亡
-		One save file that is wiped upon death.	One save file that is wiped upon death.
+		One save file that is wiped upon death.	一個會在死亡時移除的存檔。
 		Limited Fuel	有限燃料
-		Vehicles spawn with no fuel and must be refilled from fuel tanks around the world (only applies to advanced vehicles).	Vehicles spawn with no fuel and must be refilled from fuel tanks around the world (only applies to advanced vehicles).
-		First person Markers	First person Markers
-		Mission Markers for the First Person HUD.	Mission Markers for the First Person HUD
+		Vehicles spawn with no fuel and must be refilled from fuel tanks around the world (only applies to advanced vehicles).	載具生成時沒有燃料，必須從世界各地的油箱中加滿油（僅適用於進階載具）。
+		First person Markers	第一人稱視角標記
+		Mission Markers for the First Person HUD.	第一人稱視角 HUD 的任務標記
 		Starting Money	起始金錢
 		CUSTOMISE GAME MODE	自訂遊戲模式
 		Unlock All Components	解鎖全部組件
 		Unlock All Islands	解鎖全部島嶼
 		All purchasable islands are pre-purchased.	需花錢購買的島嶼全部解鎖.
 		Infinite Stock	無限庫存
-		Infinite money and components are available.	Infinite money and components are available.
+		Infinite money and components are available.	無限的金錢和組件。
 		Creative Tools	創作工具
-		Enable time/weather control menu, addon editor, mission spawn menu.	
+		Enable time/weather control menu, addon editor, mission spawn menu.	啟用時間/天氣控制選單、插件編輯器、任務生成選單。
 		Day/Night Cycle (minutes)	白天/夜晚 循環 (分)
 		Daylight Hours	白天時間
 		Clear	清除
-		Invert	Invert
+		Invert	反轉
 		KEY/BUTTON	KEY/BUTTON
 		CURRENT BINDING	當前綁定
 		REBIND	重新綁定		
